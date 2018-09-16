@@ -74,7 +74,7 @@ ROOT_BUILD_OPTION(builtin_freetype OFF "Build included libfreetype, or use syste
 ROOT_BUILD_OPTION(builtin_ftgl ON "Build included libFTGL, or use system libftgl")
 ROOT_BUILD_OPTION(builtin_gl2ps OFF "Build included libgl2ps, or use system libgl2ps")
 ROOT_BUILD_OPTION(builtin_glew ON "Build included libGLEW, or use system libGLEW")
-ROOT_BUILD_OPTION(builtin_gsl ON "Build the GSL library internally (downloading tarfile from the Web)")
+ROOT_BUILD_OPTION(builtin_gsl OFF "Build the GSL library internally (downloading tarfile from the Web)")
 ROOT_BUILD_OPTION(builtin_llvm ON "Build llvm internally")
 ROOT_BUILD_OPTION(builtin_clang ON "Build clang internally")
 ROOT_BUILD_OPTION(builtin_lzma OFF "Build included liblzma, or use system liblzma")

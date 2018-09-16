@@ -31,7 +31,8 @@ if %argC% gtr 0 (
 mkdir %scriptDir%%lsbCodeName% 2>nul
 cd %scriptDir%%lsbCodeName%
 
-cmake -G "Visual Studio 15 Win64" -DGFLAGS=0 -DSNAPPY=0 -DJNI=0 ..\..\..\..\original
+cmake -G"Visual Studio 15 2017 Win64" ..\..\..\..\original
+::cmake -G"Visual Studio 15 2017" ..\..\..\..\original
 
 
 cd %currentDir%

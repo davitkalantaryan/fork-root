@@ -19,6 +19,42 @@
  *                                                                       *
  *************************************************************************/
 
+// Added by DK
+/*************************************************************************/
+//#include "root_first_include.h"
+
+#ifndef __root_first_include_h__
+#define __root_first_include_h__
+#ifdef _WIN32
+
+#ifdef _MSC_VER
+
+#ifdef _M_AMD64
+#include <intrin.h>
+#pragma intrinsic(__stosb)
+#else
+#endif // #ifdef _M_AMD64
+
+#endif // #ifdef _MSC_VER
+
+#include <Winsock2.h>
+#include <WS2tcpip.h>
+#include <Windows.h>
+#include <DbgHelp.h>
+
+#endif // #ifdef _WIN32
+
+#ifdef OUT
+#undef OUT
+#endif
+#define OUT (CHAR_MAX + 1) /* a non-character value */
+
+#endif  // #ifndef __root_first_include_h__
+/*************************************************************************/
+// end Added by DK
+
+
+
 #ifdef _WIN32
 
 /* Disable warning about truncated symboles (usually coming from stl) */
@@ -59,9 +95,13 @@
 /* loop control variable is used outside the for-loop scope */
 #pragma warning (3: 4289)
 
+#ifndef WIN32
 #define WIN32 1
+#endif
 #define _WINDOWS 1
+#ifndef WINVER
 #define WINVER 0x0500
+#endif
 #define CRTAPI1 _cdecl 
 #define CRTAPI2 _cdecl
 #define _X86_ 1 
