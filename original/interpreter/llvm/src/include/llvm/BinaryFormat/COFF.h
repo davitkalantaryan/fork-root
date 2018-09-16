@@ -94,6 +94,7 @@ struct BigObjHeader {
 enum MachineTypes {
   MT_Invalid = 0xffff,
 
+#ifndef _WINNT_
   IMAGE_FILE_MACHINE_UNKNOWN = 0x0,
   IMAGE_FILE_MACHINE_AM33 = 0x13,
   IMAGE_FILE_MACHINE_AMD64 = 0x8664,
@@ -116,11 +117,13 @@ enum MachineTypes {
   IMAGE_FILE_MACHINE_SH5 = 0x1A8,
   IMAGE_FILE_MACHINE_THUMB = 0x1C2,
   IMAGE_FILE_MACHINE_WCEMIPSV2 = 0x169
+#endif
 };
 
 enum Characteristics {
   C_Invalid = 0,
 
+#ifndef _WINNT_
   /// The file does not contain base relocations and must be loaded at its
   /// preferred base. If this cannot be done, the loader will error.
   IMAGE_FILE_RELOCS_STRIPPED = 0x0001,
@@ -156,6 +159,7 @@ enum Characteristics {
   /// Big endian: the MSB precedes the LSB in memory. This is deprecated
   /// and should be 0.
   IMAGE_FILE_BYTES_REVERSED_HI = 0x8000
+#endif // #ifndef _WINNT_
 };
 
 enum ResourceTypeID {
@@ -192,15 +196,19 @@ struct symbol {
 };
 
 enum SymbolSectionNumber : int32_t {
+  SymbolSectionNumber_false = -3,
+#ifndef _WINNT_
   IMAGE_SYM_DEBUG = -2,
   IMAGE_SYM_ABSOLUTE = -1,
   IMAGE_SYM_UNDEFINED = 0
+#endif // #ifndef _WINNT_
 };
 
 /// Storage class tells where and what the symbol represents
 enum SymbolStorageClass {
   SSC_Invalid = 0xff,
 
+#ifndef _WINNT_
   IMAGE_SYM_CLASS_END_OF_FUNCTION = -1,  ///< Physical end of function
   IMAGE_SYM_CLASS_NULL = 0,              ///< No symbol
   IMAGE_SYM_CLASS_AUTOMATIC = 1,         ///< Stack variable
@@ -232,9 +240,12 @@ enum SymbolStorageClass {
   IMAGE_SYM_CLASS_WEAK_EXTERNAL = 105, ///< Duplicate tag
   /// External symbol in dmert public lib
   IMAGE_SYM_CLASS_CLR_TOKEN = 107
+#endif
 };
 
 enum SymbolBaseType {
+  SymbolBaseType_false = -1,
+#ifndef _WINNT_
   IMAGE_SYM_TYPE_NULL = 0,   ///< No type information or unknown base type.
   IMAGE_SYM_TYPE_VOID = 1,   ///< Used with void pointers and functions.
   IMAGE_SYM_TYPE_CHAR = 2,   ///< A character (signed byte).
@@ -251,13 +262,16 @@ enum SymbolBaseType {
   IMAGE_SYM_TYPE_WORD = 13,  ///< A word; unsigned 2-byte integer.
   IMAGE_SYM_TYPE_UINT = 14,  ///< An unsigned integer of natural size.
   IMAGE_SYM_TYPE_DWORD = 15  ///< An unsigned 4-byte integer.
+#endif                       // #ifndef _WINNT_
 };
 
 enum SymbolComplexType {
+#ifndef _WINNT_
   IMAGE_SYM_DTYPE_NULL = 0,     ///< No complex type; simple scalar variable.
   IMAGE_SYM_DTYPE_POINTER = 1,  ///< A pointer to base type.
   IMAGE_SYM_DTYPE_FUNCTION = 2, ///< A function that returns a base type.
   IMAGE_SYM_DTYPE_ARRAY = 3,    ///< An array of base type.
+#endif                          // #ifndef _WINNT_
 
   /// Type is formed as (base + (derived << SCT_COMPLEX_TYPE_SHIFT))
   SCT_COMPLEX_TYPE_SHIFT = 4
@@ -281,7 +295,9 @@ struct section {
 enum SectionCharacteristics : uint32_t {
   SC_Invalid = 0xffffffff,
 
-  IMAGE_SCN_TYPE_NOLOAD = 0x00000002,
+  IMAGE_SCN_TYPE_NOLOAD = 0x00000002
+#ifndef _WINNT_
+  ,
   IMAGE_SCN_TYPE_NO_PAD = 0x00000008,
   IMAGE_SCN_CNT_CODE = 0x00000020,
   IMAGE_SCN_CNT_INITIALIZED_DATA = 0x00000040,
@@ -317,6 +333,7 @@ enum SectionCharacteristics : uint32_t {
   IMAGE_SCN_MEM_EXECUTE = 0x20000000,
   IMAGE_SCN_MEM_READ = 0x40000000,
   IMAGE_SCN_MEM_WRITE = 0x80000000
+#endif
 };
 
 struct relocation {
@@ -326,7 +343,9 @@ struct relocation {
 };
 
 enum RelocationTypeI386 {
-  IMAGE_REL_I386_ABSOLUTE = 0x0000,
+  RelocationTypeI386_false = -1
+#ifndef _WINNT_
+                             IMAGE_REL_I386_ABSOLUTE = 0x0000,
   IMAGE_REL_I386_DIR16 = 0x0001,
   IMAGE_REL_I386_REL16 = 0x0002,
   IMAGE_REL_I386_DIR32 = 0x0006,
@@ -337,10 +356,13 @@ enum RelocationTypeI386 {
   IMAGE_REL_I386_TOKEN = 0x000C,
   IMAGE_REL_I386_SECREL7 = 0x000D,
   IMAGE_REL_I386_REL32 = 0x0014
+#endif // #ifndef _WINNT_
 };
 
 enum RelocationTypeAMD64 {
-  IMAGE_REL_AMD64_ABSOLUTE = 0x0000,
+  RelocationTypeAMD64_false = -1
+#ifndef _WINNT_
+                              IMAGE_REL_AMD64_ABSOLUTE = 0x0000,
   IMAGE_REL_AMD64_ADDR64 = 0x0001,
   IMAGE_REL_AMD64_ADDR32 = 0x0002,
   IMAGE_REL_AMD64_ADDR32NB = 0x0003,
@@ -357,10 +379,13 @@ enum RelocationTypeAMD64 {
   IMAGE_REL_AMD64_SREL32 = 0x000E,
   IMAGE_REL_AMD64_PAIR = 0x000F,
   IMAGE_REL_AMD64_SSPAN32 = 0x0010
+#endif // #ifndef _WINNT_
 };
 
 enum RelocationTypesARM {
-  IMAGE_REL_ARM_ABSOLUTE = 0x0000,
+  RelocationTypesARM_false = -1
+#ifndef _WINNT_
+                             IMAGE_REL_ARM_ABSOLUTE = 0x0000,
   IMAGE_REL_ARM_ADDR32 = 0x0001,
   IMAGE_REL_ARM_ADDR32NB = 0x0002,
   IMAGE_REL_ARM_BRANCH24 = 0x0003,
@@ -375,10 +400,13 @@ enum RelocationTypesARM {
   IMAGE_REL_ARM_BRANCH20T = 0x0012,
   IMAGE_REL_ARM_BRANCH24T = 0x0014,
   IMAGE_REL_ARM_BLX23T = 0x0015
+#endif // #ifndef _WINNT_
 };
 
 enum RelocationTypesARM64 {
-  IMAGE_REL_ARM64_ABSOLUTE = 0x0000,
+  RelocationTypesARM64_false = -1
+#ifndef _WINNT_
+                               IMAGE_REL_ARM64_ABSOLUTE = 0x0000,
   IMAGE_REL_ARM64_ADDR32 = 0x0001,
   IMAGE_REL_ARM64_ADDR32NB = 0x0002,
   IMAGE_REL_ARM64_BRANCH26 = 0x0003,
@@ -395,16 +423,20 @@ enum RelocationTypesARM64 {
   IMAGE_REL_ARM64_ADDR64 = 0x000E,
   IMAGE_REL_ARM64_BRANCH19 = 0x000F,
   IMAGE_REL_ARM64_BRANCH14 = 0x0010,
+#endif // #ifndef _WINNT_
 };
 
 enum COMDATType {
-  IMAGE_COMDAT_SELECT_NODUPLICATES = 1,
+  COMDATType_false = -1
+#ifndef _WINNT_
+                     IMAGE_COMDAT_SELECT_NODUPLICATES = 1,
   IMAGE_COMDAT_SELECT_ANY,
   IMAGE_COMDAT_SELECT_SAME_SIZE,
   IMAGE_COMDAT_SELECT_EXACT_MATCH,
   IMAGE_COMDAT_SELECT_ASSOCIATIVE,
   IMAGE_COMDAT_SELECT_LARGEST,
   IMAGE_COMDAT_SELECT_NEWEST
+#endif // #ifndef _WINNT_
 };
 
 // Auxiliary Symbol Formats
@@ -431,9 +463,12 @@ struct AuxiliaryWeakExternal {
 };
 
 enum WeakExternalCharacteristics {
-  IMAGE_WEAK_EXTERN_SEARCH_NOLIBRARY = 1,
+  WeakExternalCharacteristics_false = -1
+#ifndef _WINNT_
+                                      IMAGE_WEAK_EXTERN_SEARCH_NOLIBRARY = 1,
   IMAGE_WEAK_EXTERN_SEARCH_LIBRARY = 2,
   IMAGE_WEAK_EXTERN_SEARCH_ALIAS = 3
+#endif // #ifndef _WINNT_
 };
 
 struct AuxiliarySectionDefinition {
@@ -593,7 +628,9 @@ enum DataDirectoryIndex {
 };
 
 enum WindowsSubsystem {
-  IMAGE_SUBSYSTEM_UNKNOWN = 0, ///< An unknown subsystem.
+  WindowsSubsystem_false = -1
+#ifndef _WINNT_
+  ,IMAGE_SUBSYSTEM_UNKNOWN = 0, ///< An unknown subsystem.
   IMAGE_SUBSYSTEM_NATIVE = 1,  ///< Device drivers and native Windows processes
   IMAGE_SUBSYSTEM_WINDOWS_GUI = 2,      ///< The Windows GUI subsystem.
   IMAGE_SUBSYSTEM_WINDOWS_CUI = 3,      ///< The Windows character subsystem.
@@ -609,6 +646,7 @@ enum WindowsSubsystem {
   IMAGE_SUBSYSTEM_EFI_ROM = 13,                 ///< An EFI ROM image.
   IMAGE_SUBSYSTEM_XBOX = 14,                    ///< XBOX.
   IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION = 16 ///< A BCD application.
+#endif  // #ifndef _WINNT_
 };
 
 enum DLLCharacteristics {
