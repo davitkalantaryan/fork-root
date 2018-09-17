@@ -458,6 +458,9 @@ bool GetVisualStudioDirs(std::string& Path, std::string* WinSDK,
   return false;
 }
 
+#if defined(_WIN32) && defined(_IGNORE_WINNT_DEFINATIONS_)
+#include <winnt_macroses.h>
+#endif
 
 bool IsDLL(const std::string& Path) {
   bool isDLL = false;

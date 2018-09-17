@@ -10,6 +10,11 @@
 // This file provides the Win32 specific implementation of the Signals class.
 //
 //===----------------------------------------------------------------------===//
+
+#ifdef _IGNORE_WINNT_DEFINATIONS_
+#undef _IGNORE_WINNT_DEFINATIONS_
+#endif
+
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Support/Path.h"
 #include "llvm/Support/Process.h"
@@ -32,6 +37,7 @@
  #include <dbghelp.h>
 #endif
 #include <psapi.h>
+#include <winnt.h>
 
 #ifdef _MSC_VER
  #pragma comment(lib, "psapi.lib")
@@ -208,6 +214,8 @@ static CRITICAL_SECTION CriticalSection;
 static bool CriticalSectionInitialized = false;
 
 static StringRef Argv0;
+
+#include "winnt_macroses.h"
 
 enum {
 #if defined(_M_X64)

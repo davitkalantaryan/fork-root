@@ -7,6 +7,10 @@
 //
 //===----------------------------------------------------------------------===//
 
+#ifndef _IGNORE_WINNT_DEFINATIONS_
+#define _IGNORE_WINNT_DEFINATIONS_
+#endif
+
 #include "llvm/MC/MCWinEH.h"
 #include "llvm/ADT/StringRef.h"
 #include "llvm/BinaryFormat/COFF.h"

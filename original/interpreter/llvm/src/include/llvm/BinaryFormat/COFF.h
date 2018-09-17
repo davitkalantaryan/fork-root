@@ -23,6 +23,10 @@
 #ifndef LLVM_BINARYFORMAT_COFF_H
 #define LLVM_BINARYFORMAT_COFF_H
 
+#ifndef _IGNORE_WINNT_DEFINATIONS_
+#define _IGNORE_WINNT_DEFINATIONS_
+#endif
+
 #include "llvm/Support/DataTypes.h"
 #include <cassert>
 #include <cstring>
@@ -92,9 +96,10 @@ struct BigObjHeader {
 };
 
 enum MachineTypes {
-  MT_Invalid = 0xffff,
+  MT_Invalid = 0xffff
 
-#ifndef _WINNT_
+#ifndef _IGNORE_WINNT_
+  ,
   IMAGE_FILE_MACHINE_UNKNOWN = 0x0,
   IMAGE_FILE_MACHINE_AM33 = 0x13,
   IMAGE_FILE_MACHINE_AMD64 = 0x8664,
@@ -117,15 +122,16 @@ enum MachineTypes {
   IMAGE_FILE_MACHINE_SH5 = 0x1A8,
   IMAGE_FILE_MACHINE_THUMB = 0x1C2,
   IMAGE_FILE_MACHINE_WCEMIPSV2 = 0x169
-#endif
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 enum Characteristics {
-  C_Invalid = 0,
+  C_Invalid = 0
 
-#ifndef _WINNT_
+#ifndef _IGNORE_WINNT_
   /// The file does not contain base relocations and must be loaded at its
   /// preferred base. If this cannot be done, the loader will error.
+  ,
   IMAGE_FILE_RELOCS_STRIPPED = 0x0001,
   /// The file is valid and can be run.
   IMAGE_FILE_EXECUTABLE_IMAGE = 0x0002,
@@ -159,7 +165,7 @@ enum Characteristics {
   /// Big endian: the MSB precedes the LSB in memory. This is deprecated
   /// and should be 0.
   IMAGE_FILE_BYTES_REVERSED_HI = 0x8000
-#endif // #ifndef _WINNT_
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 enum ResourceTypeID {
@@ -196,19 +202,21 @@ struct symbol {
 };
 
 enum SymbolSectionNumber : int32_t {
-  SymbolSectionNumber_false = -3,
-#ifndef _WINNT_
+  SymbolSectionNumber_false = -30
+#ifndef _IGNORE_WINNT_
+  ,
   IMAGE_SYM_DEBUG = -2,
   IMAGE_SYM_ABSOLUTE = -1,
   IMAGE_SYM_UNDEFINED = 0
-#endif // #ifndef _WINNT_
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 /// Storage class tells where and what the symbol represents
 enum SymbolStorageClass {
-  SSC_Invalid = 0xff,
+  SSC_Invalid = 0xff
 
-#ifndef _WINNT_
+#ifndef _IGNORE_WINNT_
+  ,
   IMAGE_SYM_CLASS_END_OF_FUNCTION = -1,  ///< Physical end of function
   IMAGE_SYM_CLASS_NULL = 0,              ///< No symbol
   IMAGE_SYM_CLASS_AUTOMATIC = 1,         ///< Stack variable
@@ -244,8 +252,9 @@ enum SymbolStorageClass {
 };
 
 enum SymbolBaseType {
-  SymbolBaseType_false = -1,
-#ifndef _WINNT_
+  SymbolBaseType_false = -1
+#ifndef _IGNORE_WINNT_
+  ,
   IMAGE_SYM_TYPE_NULL = 0,   ///< No type information or unknown base type.
   IMAGE_SYM_TYPE_VOID = 1,   ///< Used with void pointers and functions.
   IMAGE_SYM_TYPE_CHAR = 2,   ///< A character (signed byte).
@@ -262,16 +271,16 @@ enum SymbolBaseType {
   IMAGE_SYM_TYPE_WORD = 13,  ///< A word; unsigned 2-byte integer.
   IMAGE_SYM_TYPE_UINT = 14,  ///< An unsigned integer of natural size.
   IMAGE_SYM_TYPE_DWORD = 15  ///< An unsigned 4-byte integer.
-#endif                       // #ifndef _WINNT_
+#endif                       // #ifndef _IGNORE_WINNT_
 };
 
 enum SymbolComplexType {
-#ifndef _WINNT_
+#ifndef _IGNORE_WINNT_
   IMAGE_SYM_DTYPE_NULL = 0,     ///< No complex type; simple scalar variable.
   IMAGE_SYM_DTYPE_POINTER = 1,  ///< A pointer to base type.
   IMAGE_SYM_DTYPE_FUNCTION = 2, ///< A function that returns a base type.
   IMAGE_SYM_DTYPE_ARRAY = 3,    ///< An array of base type.
-#endif                          // #ifndef _WINNT_
+#endif                          // #ifndef _IGNORE_WINNT_
 
   /// Type is formed as (base + (derived << SCT_COMPLEX_TYPE_SHIFT))
   SCT_COMPLEX_TYPE_SHIFT = 4
@@ -296,7 +305,7 @@ enum SectionCharacteristics : uint32_t {
   SC_Invalid = 0xffffffff,
 
   IMAGE_SCN_TYPE_NOLOAD = 0x00000002
-#ifndef _WINNT_
+#ifndef _IGNORE_WINNT_
   ,
   IMAGE_SCN_TYPE_NO_PAD = 0x00000008,
   IMAGE_SCN_CNT_CODE = 0x00000020,
@@ -333,7 +342,7 @@ enum SectionCharacteristics : uint32_t {
   IMAGE_SCN_MEM_EXECUTE = 0x20000000,
   IMAGE_SCN_MEM_READ = 0x40000000,
   IMAGE_SCN_MEM_WRITE = 0x80000000
-#endif
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 struct relocation {
@@ -344,8 +353,9 @@ struct relocation {
 
 enum RelocationTypeI386 {
   RelocationTypeI386_false = -1
-#ifndef _WINNT_
-                             IMAGE_REL_I386_ABSOLUTE = 0x0000,
+#ifndef _IGNORE_WINNT_
+  ,
+  IMAGE_REL_I386_ABSOLUTE = 0x0000,
   IMAGE_REL_I386_DIR16 = 0x0001,
   IMAGE_REL_I386_REL16 = 0x0002,
   IMAGE_REL_I386_DIR32 = 0x0006,
@@ -356,13 +366,14 @@ enum RelocationTypeI386 {
   IMAGE_REL_I386_TOKEN = 0x000C,
   IMAGE_REL_I386_SECREL7 = 0x000D,
   IMAGE_REL_I386_REL32 = 0x0014
-#endif // #ifndef _WINNT_
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 enum RelocationTypeAMD64 {
   RelocationTypeAMD64_false = -1
-#ifndef _WINNT_
-                              IMAGE_REL_AMD64_ABSOLUTE = 0x0000,
+#ifndef _IGNORE_WINNT_
+  ,
+  IMAGE_REL_AMD64_ABSOLUTE = 0x0000,
   IMAGE_REL_AMD64_ADDR64 = 0x0001,
   IMAGE_REL_AMD64_ADDR32 = 0x0002,
   IMAGE_REL_AMD64_ADDR32NB = 0x0003,
@@ -379,13 +390,14 @@ enum RelocationTypeAMD64 {
   IMAGE_REL_AMD64_SREL32 = 0x000E,
   IMAGE_REL_AMD64_PAIR = 0x000F,
   IMAGE_REL_AMD64_SSPAN32 = 0x0010
-#endif // #ifndef _WINNT_
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 enum RelocationTypesARM {
   RelocationTypesARM_false = -1
-#ifndef _WINNT_
-                             IMAGE_REL_ARM_ABSOLUTE = 0x0000,
+#ifndef _IGNORE_WINNT_
+  ,
+  IMAGE_REL_ARM_ABSOLUTE = 0x0000,
   IMAGE_REL_ARM_ADDR32 = 0x0001,
   IMAGE_REL_ARM_ADDR32NB = 0x0002,
   IMAGE_REL_ARM_BRANCH24 = 0x0003,
@@ -400,13 +412,14 @@ enum RelocationTypesARM {
   IMAGE_REL_ARM_BRANCH20T = 0x0012,
   IMAGE_REL_ARM_BRANCH24T = 0x0014,
   IMAGE_REL_ARM_BLX23T = 0x0015
-#endif // #ifndef _WINNT_
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 enum RelocationTypesARM64 {
   RelocationTypesARM64_false = -1
-#ifndef _WINNT_
-                               IMAGE_REL_ARM64_ABSOLUTE = 0x0000,
+#ifndef _IGNORE_WINNT_
+  ,
+  IMAGE_REL_ARM64_ABSOLUTE = 0x0000,
   IMAGE_REL_ARM64_ADDR32 = 0x0001,
   IMAGE_REL_ARM64_ADDR32NB = 0x0002,
   IMAGE_REL_ARM64_BRANCH26 = 0x0003,
@@ -423,20 +436,21 @@ enum RelocationTypesARM64 {
   IMAGE_REL_ARM64_ADDR64 = 0x000E,
   IMAGE_REL_ARM64_BRANCH19 = 0x000F,
   IMAGE_REL_ARM64_BRANCH14 = 0x0010,
-#endif // #ifndef _WINNT_
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 enum COMDATType {
   COMDATType_false = -1
-#ifndef _WINNT_
-                     IMAGE_COMDAT_SELECT_NODUPLICATES = 1,
+#ifndef _IGNORE_WINNT_
+  ,
+  IMAGE_COMDAT_SELECT_NODUPLICATES = 1,
   IMAGE_COMDAT_SELECT_ANY,
   IMAGE_COMDAT_SELECT_SAME_SIZE,
   IMAGE_COMDAT_SELECT_EXACT_MATCH,
   IMAGE_COMDAT_SELECT_ASSOCIATIVE,
   IMAGE_COMDAT_SELECT_LARGEST,
   IMAGE_COMDAT_SELECT_NEWEST
-#endif // #ifndef _WINNT_
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 // Auxiliary Symbol Formats
@@ -464,11 +478,12 @@ struct AuxiliaryWeakExternal {
 
 enum WeakExternalCharacteristics {
   WeakExternalCharacteristics_false = -1
-#ifndef _WINNT_
-                                      IMAGE_WEAK_EXTERN_SEARCH_NOLIBRARY = 1,
+#ifndef _IGNORE_WINNT_
+  ,
+  IMAGE_WEAK_EXTERN_SEARCH_NOLIBRARY = 1,
   IMAGE_WEAK_EXTERN_SEARCH_LIBRARY = 2,
   IMAGE_WEAK_EXTERN_SEARCH_ALIAS = 3
-#endif // #ifndef _WINNT_
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 struct AuxiliarySectionDefinition {
@@ -629,8 +644,9 @@ enum DataDirectoryIndex {
 
 enum WindowsSubsystem {
   WindowsSubsystem_false = -1
-#ifndef _WINNT_
-  ,IMAGE_SUBSYSTEM_UNKNOWN = 0, ///< An unknown subsystem.
+#ifndef _IGNORE_WINNT_
+  ,
+  IMAGE_SUBSYSTEM_UNKNOWN = 0, ///< An unknown subsystem.
   IMAGE_SUBSYSTEM_NATIVE = 1,  ///< Device drivers and native Windows processes
   IMAGE_SUBSYSTEM_WINDOWS_GUI = 2,      ///< The Windows GUI subsystem.
   IMAGE_SUBSYSTEM_WINDOWS_CUI = 3,      ///< The Windows character subsystem.
@@ -646,7 +662,7 @@ enum WindowsSubsystem {
   IMAGE_SUBSYSTEM_EFI_ROM = 13,                 ///< An EFI ROM image.
   IMAGE_SUBSYSTEM_XBOX = 14,                    ///< XBOX.
   IMAGE_SUBSYSTEM_WINDOWS_BOOT_APPLICATION = 16 ///< A BCD application.
-#endif  // #ifndef _WINNT_
+#endif                                          // #ifndef _IGNORE_WINNT_
 };
 
 enum DLLCharacteristics {
@@ -676,6 +692,9 @@ enum DLLCharacteristics {
 };
 
 enum DebugType {
+  DebugType_false = -1
+#ifndef _IGNORE_WINNT_
+  ,
   IMAGE_DEBUG_TYPE_UNKNOWN = 0,
   IMAGE_DEBUG_TYPE_COFF = 1,
   IMAGE_DEBUG_TYPE_CODEVIEW = 2,
@@ -693,19 +712,25 @@ enum DebugType {
   IMAGE_DEBUG_TYPE_ILTCG = 14,
   IMAGE_DEBUG_TYPE_MPX = 15,
   IMAGE_DEBUG_TYPE_REPRO = 16,
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 enum BaseRelocationType {
+#ifndef _IGNORE_WINNT_
   IMAGE_REL_BASED_ABSOLUTE = 0,
   IMAGE_REL_BASED_HIGH = 1,
   IMAGE_REL_BASED_LOW = 2,
   IMAGE_REL_BASED_HIGHLOW = 3,
   IMAGE_REL_BASED_HIGHADJ = 4,
   IMAGE_REL_BASED_MIPS_JMPADDR = 5,
+#endif // #ifndef _IGNORE_WINNT_
   IMAGE_REL_BASED_ARM_MOV32A = 5,
-  IMAGE_REL_BASED_ARM_MOV32T = 7,
+  IMAGE_REL_BASED_ARM_MOV32T = 7
+#ifndef _IGNORE_WINNT_
+  ,
   IMAGE_REL_BASED_MIPS_JMPADDR16 = 9,
   IMAGE_REL_BASED_DIR64 = 10
+#endif // #ifndef _IGNORE_WINNT_
 };
 
 enum ImportType { IMPORT_CODE = 0, IMPORT_DATA = 1, IMPORT_CONST = 2 };

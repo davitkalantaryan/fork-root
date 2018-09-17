@@ -10,30 +10,37 @@
 //#define WIN32
 #endif
 
+#ifndef _IGNORE_WINNT_DEFINATIONS_
+#define _IGNORE_WINNT_DEFINATIONS_
+#endif
+
 #ifdef _WIN32
 
 #ifdef _MSC_VER
 
+//#if __FILE__ == MCWinEH.cpp
+//#endif
+
 #ifdef _M_AMD64
-#include <intrin.h>  
+#include <intrin.h>
 #pragma intrinsic(__stosb)
 #else
-#endif   // #ifdef _M_AMD64
+#endif // #ifdef _M_AMD64
 
-#endif   // #ifdef _MSC_VER
+#endif // #ifdef _MSC_VER
 
 #include <Winsock2.h>
 #include <WS2tcpip.h>
 #include <Windows.h>
 #include <DbgHelp.h>
 
-#endif   // #ifdef _WIN32
+#endif // #ifdef _WIN32
 
 #if 1
 #ifdef OUT
 #undef OUT
 #endif
-#define	OUT	(CHAR_MAX+1)	/* a non-character value */
+#define OUT (CHAR_MAX + 1) /* a non-character value */
 #endif
 
-#endif  // #ifndef __root_first_include_h__
+#endif // #ifndef __root_first_include_h__

@@ -7,6 +7,11 @@
 //
 //===----------------------------------------------------------------------===//
 
+
+#ifndef _IGNORE_WINNT_DEFINATIONS_
+#define _IGNORE_WINNT_DEFINATIONS_
+#endif
+
 #include "llvm/MC/MCFragment.h"
 #include "llvm/ADT/SmallVector.h"
 #include "llvm/ADT/StringExtras.h"
