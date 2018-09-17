@@ -27,9 +27,18 @@
     <ClInclude Include="..\..\..\original\build\win\winnt_macroses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\original\build\win\root_intrinsic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\original\build\win\root_warning_disable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\util\root_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\TROOTnew.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

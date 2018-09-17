@@ -395,7 +395,7 @@ const char *GetExePath()
 #endif
 #ifdef _WIN32
     char *buf = new char[MAX_MODULE_NAME32 + 1];
-      ::GetModuleFileName(NULL, buf, MAX_MODULE_NAME32 + 1);
+      ::GetModuleFileNameA(NULL, buf, MAX_MODULE_NAME32 + 1);
       char *p = buf;
       while ((p = strchr(p, '\\')))
          * (p++) = '/';

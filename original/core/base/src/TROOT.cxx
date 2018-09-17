@@ -83,10 +83,10 @@ of a main program creating an interactive version is shown below:
 //#define dlsym(library, function_name) ::GetProcAddress((HMODULE)library, function_name)
 #define dlopen(library_name, flags) ::LoadLibrary(library_name)
 #define dlclose(library) ::FreeLibrary((HMODULE)library)
-char *dlerror() {
+char *dlerror()
+{
    static char Msg[1000];
-   FormatMessage(FORMAT_MESSAGE_FROM_SYSTEM, NULL, GetLastError(),
-                 MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT), Msg,
+   FormatMessage(FORMAT_MESSAGE_FROM_SYSTEM, NULL, GetLastError(), MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT), Msg,
                  sizeof(Msg), NULL);
    return Msg;
 }
@@ -156,7 +156,9 @@ FARPROC dlsym(void *library, const char *function_name)
 #include "TVirtualRWMutex.h"
 
 #include <string>
-namespace std {} using namespace std;
+namespace std {
+}
+using namespace std;
 
 #if defined(R__UNIX)
 #if defined(R__HAS_COCOA)
@@ -175,11 +177,11 @@ static DestroyInterpreter_t *gDestroyInterpreter = 0;
 static void *gInterpreterLib = 0;
 
 // Mutex for protection of concurrent gROOT access
-TVirtualMutex* gROOTMutex = 0;
+TVirtualMutex *gROOTMutex = 0;
 ROOT::TVirtualRWMutex *ROOT::gCoreMutex = nullptr;
 
 // For accessing TThread::Tsd indirectly.
-void **(*gThreadTsd)(void*,Int_t) = 0;
+void **(*gThreadTsd)(void *, Int_t) = 0;
 
 //-------- Names of next three routines are a small homage to CMZ --------------
 ////////////////////////////////////////////////////////////////////////////////
@@ -189,7 +191,7 @@ static Int_t IVERSQ()
 {
    Int_t maj, min, cycle;
    sscanf(ROOT_RELEASE, "%d.%d/%d", &maj, &min, &cycle);
-   return 10000*maj + 100*min + cycle;
+   return 10000 * maj + 100 * min + cycle;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -197,19 +199,17 @@ static Int_t IVERSQ()
 
 static Int_t IDATQQ(const char *date)
 {
-   static const char *months[] = {"Jan","Feb","Mar","Apr","May",
-                                  "Jun","Jul","Aug","Sep","Oct",
-                                  "Nov","Dec"};
+   static const char *months[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
-   char  sm[12];
-   Int_t yy, mm=0, dd;
+   char sm[12];
+   Int_t yy, mm = 0, dd;
    sscanf(date, "%s %d %d", sm, &dd, &yy);
    for (int i = 0; i < 12; i++)
       if (!strncmp(sm, months[i], 3)) {
-         mm = i+1;
+         mm = i + 1;
          break;
       }
-   return 10000*yy + 100*mm + dd;
+   return 10000 * yy + 100 * mm + dd;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -220,7 +220,7 @@ static Int_t ITIMQQ(const char *time)
 {
    Int_t hh, mm, ss;
    sscanf(time, "%d:%d:%d", &hh, &mm, &ss);
-   return 100*hh + mm;
+   return 100 * hh + mm;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -249,49 +249,42 @@ static void CleanUpROOTAtExit()
 /// before initialization of TCling.
 
 namespace {
-   struct ModuleHeaderInfo_t {
-      ModuleHeaderInfo_t(const char* moduleName,
-                         const char** headers,
-                         const char** includePaths,
-                         const char* payloadCode,
-                         const char* fwdDeclCode,
-                         void (*triggerFunc)(),
-                         const TROOT::FwdDeclArgsToKeepCollection_t& fwdDeclsArgToSkip,
-                         const char **classesHeaders,
-                         bool hasCxxModule):
-                           fModuleName(moduleName),
-                           fHeaders(headers),
-                           fPayloadCode(payloadCode),
-                           fFwdDeclCode(fwdDeclCode),
-                           fIncludePaths(includePaths),
-                           fTriggerFunc(triggerFunc),
-                           fClassesHeaders(classesHeaders),
-                           fFwdNargsToKeepColl(fwdDeclsArgToSkip),
-                           fHasCxxModule(hasCxxModule) {}
-
-      const char* fModuleName; // module name
-      const char** fHeaders; // 0-terminated array of header files
-      const char* fPayloadCode; // Additional code to be given to cling at library load
-      const char* fFwdDeclCode; // Additional code to let cling know about selected classes and functions
-      const char** fIncludePaths; // 0-terminated array of header files
-      void (*fTriggerFunc)(); // Pointer to the dict initialization used to find the library name
-      const char** fClassesHeaders; // 0-terminated list of classes and related header files
-      const TROOT::FwdDeclArgsToKeepCollection_t fFwdNargsToKeepColl; // Collection of
-                                                                      // pairs of template fwd decls and number of
-      bool fHasCxxModule; // Whether this module has a C++ module alongside it.
-   };
-
-   std::vector<ModuleHeaderInfo_t>& GetModuleHeaderInfoBuffer() {
-      static std::vector<ModuleHeaderInfo_t> moduleHeaderInfoBuffer;
-      return moduleHeaderInfoBuffer;
+struct ModuleHeaderInfo_t {
+   ModuleHeaderInfo_t(const char *moduleName, const char **headers, const char **includePaths, const char *payloadCode,
+                      const char *fwdDeclCode, void (*triggerFunc)(),
+                      const TROOT::FwdDeclArgsToKeepCollection_t &fwdDeclsArgToSkip, const char **classesHeaders,
+                      bool hasCxxModule)
+      : fModuleName(moduleName), fHeaders(headers), fPayloadCode(payloadCode), fFwdDeclCode(fwdDeclCode),
+        fIncludePaths(includePaths), fTriggerFunc(triggerFunc), fClassesHeaders(classesHeaders),
+        fFwdNargsToKeepColl(fwdDeclsArgToSkip), fHasCxxModule(hasCxxModule)
+   {
    }
-}
 
-Int_t  TROOT::fgDirLevel = 0;
+   const char *fModuleName;      // module name
+   const char **fHeaders;        // 0-terminated array of header files
+   const char *fPayloadCode;     // Additional code to be given to cling at library load
+   const char *fFwdDeclCode;     // Additional code to let cling know about selected classes and functions
+   const char **fIncludePaths;   // 0-terminated array of header files
+   void (*fTriggerFunc)();       // Pointer to the dict initialization used to find the library name
+   const char **fClassesHeaders; // 0-terminated list of classes and related header files
+   const TROOT::FwdDeclArgsToKeepCollection_t fFwdNargsToKeepColl; // Collection of
+                                                                   // pairs of template fwd decls and number of
+   bool fHasCxxModule;                                             // Whether this module has a C++ module alongside it.
+};
+
+std::vector<ModuleHeaderInfo_t> &GetModuleHeaderInfoBuffer()
+{
+   static std::vector<ModuleHeaderInfo_t> moduleHeaderInfoBuffer;
+   return moduleHeaderInfoBuffer;
+}
+} // namespace
+
+Int_t TROOT::fgDirLevel = 0;
 Bool_t TROOT::fgRootInit = kFALSE;
 Bool_t TROOT::fgMemCheck = kFALSE;
 
-static void at_exit_of_TROOT() {
+static void at_exit_of_TROOT()
+{
    if (ROOT::Internal::gROOTLocal)
       ROOT::Internal::gROOTLocal->~TROOT();
 }
@@ -299,233 +292,239 @@ static void at_exit_of_TROOT() {
 // This local static object initializes the ROOT system
 namespace ROOT {
 namespace Internal {
-   class TROOTAllocator {
-      // Simple wrapper to separate, time-wise, the call to the
-      // TROOT destructor and the actual free-ing of the memory.
-      //
-      // Since the interpreter implementation (currently TCling) is
-      // loaded via dlopen by libCore, the destruction of its global
-      // variable (i.e. in particular clang's) is scheduled before
-      // those in libCore so we need to schedule the call to the TROOT
-      // destructor before that *but* we want to make sure the memory
-      // stay around until libCore itself is unloaded so that code
-      // using gROOT can 'properly' check for validity.
-      //
-      // The order of loading for is:
-      //    libCore.so
-      //    libRint.so
-      //    ... anything other library hard linked to the executable ...
-      //    ... for example libEvent
-      //    libCling.so
-      //    ... other libraries like libTree for example ....
-      // and the destruction order is (of course) the reverse.
-      // By default the unloading of the dictionary, does use
-      // the service of the interpreter ... which of course
-      // fails if libCling is already unloaded by that information
-      // has not been registered per se.
-      //
-      // To solve this problem, we now schedule the destruction
-      // of the TROOT object to happen _just_ before the
-      // unloading/destruction of libCling so that we can
-      // maximize the amount of clean-up we can do correctly
-      // and we can still allocate the TROOT object's memory
-      // statically.
-      //
-      char fHolder[sizeof(TROOT)];
-   public:
-      TROOTAllocator() {
-         new(&(fHolder[0])) TROOT("root", "The ROOT of EVERYTHING");
+class TROOTAllocator {
+   // Simple wrapper to separate, time-wise, the call to the
+   // TROOT destructor and the actual free-ing of the memory.
+   //
+   // Since the interpreter implementation (currently TCling) is
+   // loaded via dlopen by libCore, the destruction of its global
+   // variable (i.e. in particular clang's) is scheduled before
+   // those in libCore so we need to schedule the call to the TROOT
+   // destructor before that *but* we want to make sure the memory
+   // stay around until libCore itself is unloaded so that code
+   // using gROOT can 'properly' check for validity.
+   //
+   // The order of loading for is:
+   //    libCore.so
+   //    libRint.so
+   //    ... anything other library hard linked to the executable ...
+   //    ... for example libEvent
+   //    libCling.so
+   //    ... other libraries like libTree for example ....
+   // and the destruction order is (of course) the reverse.
+   // By default the unloading of the dictionary, does use
+   // the service of the interpreter ... which of course
+   // fails if libCling is already unloaded by that information
+   // has not been registered per se.
+   //
+   // To solve this problem, we now schedule the destruction
+   // of the TROOT object to happen _just_ before the
+   // unloading/destruction of libCling so that we can
+   // maximize the amount of clean-up we can do correctly
+   // and we can still allocate the TROOT object's memory
+   // statically.
+   //
+   char fHolder[sizeof(TROOT)];
+
+public:
+   TROOTAllocator() { new (&(fHolder[0])) TROOT("root", "The ROOT of EVERYTHING"); }
+
+   ~TROOTAllocator()
+   {
+      if (gROOTLocal) {
+         gROOTLocal->~TROOT();
       }
+   }
+};
 
-      ~TROOTAllocator() {
-         if (gROOTLocal) {
-            gROOTLocal->~TROOT();
-         }
-      }
-   };
+// The global gROOT is defined to be a function (ROOT::GetROOT())
+// which itself is dereferencing a function pointer.
 
-   // The global gROOT is defined to be a function (ROOT::GetROOT())
-   // which itself is dereferencing a function pointer.
+// Initially this function pointer's value is & GetROOT1 whose role is to
+// create and initialize the TROOT object itself.
+// At the very end of the TROOT constructor the value of the function pointer
+// is switch to & GetROOT2 whose role is to initialize the interpreter.
 
-   // Initially this function pointer's value is & GetROOT1 whose role is to
-   // create and initialize the TROOT object itself.
-   // At the very end of the TROOT constructor the value of the function pointer
-   // is switch to & GetROOT2 whose role is to initialize the interpreter.
+// This mechanism was primarily intended to fix the issues with order in which
+// global TROOT and LLVM globals are initialized. TROOT was initializing
+// Cling, but Cling could not be used yet due to LLVM globals not being
+// Initialized yet.  The solution is to delay initializing the interpreter in
+// TROOT till after main() when all LLVM globals are initialized.
 
-   // This mechanism was primarily intended to fix the issues with order in which
-   // global TROOT and LLVM globals are initialized. TROOT was initializing
-   // Cling, but Cling could not be used yet due to LLVM globals not being
-   // Initialized yet.  The solution is to delay initializing the interpreter in
-   // TROOT till after main() when all LLVM globals are initialized.
+// Technically, the mechanism used actually delay the interpreter
+// initialization until the first use of gROOT *after* the end of the
+// TROOT constructor.
 
-   // Technically, the mechanism used actually delay the interpreter
-   // initialization until the first use of gROOT *after* the end of the
-   // TROOT constructor.
+// So to delay until after the start of main, we also made sure that none
+// of the ROOT code (mostly the dictionary code) used during library loading
+// is using gROOT (directly or indirectly).
 
-   // So to delay until after the start of main, we also made sure that none
-   // of the ROOT code (mostly the dictionary code) used during library loading
-   // is using gROOT (directly or indirectly).
+// In practice, the initialization of the interpreter is now delayed until
+// the first use gROOT (or gInterpreter) after the start of main (but user
+// could easily break this by using gROOT in their library initialization
+// code).
 
-   // In practice, the initialization of the interpreter is now delayed until
-   // the first use gROOT (or gInterpreter) after the start of main (but user
-   // could easily break this by using gROOT in their library initialization
-   // code).
+extern TROOT *gROOTLocal;
 
-   extern TROOT *gROOTLocal;
-
-   TROOT *GetROOT1() {
-      if (gROOTLocal)
-         return gROOTLocal;
-      static TROOTAllocator alloc;
+TROOT *GetROOT1()
+{
+   if (gROOTLocal)
       return gROOTLocal;
-   }
+   static TROOTAllocator alloc;
+   return gROOTLocal;
+}
 
-   TROOT *GetROOT2() {
-      static Bool_t initInterpreter = kFALSE;
-      if (!initInterpreter) {
-         initInterpreter = kTRUE;
-         gROOTLocal->InitInterpreter();
-         // Load and init threads library
-         gROOTLocal->InitThreads();
+TROOT *GetROOT2()
+{
+   static Bool_t initInterpreter = kFALSE;
+   if (!initInterpreter) {
+      initInterpreter = kTRUE;
+      gROOTLocal->InitInterpreter();
+      // Load and init threads library
+      gROOTLocal->InitThreads();
+   }
+   return gROOTLocal;
+}
+typedef TROOT *(*GetROOTFun_t)();
+
+static GetROOTFun_t gGetROOT = &GetROOT1;
+
+static Func_t GetSymInLibImt(const char *funcname)
+{
+   const static bool loadSuccess =
+      dlsym(RTLD_DEFAULT, "usedToIdentifyRootClingByDlSym") ? false : 0 <= gSystem->Load("libImt");
+   if (loadSuccess) {
+      if (auto sym = gSystem->DynFindSymbol(nullptr, funcname)) {
+         return sym;
+      } else {
+         Error("GetSymInLibImt", "Cannot get symbol %s.", funcname);
       }
-      return gROOTLocal;
    }
-   typedef TROOT *(*GetROOTFun_t)();
+   return nullptr;
+}
 
-   static GetROOTFun_t gGetROOT = &GetROOT1;
-
-   static Func_t GetSymInLibImt(const char *funcname)
-   {
-      const static bool loadSuccess = dlsym(RTLD_DEFAULT, "usedToIdentifyRootClingByDlSym")? false : 0 <= gSystem->Load("libImt");
-      if (loadSuccess) {
-         if (auto sym = gSystem->DynFindSymbol(nullptr, funcname)) {
-            return sym;
-         } else {
-            Error("GetSymInLibImt", "Cannot get symbol %s.", funcname);
-         }
-      }
-      return nullptr;
-   }
-
-   //////////////////////////////////////////////////////////////////////////////
-   /// Globally enables the parallel branch processing, which is a case of
-   /// implicit multi-threading (IMT) in ROOT, activating the required locks.
-   /// This IMT use case, implemented in TTree::GetEntry, spawns a task for
-   /// each branch of the tree. Therefore, a task takes care of the reading,
-   /// decompression and deserialisation of a given branch.
-   void EnableParBranchProcessing()
-   {
+//////////////////////////////////////////////////////////////////////////////
+/// Globally enables the parallel branch processing, which is a case of
+/// implicit multi-threading (IMT) in ROOT, activating the required locks.
+/// This IMT use case, implemented in TTree::GetEntry, spawns a task for
+/// each branch of the tree. Therefore, a task takes care of the reading,
+/// decompression and deserialisation of a given branch.
+void EnableParBranchProcessing()
+{
 #ifdef R__USE_IMT
-      if (!IsImplicitMTEnabled())
-         EnableImplicitMT();
-      static void (*sym)() = (void(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_EnableParBranchProcessing");
-      if (sym)
-         sym();
+   if (!IsImplicitMTEnabled())
+      EnableImplicitMT();
+   static void (*sym)() = (void (*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_EnableParBranchProcessing");
+   if (sym)
+      sym();
 #else
-      ::Warning("EnableParBranchProcessing", "Cannot enable parallel branch processing, please build ROOT with -Dimt=ON");
+   ::Warning("EnableParBranchProcessing", "Cannot enable parallel branch processing, please build ROOT with -Dimt=ON");
 #endif
-   }
+}
 
-   //////////////////////////////////////////////////////////////////////////////
-   /// Globally disables the IMT use case of parallel branch processing,
-   /// deactivating the corresponding locks.
-   void DisableParBranchProcessing()
-   {
+//////////////////////////////////////////////////////////////////////////////
+/// Globally disables the IMT use case of parallel branch processing,
+/// deactivating the corresponding locks.
+void DisableParBranchProcessing()
+{
 #ifdef R__USE_IMT
-      static void (*sym)() = (void(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_DisableParBranchProcessing");
-      if (sym)
-         sym();
+   static void (*sym)() = (void (*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_DisableParBranchProcessing");
+   if (sym)
+      sym();
 #else
-      ::Warning("DisableParBranchProcessing", "Cannot disable parallel branch processing, please build ROOT with -Dimt=ON");
+   ::Warning("DisableParBranchProcessing",
+             "Cannot disable parallel branch processing, please build ROOT with -Dimt=ON");
 #endif
-   }
+}
 
-   //////////////////////////////////////////////////////////////////////////////
-   /// Returns true if parallel branch processing is enabled.
-   Bool_t IsParBranchProcessingEnabled()
-   {
+//////////////////////////////////////////////////////////////////////////////
+/// Returns true if parallel branch processing is enabled.
+Bool_t IsParBranchProcessingEnabled()
+{
 #ifdef R__USE_IMT
-      static Bool_t (*sym)() = (Bool_t(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_IsParBranchProcessingEnabled");
-      if (sym)
-         return sym();
-      else
-         return kFALSE;
-#else
+   static Bool_t (*sym)() = (Bool_t(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_IsParBranchProcessingEnabled");
+   if (sym)
+      return sym();
+   else
       return kFALSE;
-#endif
-   }
-
-   ////////////////////////////////////////////////////////////////////////////////
-   /// Globally enables the parallel tree processing, which is a case of
-   /// implicit multi-threading in ROOT, activating the required locks.
-   /// This IMT use case, implemented in TTreeProcessor::Process, receives a user
-   /// function and applies it to subranges of the tree, which correspond to its
-   /// clusters. Hence, for every cluster, a task is spawned to potentially
-   /// process it in parallel with the other clusters.
-   void EnableParTreeProcessing()
-   {
-#ifdef R__USE_IMT
-      if (!IsImplicitMTEnabled())
-         EnableImplicitMT();
-      static void (*sym)() = (void(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_EnableParTreeProcessing");
-      if (sym)
-         sym();
 #else
-      ::Warning("EnableParTreeProcessing", "Cannot enable parallel tree processing, please build ROOT with -Dimt=ON");
+   return kFALSE;
 #endif
-   }
+}
 
-   //////////////////////////////////////////////////////////////////////////////
-   /// Globally disables the IMT use case of parallel branch processing,
-   /// deactivating the corresponding locks.
-   void DisableParTreeProcessing()
-   {
+////////////////////////////////////////////////////////////////////////////////
+/// Globally enables the parallel tree processing, which is a case of
+/// implicit multi-threading in ROOT, activating the required locks.
+/// This IMT use case, implemented in TTreeProcessor::Process, receives a user
+/// function and applies it to subranges of the tree, which correspond to its
+/// clusters. Hence, for every cluster, a task is spawned to potentially
+/// process it in parallel with the other clusters.
+void EnableParTreeProcessing()
+{
 #ifdef R__USE_IMT
-      static void (*sym)() = (void(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_DisableParTreeProcessing");
-      if (sym)
-         sym();
+   if (!IsImplicitMTEnabled())
+      EnableImplicitMT();
+   static void (*sym)() = (void (*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_EnableParTreeProcessing");
+   if (sym)
+      sym();
 #else
-      ::Warning("DisableParTreeProcessing", "Cannot disable parallel tree processing, please build ROOT with -Dimt=ON");
+   ::Warning("EnableParTreeProcessing", "Cannot enable parallel tree processing, please build ROOT with -Dimt=ON");
 #endif
-   }
+}
 
-   ////////////////////////////////////////////////////////////////////////////////
-   /// Returns true if parallel tree processing is enabled.
-   Bool_t IsParTreeProcessingEnabled()
-   {
+//////////////////////////////////////////////////////////////////////////////
+/// Globally disables the IMT use case of parallel branch processing,
+/// deactivating the corresponding locks.
+void DisableParTreeProcessing()
+{
 #ifdef R__USE_IMT
-      static Bool_t (*sym)() = (Bool_t(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_IsParTreeProcessingEnabled");
-      if (sym)
-         return sym();
-      else
-         return kFALSE;
+   static void (*sym)() = (void (*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_DisableParTreeProcessing");
+   if (sym)
+      sym();
 #else
+   ::Warning("DisableParTreeProcessing", "Cannot disable parallel tree processing, please build ROOT with -Dimt=ON");
+#endif
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Returns true if parallel tree processing is enabled.
+Bool_t IsParTreeProcessingEnabled()
+{
+#ifdef R__USE_IMT
+   static Bool_t (*sym)() = (Bool_t(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_IsParTreeProcessingEnabled");
+   if (sym)
+      return sym();
+   else
       return kFALSE;
+#else
+   return kFALSE;
 #endif
-   }
+}
 
-   ////////////////////////////////////////////////////////////////////////////////
-   /// Keeps track of the status of ImplicitMT w/o resorting to the load of
-   /// libImt
-   static Bool_t &IsImplicitMTEnabledImpl()
-   {
-      static Bool_t isImplicitMTEnabled = kFALSE;
-      return isImplicitMTEnabled;
-   }
+////////////////////////////////////////////////////////////////////////////////
+/// Keeps track of the status of ImplicitMT w/o resorting to the load of
+/// libImt
+static Bool_t &IsImplicitMTEnabledImpl()
+{
+   static Bool_t isImplicitMTEnabled = kFALSE;
+   return isImplicitMTEnabled;
+}
 
-} // end of Internal sub namespace
-// back to ROOT namespace
+} // namespace Internal
+  // back to ROOT namespace
 
-   TROOT *GetROOT() {
-      return (*Internal::gGetROOT)();
-   }
+TROOT *GetROOT()
+{
+   return (*Internal::gGetROOT)();
+}
 
-   TString &GetMacroPath() {
-      static TString macroPath;
-      return macroPath;
-   }
+TString &GetMacroPath()
+{
+   static TString macroPath;
+   return macroPath;
+}
 
-   // clang-format off
+// clang-format off
    ////////////////////////////////////////////////////////////////////////////////
    /// Enables the global mutex to make ROOT thread safe/aware.
    ///
@@ -541,89 +540,90 @@ namespace Internal {
    /// gFile and gPad default to nullptr, as it is for single-thread programs.
    ///
    /// Note that there is no `DisableThreadSafety()`. ROOT's thread-safety features cannot be disabled once activated.
-   // clang-format on
-   void EnableThreadSafety()
-   {
-      static void (*sym)() = (void(*)())Internal::GetSymInLibImt("ROOT_TThread_Initialize");
-      if (sym)
-         sym();
-   }
-
-   ////////////////////////////////////////////////////////////////////////////////
-   /// @param[in] numthreads Number of threads to use. If not specified or
-   ///                       set to zero, the number of threads is automatically
-   ///                       decided by the implementation. Any other value is
-   ///                       used as a hint.
-   ///
-   /// ROOT must be built with the compilation flag `imt=ON` for this feature to be available.
-   /// The following objects and methods automatically take advantage of
-   /// multi-threading if a call to `EnableImplicitMT` has been made before usage:
-   ///
-   ///  - RDataFrame internally runs the event-loop by parallelizing over clusters of entries
-   ///  - TTree::GetEntry reads multiple branches in parallel
-   ///  - TTree::FlushBaskets writes multiple baskets to disk in parallel
-   ///  - TTreeCacheUnzip decompresses the baskets contained in a TTreeCache in parallel
-   ///  - THx::Fit performs in parallel the evaluation of the objective function over the data
-   ///  - TMVA::DNN trains the deep neural networks in parallel
-   ///
-   /// EnableImplicitMT calls in turn EnableThreadSafety.
-   /// The 'numthreads' parameter allows to control the number of threads to
-   /// be used by the implicit multi-threading. However, this parameter is just
-   /// a hint for ROOT: it will try to satisfy the request if the execution
-   /// scenario allows it. For example, if ROOT is configured to use an external
-   /// scheduler, setting a value for 'numthreads' might not have any effect.
-   void EnableImplicitMT(UInt_t numthreads)
-   {
-#ifdef R__USE_IMT
-      if (ROOT::Internal::IsImplicitMTEnabledImpl())
-         return;
-      EnableThreadSafety();
-      static void (*sym)(UInt_t) = (void(*)(UInt_t))Internal::GetSymInLibImt("ROOT_TImplicitMT_EnableImplicitMT");
-      if (sym)
-         sym(numthreads);
-      ROOT::Internal::IsImplicitMTEnabledImpl() = true;
-#else
-      ::Warning("EnableImplicitMT", "Cannot enable implicit multi-threading with %d threads, please build ROOT with -Dimt=ON", numthreads);
-#endif
-   }
-
-   ////////////////////////////////////////////////////////////////////////////////
-   /// Disables the implicit multi-threading in ROOT (see EnableImplicitMT).
-   void DisableImplicitMT()
-   {
-#ifdef R__USE_IMT
-      static void (*sym)() = (void(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_DisableImplicitMT");
-      if (sym)
-         sym();
-      ROOT::Internal::IsImplicitMTEnabledImpl() = kFALSE;
-#else
-      ::Warning("DisableImplicitMT", "Cannot disable implicit multi-threading, please build ROOT with -Dimt=ON");
-#endif
-   }
-
-   ////////////////////////////////////////////////////////////////////////////////
-   /// Returns true if the implicit multi-threading in ROOT is enabled.
-   Bool_t IsImplicitMTEnabled()
-   {
-      return ROOT::Internal::IsImplicitMTEnabledImpl();
-   }
-
-   ////////////////////////////////////////////////////////////////////////////////
-   /// Returns the size of the pool used for implicit multi-threading.
-   UInt_t GetImplicitMTPoolSize()
-   {
-#ifdef R__USE_IMT
-      static UInt_t (*sym)() = (UInt_t(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_GetImplicitMTPoolSize");
-      if (sym)
-         return sym();
-      else
-         return 0;
-#else
-      return 0;
-#endif
-   }
-
+// clang-format on
+void EnableThreadSafety()
+{
+   static void (*sym)() = (void (*)())Internal::GetSymInLibImt("ROOT_TThread_Initialize");
+   if (sym)
+      sym();
 }
+
+////////////////////////////////////////////////////////////////////////////////
+/// @param[in] numthreads Number of threads to use. If not specified or
+///                       set to zero, the number of threads is automatically
+///                       decided by the implementation. Any other value is
+///                       used as a hint.
+///
+/// ROOT must be built with the compilation flag `imt=ON` for this feature to be available.
+/// The following objects and methods automatically take advantage of
+/// multi-threading if a call to `EnableImplicitMT` has been made before usage:
+///
+///  - RDataFrame internally runs the event-loop by parallelizing over clusters of entries
+///  - TTree::GetEntry reads multiple branches in parallel
+///  - TTree::FlushBaskets writes multiple baskets to disk in parallel
+///  - TTreeCacheUnzip decompresses the baskets contained in a TTreeCache in parallel
+///  - THx::Fit performs in parallel the evaluation of the objective function over the data
+///  - TMVA::DNN trains the deep neural networks in parallel
+///
+/// EnableImplicitMT calls in turn EnableThreadSafety.
+/// The 'numthreads' parameter allows to control the number of threads to
+/// be used by the implicit multi-threading. However, this parameter is just
+/// a hint for ROOT: it will try to satisfy the request if the execution
+/// scenario allows it. For example, if ROOT is configured to use an external
+/// scheduler, setting a value for 'numthreads' might not have any effect.
+void EnableImplicitMT(UInt_t numthreads)
+{
+#ifdef R__USE_IMT
+   if (ROOT::Internal::IsImplicitMTEnabledImpl())
+      return;
+   EnableThreadSafety();
+   static void (*sym)(UInt_t) = (void (*)(UInt_t))Internal::GetSymInLibImt("ROOT_TImplicitMT_EnableImplicitMT");
+   if (sym)
+      sym(numthreads);
+   ROOT::Internal::IsImplicitMTEnabledImpl() = true;
+#else
+   ::Warning("EnableImplicitMT",
+             "Cannot enable implicit multi-threading with %d threads, please build ROOT with -Dimt=ON", numthreads);
+#endif
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Disables the implicit multi-threading in ROOT (see EnableImplicitMT).
+void DisableImplicitMT()
+{
+#ifdef R__USE_IMT
+   static void (*sym)() = (void (*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_DisableImplicitMT");
+   if (sym)
+      sym();
+   ROOT::Internal::IsImplicitMTEnabledImpl() = kFALSE;
+#else
+   ::Warning("DisableImplicitMT", "Cannot disable implicit multi-threading, please build ROOT with -Dimt=ON");
+#endif
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Returns true if the implicit multi-threading in ROOT is enabled.
+Bool_t IsImplicitMTEnabled()
+{
+   return ROOT::Internal::IsImplicitMTEnabledImpl();
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// Returns the size of the pool used for implicit multi-threading.
+UInt_t GetImplicitMTPoolSize()
+{
+#ifdef R__USE_IMT
+   static UInt_t (*sym)() = (UInt_t(*)())Internal::GetSymInLibImt("ROOT_TImplicitMT_GetImplicitMTPoolSize");
+   if (sym)
+      return sym();
+   else
+      return 0;
+#else
+   return 0;
+#endif
+}
+
+} // namespace ROOT
 
 TROOT *ROOT::Internal::gROOTLocal = ROOT::GetROOT();
 
@@ -633,24 +633,20 @@ TROOT *ROOT::Internal::gROOTLocal = ROOT::GetROOT();
 // ROOTDEBUG, or via the debugger.
 Int_t gDebug;
 
-
 ClassImp(TROOT);
 
 ////////////////////////////////////////////////////////////////////////////////
 /// Default ctor.
 
-TROOT::TROOT() : TDirectory(),
-     fLineIsProcessing(0), fVersion(0), fVersionInt(0), fVersionCode(0),
-     fVersionDate(0), fVersionTime(0), fBuiltDate(0), fBuiltTime(0),
-     fTimer(0), fApplication(0), fInterpreter(0), fBatch(kTRUE),
-     fIsWebDisplay(kFALSE), fIsWebDisplayBatch(kFALSE), fEditHistograms(kTRUE),
-     fFromPopUp(kTRUE),fMustClean(kTRUE),fReadingObject(kFALSE),fForceStyle(kFALSE),
-     fInterrupt(kFALSE),fEscape(kFALSE),fExecutingMacro(kFALSE),fEditorMode(0),
-     fPrimitive(0),fSelectPad(0),fClasses(0),fTypes(0),fGlobals(0),fGlobalFunctions(0),
-     fClosedObjects(0),fFiles(0),fMappedFiles(0),fSockets(0),fCanvases(0),fStyles(0),fFunctions(0),
-     fTasks(0),fColors(0),fGeometries(0),fBrowsers(0),fSpecials(0),fCleanups(0),
-     fMessageHandlers(0),fStreamerInfo(0),fClassGenerators(0),fSecContexts(0),
-     fProofs(0),fClipboard(0),fDataSets(0),fUUIDs(0),fRootFolder(0),fBrowsables(0),
+TROOT::TROOT()
+   : TDirectory(), fLineIsProcessing(0), fVersion(0), fVersionInt(0), fVersionCode(0), fVersionDate(0), fVersionTime(0),
+     fBuiltDate(0), fBuiltTime(0), fTimer(0), fApplication(0), fInterpreter(0), fBatch(kTRUE), fIsWebDisplay(kFALSE),
+     fIsWebDisplayBatch(kFALSE), fEditHistograms(kTRUE), fFromPopUp(kTRUE), fMustClean(kTRUE), fReadingObject(kFALSE),
+     fForceStyle(kFALSE), fInterrupt(kFALSE), fEscape(kFALSE), fExecutingMacro(kFALSE), fEditorMode(0), fPrimitive(0),
+     fSelectPad(0), fClasses(0), fTypes(0), fGlobals(0), fGlobalFunctions(0), fClosedObjects(0), fFiles(0),
+     fMappedFiles(0), fSockets(0), fCanvases(0), fStyles(0), fFunctions(0), fTasks(0), fColors(0), fGeometries(0),
+     fBrowsers(0), fSpecials(0), fCleanups(0), fMessageHandlers(0), fStreamerInfo(0), fClassGenerators(0),
+     fSecContexts(0), fProofs(0), fClipboard(0), fDataSets(0), fUUIDs(0), fRootFolder(0), fBrowsables(0),
      fPluginManager(0)
 {
 }
@@ -674,21 +670,18 @@ TROOT::TROOT() : TDirectory(),
 /// (e.g. the graphics system is initialized via such a function).
 
 TROOT::TROOT(const char *name, const char *title, VoidFuncPtr_t *initfunc)
-   : TDirectory(), fLineIsProcessing(0), fVersion(0), fVersionInt(0), fVersionCode(0),
-     fVersionDate(0), fVersionTime(0), fBuiltDate(0), fBuiltTime(0),
-     fTimer(0), fApplication(0), fInterpreter(0), fBatch(kTRUE),
-     fIsWebDisplay(kFALSE), fIsWebDisplayBatch(kFALSE), fEditHistograms(kTRUE),
-     fFromPopUp(kTRUE),fMustClean(kTRUE),fReadingObject(kFALSE),fForceStyle(kFALSE),
-     fInterrupt(kFALSE),fEscape(kFALSE),fExecutingMacro(kFALSE),fEditorMode(0),
-     fPrimitive(0),fSelectPad(0),fClasses(0),fTypes(0),fGlobals(0),fGlobalFunctions(0),
-     fClosedObjects(0),fFiles(0),fMappedFiles(0),fSockets(0),fCanvases(0),fStyles(0),fFunctions(0),
-     fTasks(0),fColors(0),fGeometries(0),fBrowsers(0),fSpecials(0),fCleanups(0),
-     fMessageHandlers(0),fStreamerInfo(0),fClassGenerators(0),fSecContexts(0),
-     fProofs(0),fClipboard(0),fDataSets(0),fUUIDs(0),fRootFolder(0),fBrowsables(0),
+   : TDirectory(), fLineIsProcessing(0), fVersion(0), fVersionInt(0), fVersionCode(0), fVersionDate(0), fVersionTime(0),
+     fBuiltDate(0), fBuiltTime(0), fTimer(0), fApplication(0), fInterpreter(0), fBatch(kTRUE), fIsWebDisplay(kFALSE),
+     fIsWebDisplayBatch(kFALSE), fEditHistograms(kTRUE), fFromPopUp(kTRUE), fMustClean(kTRUE), fReadingObject(kFALSE),
+     fForceStyle(kFALSE), fInterrupt(kFALSE), fEscape(kFALSE), fExecutingMacro(kFALSE), fEditorMode(0), fPrimitive(0),
+     fSelectPad(0), fClasses(0), fTypes(0), fGlobals(0), fGlobalFunctions(0), fClosedObjects(0), fFiles(0),
+     fMappedFiles(0), fSockets(0), fCanvases(0), fStyles(0), fFunctions(0), fTasks(0), fColors(0), fGeometries(0),
+     fBrowsers(0), fSpecials(0), fCleanups(0), fMessageHandlers(0), fStreamerInfo(0), fClassGenerators(0),
+     fSecContexts(0), fProofs(0), fClipboard(0), fDataSets(0), fUUIDs(0), fRootFolder(0), fBrowsables(0),
      fPluginManager(0)
 {
    if (fgRootInit || ROOT::Internal::gROOTLocal) {
-      //Warning("TROOT", "only one instance of TROOT allowed");
+      // Warning("TROOT", "only one instance of TROOT allowed");
       return;
    }
 
@@ -729,25 +722,27 @@ TROOT::TROOT(const char *name, const char *title, VoidFuncPtr_t *initfunc)
    TDirectory::Build();
 
    // Initialize interface to CINT C++ interpreter
-   fVersionInt      = 0;  // check in TROOT dtor in case TCling fails
-   fClasses         = 0;  // might be checked via TCling ctor
-   fEnums           = 0;
+   fVersionInt = 0; // check in TROOT dtor in case TCling fails
+   fClasses = 0;    // might be checked via TCling ctor
+   fEnums = 0;
 
-   fConfigOptions   = R__CONFIGUREOPTIONS;
-   fConfigFeatures  = R__CONFIGUREFEATURES;
-   fVersion         = ROOT_RELEASE;
-   fVersionCode     = ROOT_VERSION_CODE;
-   fVersionInt      = IVERSQ();
-   fVersionDate     = IDATQQ(ROOT_RELEASE_DATE);
-   fVersionTime     = ITIMQQ(ROOT_RELEASE_TIME);
-   fBuiltDate       = IDATQQ(__DATE__);
-   fBuiltTime       = ITIMQQ(__TIME__);
+   fConfigOptions = R__CONFIGUREOPTIONS;
+   fConfigFeatures = R__CONFIGUREFEATURES;
+   fVersion = ROOT_RELEASE;
+   fVersionCode = ROOT_VERSION_CODE;
+   fVersionInt = IVERSQ();
+   fVersionDate = IDATQQ(ROOT_RELEASE_DATE);
+   fVersionTime = ITIMQQ(ROOT_RELEASE_TIME);
+   fBuiltDate = IDATQQ(__DATE__);
+   fBuiltTime = ITIMQQ(__TIME__);
 
    ReadGitInfo();
 
-   fClasses         = new THashTable(800,3); fClasses->UseRWLock();
-   //fIdMap           = new IdMap_t;
-   fStreamerInfo    = new TObjArray(100); fStreamerInfo->UseRWLock();
+   fClasses = new THashTable(800, 3);
+   fClasses->UseRWLock();
+   // fIdMap           = new IdMap_t;
+   fStreamerInfo = new TObjArray(100);
+   fStreamerInfo->UseRWLock();
    fClassGenerators = new TList;
 
    // usedToIdentifyRootClingByDlSym is available when TROOT is part of
@@ -771,34 +766,36 @@ TROOT::TROOT(const char *name, const char *title, VoidFuncPtr_t *initfunc)
       return l;
    };
 
-   fTimer       = 0;
+   fTimer = 0;
    fApplication = 0;
-   fColors      = setNameLocked(new TObjArray(1000), "ListOfColors");
-   fTypes       = 0;
-   fGlobals     = 0;
+   fColors = setNameLocked(new TObjArray(1000), "ListOfColors");
+   fTypes = 0;
+   fGlobals = 0;
    fGlobalFunctions = 0;
    // fList was created in TDirectory::Build but with different sizing.
    delete fList;
-   fList        = new THashList(1000,3); fList->UseRWLock();
+   fList = new THashList(1000, 3);
+   fList->UseRWLock();
    fClosedObjects = setNameLocked(new TList, "ClosedFiles");
-   fFiles       = setNameLocked(new TList, "Files");
+   fFiles = setNameLocked(new TList, "Files");
    fMappedFiles = setNameLocked(new TList, "MappedFiles");
-   fSockets     = setNameLocked(new TList, "Sockets");
-   fCanvases    = setNameLocked(new TList, "Canvases");
-   fStyles      = setNameLocked(new TList, "Styles");
-   fFunctions   = setNameLocked(new TList, "Functions");
-   fTasks       = setNameLocked(new TList, "Tasks");
-   fGeometries  = setNameLocked(new TList, "Geometries");
-   fBrowsers    = setNameLocked(new TList, "Browsers");
-   fSpecials    = setNameLocked(new TList, "Specials");
-   fBrowsables  = (TList*)setNameLocked(new TList, "Browsables");
-   fCleanups    = setNameLocked(new THashList, "Cleanups");
+   fSockets = setNameLocked(new TList, "Sockets");
+   fCanvases = setNameLocked(new TList, "Canvases");
+   fStyles = setNameLocked(new TList, "Styles");
+   fFunctions = setNameLocked(new TList, "Functions");
+   fTasks = setNameLocked(new TList, "Tasks");
+   fGeometries = setNameLocked(new TList, "Geometries");
+   fBrowsers = setNameLocked(new TList, "Browsers");
+   fSpecials = setNameLocked(new TList, "Specials");
+   fBrowsables = (TList *)setNameLocked(new TList, "Browsables");
+   fCleanups = setNameLocked(new THashList, "Cleanups");
    fMessageHandlers = setNameLocked(new TList, "MessageHandlers");
    fSecContexts = setNameLocked(new TList, "SecContexts");
-   fProofs      = setNameLocked(new TList, "Proofs");
-   fClipboard   = setNameLocked(new TList, "Clipboard");
-   fDataSets    = setNameLocked(new TList, "DataSets");
-   fTypes       = new TListOfTypes; fTypes->UseRWLock();
+   fProofs = setNameLocked(new TList, "Proofs");
+   fClipboard = setNameLocked(new TList, "Clipboard");
+   fDataSets = setNameLocked(new TList, "DataSets");
+   fTypes = new TListOfTypes;
+   fTypes->UseRWLock();
 
    TProcessID::AddProcessID();
    fUUIDs = new TProcessUUID();
@@ -806,57 +803,62 @@ TROOT::TROOT(const char *name, const char *title, VoidFuncPtr_t *initfunc)
    fRootFolder = new TFolder();
    fRootFolder->SetName("root");
    fRootFolder->SetTitle("root of all folders");
-   fRootFolder->AddFolder("Classes",   "List of Active Classes",fClasses);
-   fRootFolder->AddFolder("Colors",    "List of Active Colors",fColors);
-   fRootFolder->AddFolder("MapFiles",  "List of MapFiles",fMappedFiles);
-   fRootFolder->AddFolder("Sockets",   "List of Socket Connections",fSockets);
-   fRootFolder->AddFolder("Canvases",  "List of Canvases",fCanvases);
-   fRootFolder->AddFolder("Styles",    "List of Styles",fStyles);
-   fRootFolder->AddFolder("Functions", "List of Functions",fFunctions);
-   fRootFolder->AddFolder("Tasks",     "List of Tasks",fTasks);
-   fRootFolder->AddFolder("Geometries","List of Geometries",fGeometries);
-   fRootFolder->AddFolder("Browsers",  "List of Browsers",fBrowsers);
-   fRootFolder->AddFolder("Specials",  "List of Special Objects",fSpecials);
-   fRootFolder->AddFolder("Handlers",  "List of Message Handlers",fMessageHandlers);
-   fRootFolder->AddFolder("Cleanups",  "List of RecursiveRemove Collections",fCleanups);
-   fRootFolder->AddFolder("StreamerInfo","List of Active StreamerInfo Classes",fStreamerInfo);
-   fRootFolder->AddFolder("SecContexts","List of Security Contexts",fSecContexts);
-   fRootFolder->AddFolder("PROOF Sessions", "List of PROOF sessions",fProofs);
-   fRootFolder->AddFolder("ROOT Memory","List of Objects in the gROOT Directory",fList);
-   fRootFolder->AddFolder("ROOT Files","List of Connected ROOT Files",fFiles);
+   fRootFolder->AddFolder("Classes", "List of Active Classes", fClasses);
+   fRootFolder->AddFolder("Colors", "List of Active Colors", fColors);
+   fRootFolder->AddFolder("MapFiles", "List of MapFiles", fMappedFiles);
+   fRootFolder->AddFolder("Sockets", "List of Socket Connections", fSockets);
+   fRootFolder->AddFolder("Canvases", "List of Canvases", fCanvases);
+   fRootFolder->AddFolder("Styles", "List of Styles", fStyles);
+   fRootFolder->AddFolder("Functions", "List of Functions", fFunctions);
+   fRootFolder->AddFolder("Tasks", "List of Tasks", fTasks);
+   fRootFolder->AddFolder("Geometries", "List of Geometries", fGeometries);
+   fRootFolder->AddFolder("Browsers", "List of Browsers", fBrowsers);
+   fRootFolder->AddFolder("Specials", "List of Special Objects", fSpecials);
+   fRootFolder->AddFolder("Handlers", "List of Message Handlers", fMessageHandlers);
+   fRootFolder->AddFolder("Cleanups", "List of RecursiveRemove Collections", fCleanups);
+   fRootFolder->AddFolder("StreamerInfo", "List of Active StreamerInfo Classes", fStreamerInfo);
+   fRootFolder->AddFolder("SecContexts", "List of Security Contexts", fSecContexts);
+   fRootFolder->AddFolder("PROOF Sessions", "List of PROOF sessions", fProofs);
+   fRootFolder->AddFolder("ROOT Memory", "List of Objects in the gROOT Directory", fList);
+   fRootFolder->AddFolder("ROOT Files", "List of Connected ROOT Files", fFiles);
 
    // by default, add the list of files, tasks, canvases and browsers in the Cleanups list
-   fCleanups->Add(fCanvases); fCanvases->SetBit(kMustCleanup);
-   fCleanups->Add(fBrowsers); fBrowsers->SetBit(kMustCleanup);
-   fCleanups->Add(fTasks);    fTasks->SetBit(kMustCleanup);
-   fCleanups->Add(fFiles);    fFiles->SetBit(kMustCleanup);
-   fCleanups->Add(fClosedObjects); fClosedObjects->SetBit(kMustCleanup);
+   fCleanups->Add(fCanvases);
+   fCanvases->SetBit(kMustCleanup);
+   fCleanups->Add(fBrowsers);
+   fBrowsers->SetBit(kMustCleanup);
+   fCleanups->Add(fTasks);
+   fTasks->SetBit(kMustCleanup);
+   fCleanups->Add(fFiles);
+   fFiles->SetBit(kMustCleanup);
+   fCleanups->Add(fClosedObjects);
+   fClosedObjects->SetBit(kMustCleanup);
    // And add TROOT's TDirectory personality
    fCleanups->Add(fList);
 
-   fExecutingMacro= kFALSE;
-   fForceStyle    = kFALSE;
-   fFromPopUp     = kFALSE;
+   fExecutingMacro = kFALSE;
+   fForceStyle = kFALSE;
+   fFromPopUp = kFALSE;
    fReadingObject = kFALSE;
-   fInterrupt     = kFALSE;
-   fEscape        = kFALSE;
-   fMustClean     = kTRUE;
-   fPrimitive     = 0;
-   fSelectPad     = 0;
-   fEditorMode    = 0;
+   fInterrupt = kFALSE;
+   fEscape = kFALSE;
+   fMustClean = kTRUE;
+   fPrimitive = 0;
+   fSelectPad = 0;
+   fEditorMode = 0;
    fDefCanvasName = "c1";
-   fEditHistograms= kFALSE;
-   fLineIsProcessing = 1;   // This prevents WIN32 "Windows" thread to pick ROOT objects with mouse
-   gDirectory     = this;
-   gPad           = 0;
+   fEditHistograms = kFALSE;
+   fLineIsProcessing = 1; // This prevents WIN32 "Windows" thread to pick ROOT objects with mouse
+   gDirectory = this;
+   gPad = 0;
 
-   //set name of graphical cut class for the graphics editor
-   //cannot call SetCutClassName at this point because the TClass of TCutG
-   //is not yet build
+   // set name of graphical cut class for the graphics editor
+   // cannot call SetCutClassName at this point because the TClass of TCutG
+   // is not yet build
    fCutClassName = "TCutG";
 
    // Create a default MessageHandler
-   new TMessageHandler((TClass*)0);
+   new TMessageHandler((TClass *)0);
 
    // Create some styles
    gStyle = 0;
@@ -865,9 +867,9 @@ TROOT::TROOT(const char *name, const char *title, VoidFuncPtr_t *initfunc)
 
    // Setup default (batch) graphics and GUI environment
    gBatchGuiFactory = new TGuiFactory;
-   gGuiFactory      = gBatchGuiFactory;
-   gGXBatch         = new TVirtualX("Batch", "ROOT Interface to batch graphics");
-   gVirtualX        = gGXBatch;
+   gGuiFactory = gBatchGuiFactory;
+   gGXBatch = new TVirtualX("Batch", "ROOT Interface to batch graphics");
+   gVirtualX = gGXBatch;
 
 #if defined(R__WIN32)
    fBatch = kFALSE;
@@ -883,7 +885,7 @@ TROOT::TROOT(const char *name, const char *title, VoidFuncPtr_t *initfunc)
    int i = 0;
    while (initfunc && initfunc[i]) {
       (initfunc[i])();
-      fBatch = kFALSE;  // put system in graphics mode (backward compatible)
+      fBatch = kFALSE; // put system in graphics mode (backward compatible)
       i++;
    }
 
@@ -921,9 +923,10 @@ TROOT::~TROOT()
 
       // Return when error occurred in TCling, i.e. when setup file(s) are
       // out of date
-      if (!fVersionInt) return;
+      if (!fVersionInt)
+         return;
 
-      // ATTENTION!!! Order is important!
+         // ATTENTION!!! Order is important!
 
 #ifdef R__COMPLETE_MEM_TERMINATION
       SafeDelete(fBrowsables);
@@ -931,41 +934,54 @@ TROOT::~TROOT()
       // FIXME: Causes rootcling to deadlock, debug and uncomment
       // SafeDelete(fRootFolder);
 
-      fSpecials->Delete();   SafeDelete(fSpecials);    // delete special objects : PostScript, Minuit, Html
+      fSpecials->Delete();
+      SafeDelete(fSpecials); // delete special objects : PostScript, Minuit, Html
 #endif
       fClosedObjects->Delete("slow"); // and closed files
-      fFiles->Delete("slow");       // and files
+      fFiles->Delete("slow");         // and files
       SafeDelete(fFiles);
-      fSecContexts->Delete("slow"); SafeDelete(fSecContexts); // and security contexts
-      fSockets->Delete();           SafeDelete(fSockets);     // and sockets
-      fMappedFiles->Delete("slow");                     // and mapped files
-      TSeqCollection *tl = fMappedFiles; fMappedFiles = 0; delete tl;
+      fSecContexts->Delete("slow");
+      SafeDelete(fSecContexts); // and security contexts
+      fSockets->Delete();
+      SafeDelete(fSockets);         // and sockets
+      fMappedFiles->Delete("slow"); // and mapped files
+      TSeqCollection *tl = fMappedFiles;
+      fMappedFiles = 0;
+      delete tl;
 
       SafeDelete(fClosedObjects);
 
       delete fUUIDs;
-      TProcessID::Cleanup();                            // and list of ProcessIDs
+      TProcessID::Cleanup(); // and list of ProcessIDs
 
-      fFunctions->Delete();  SafeDelete(fFunctions);   // etc..
-      fGeometries->Delete(); SafeDelete(fGeometries);
-      fBrowsers->Delete();   SafeDelete(fBrowsers);
+      fFunctions->Delete();
+      SafeDelete(fFunctions); // etc..
+      fGeometries->Delete();
+      SafeDelete(fGeometries);
+      fBrowsers->Delete();
+      SafeDelete(fBrowsers);
 #ifdef R__COMPLETE_MEM_TERMINATION
       SafeDelete(fCanvases);
 #endif
-      fColors->Delete();     SafeDelete(fColors);
-      fStyles->Delete();     SafeDelete(fStyles);
+      fColors->Delete();
+      SafeDelete(fColors);
+      fStyles->Delete();
+      SafeDelete(fStyles);
 
 #ifdef R__COMPLETE_MEM_TERMINATION
-      if (gGuiFactory != gBatchGuiFactory) SafeDelete(gGuiFactory);
+      if (gGuiFactory != gBatchGuiFactory)
+         SafeDelete(gGuiFactory);
       SafeDelete(gBatchGuiFactory);
-      if (gGXBatch != gVirtualX) SafeDelete(gGXBatch);
+      if (gGXBatch != gVirtualX)
+         SafeDelete(gGXBatch);
       SafeDelete(gVirtualX);
 #endif
 
       // Stop emitting signals
       TQObject::BlockAllSignals(kTRUE);
 
-      fMessageHandlers->Delete(); SafeDelete(fMessageHandlers);
+      fMessageHandlers->Delete();
+      SafeDelete(fMessageHandlers);
 
 #ifdef R__COMPLETE_MEM_TERMINATION
       SafeDelete(fCanvases);
@@ -975,15 +991,21 @@ TROOT::~TROOT()
       SafeDelete(fClipboard);
 
       fCleanups->Clear();
-      delete fPluginManager; gPluginMgr = fPluginManager = 0;
-      delete gClassTable;  gClassTable = 0;
-      delete gEnv; gEnv = 0;
+      delete fPluginManager;
+      gPluginMgr = fPluginManager = 0;
+      delete gClassTable;
+      gClassTable = 0;
+      delete gEnv;
+      gEnv = 0;
 
-      if (fTypes) fTypes->Delete();
+      if (fTypes)
+         fTypes->Delete();
       SafeDelete(fTypes);
-      if (fGlobals) fGlobals->Delete();
+      if (fGlobals)
+         fGlobals->Delete();
       SafeDelete(fGlobals);
-      if (fGlobalFunctions) fGlobalFunctions->Delete();
+      if (fGlobalFunctions)
+         fGlobalFunctions->Delete();
       SafeDelete(fGlobalFunctions);
       fEnums.load()->Delete();
 
@@ -1048,7 +1070,8 @@ void TROOT::AddClass(TClass *cl)
 
 void TROOT::AddClassGenerator(TClassGenerator *generator)
 {
-   if (!generator) return;
+   if (!generator)
+      return;
    fClassGenerators->Add(generator);
 }
 
@@ -1061,7 +1084,7 @@ void TROOT::AddClassGenerator(TClassGenerator *generator)
 void TROOT::Append(TObject *obj, Bool_t replace /* = kFALSE */)
 {
    R__LOCKGUARD(gROOTMutex);
-   TDirectory::Append(obj,replace);
+   TDirectory::Append(obj, replace);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1072,7 +1095,7 @@ void TROOT::Browse(TBrowser *b)
    TObject *obj;
    TIter next(fBrowsables);
 
-   while ((obj = (TObject *) next())) {
+   while ((obj = (TObject *)next())) {
       const char *opt = next.GetOption();
       if (opt && strlen(opt))
          b->Add(obj, opt);
@@ -1088,73 +1111,75 @@ void TROOT::Browse(TBrowser *b)
 
 Bool_t TROOT::ClassSaved(TClass *cl)
 {
-   if (cl == 0) return kFALSE;
-   if (cl->TestBit(TClass::kClassSaved)) return kTRUE;
+   if (cl == 0)
+      return kFALSE;
+   if (cl->TestBit(TClass::kClassSaved))
+      return kTRUE;
    cl->SetBit(TClass::kClassSaved);
    return kFALSE;
 }
 
 namespace {
-   static void R__ListSlowClose(TList *files)
-   {
-      // Routine to close a list of files using the 'slow' techniques
-      // that also for the deletion ot update the list itself.
+static void R__ListSlowClose(TList *files)
+{
+   // Routine to close a list of files using the 'slow' techniques
+   // that also for the deletion ot update the list itself.
 
-      static TObject harmless;
-      TObjLink *cursor = files->FirstLink();
-      while (cursor) {
-         TDirectory *dir = static_cast<TDirectory*>( cursor->GetObject() );
-         if (dir) {
-            // In order for the iterator to stay valid, we must
-            // prevent the removal of the object (dir) from the list
-            // (which is done in TFile::Close).   We can also can not
-            // just move to the next iterator since the Close might
-            // also (indirectly) remove that file.
-            // So we SetObject to a harmless value, so that 'dir'
-            // is not seen as part of the list.
-            // We will later, remove all the object (see files->Clear()
-            cursor->SetObject(&harmless); // this must not be zero otherwise things go wrong.
-            // See related comment at the files->Clear("nodelete");
-            dir->Close("nodelete");
-            // Put it back
-            cursor->SetObject(dir);
-         }
-         cursor = cursor->Next();
-      };
-      // Now were done, clear the list but do not delete the objects as
-      // they have been moved to the list of closed objects and must be
-      // deleted from there in order to avoid a double delete from a
-      // use objects (on the interpreter stack).
-      files->Clear("nodelete");
-   }
-
-   static void R__ListSlowDeleteContent(TList *files)
-   {
-      // Routine to delete the content of list of files using the 'slow' techniques
-
-      static TObject harmless;
-      TObjLink *cursor = files->FirstLink();
-      while (cursor) {
-         TDirectory *dir = dynamic_cast<TDirectory*>( cursor->GetObject() );
-         if (dir) {
-            // In order for the iterator to stay valid, we must
-            // prevent the removal of the object (dir) from the list
-            // (which is done in TFile::Close).   We can also can not
-            // just move to the next iterator since the Close might
-            // also (indirectly) remove that file.
-            // So we SetObject to a harmless value, so that 'dir'
-            // is not seen as part of the list.
-            // We will later, remove all the object (see files->Clear()
-            cursor->SetObject(&harmless); // this must not be zero otherwise things go wrong.
-            // See related comment at the files->Clear("nodelete");
-            dir->GetList()->Delete("slow");
-            // Put it back
-            cursor->SetObject(dir);
-         }
-         cursor = cursor->Next();
-      };
-   }
+   static TObject harmless;
+   TObjLink *cursor = files->FirstLink();
+   while (cursor) {
+      TDirectory *dir = static_cast<TDirectory *>(cursor->GetObject());
+      if (dir) {
+         // In order for the iterator to stay valid, we must
+         // prevent the removal of the object (dir) from the list
+         // (which is done in TFile::Close).   We can also can not
+         // just move to the next iterator since the Close might
+         // also (indirectly) remove that file.
+         // So we SetObject to a harmless value, so that 'dir'
+         // is not seen as part of the list.
+         // We will later, remove all the object (see files->Clear()
+         cursor->SetObject(&harmless); // this must not be zero otherwise things go wrong.
+         // See related comment at the files->Clear("nodelete");
+         dir->Close("nodelete");
+         // Put it back
+         cursor->SetObject(dir);
+      }
+      cursor = cursor->Next();
+   };
+   // Now were done, clear the list but do not delete the objects as
+   // they have been moved to the list of closed objects and must be
+   // deleted from there in order to avoid a double delete from a
+   // use objects (on the interpreter stack).
+   files->Clear("nodelete");
 }
+
+static void R__ListSlowDeleteContent(TList *files)
+{
+   // Routine to delete the content of list of files using the 'slow' techniques
+
+   static TObject harmless;
+   TObjLink *cursor = files->FirstLink();
+   while (cursor) {
+      TDirectory *dir = dynamic_cast<TDirectory *>(cursor->GetObject());
+      if (dir) {
+         // In order for the iterator to stay valid, we must
+         // prevent the removal of the object (dir) from the list
+         // (which is done in TFile::Close).   We can also can not
+         // just move to the next iterator since the Close might
+         // also (indirectly) remove that file.
+         // So we SetObject to a harmless value, so that 'dir'
+         // is not seen as part of the list.
+         // We will later, remove all the object (see files->Clear()
+         cursor->SetObject(&harmless); // this must not be zero otherwise things go wrong.
+         // See related comment at the files->Clear("nodelete");
+         dir->GetList()->Delete("slow");
+         // Put it back
+         cursor->SetObject(dir);
+      }
+      cursor = cursor->Next();
+   };
+}
+} // namespace
 
 ////////////////////////////////////////////////////////////////////////////////
 /// Close any files and sockets that gROOT knows about.
@@ -1163,13 +1188,13 @@ namespace {
 void TROOT::CloseFiles()
 {
    if (fFiles && fFiles->First()) {
-      R__ListSlowClose(static_cast<TList*>(fFiles));
+      R__ListSlowClose(static_cast<TList *>(fFiles));
    }
    // and Close TROOT itself.
    Close("slow");
    // Now sockets.
    if (fSockets && fSockets->First()) {
-      if (0==fCleanups->FindObject(fSockets) ) {
+      if (0 == fCleanups->FindObject(fSockets)) {
          fCleanups->Add(fSockets);
          fSockets->SetBit(kMustCleanup);
       }
@@ -1179,7 +1204,7 @@ void TROOT::CloseFiles()
       gInterpreter->CallFunc_SetFuncProto(socketCloser, socketClass->GetClassInfo(), "Close", "", &offset);
       if (gInterpreter->CallFunc_IsValid(socketCloser)) {
          static TObject harmless;
-         TObjLink *cursor = static_cast<TList*>(fSockets)->FirstLink();
+         TObjLink *cursor = static_cast<TList *>(fSockets)->FirstLink();
          TList notclosed;
          while (cursor) {
             TObject *socket = cursor->GetObject();
@@ -1194,7 +1219,7 @@ void TROOT::CloseFiles()
             cursor->SetObject(&harmless); // this must not be zero otherwise things go wrong.
 
             if (socket->IsA()->InheritsFrom(socketClass)) {
-               gInterpreter->CallFunc_Exec(socketCloser, ((char*)socket)+offset);
+               gInterpreter->CallFunc_Exec(socketCloser, ((char *)socket) + offset);
                // Put the object in the closed list for later deletion.
                socket->SetBit(kMustCleanup);
                fClosedObjects->AddLast(socket);
@@ -1202,9 +1227,10 @@ void TROOT::CloseFiles()
                // Crap ... this is not a socket, likely Proof or something, let's try to find a Close
                Long_t other_offset;
                CallFunc_t *otherCloser = gInterpreter->CallFunc_Factory();
-               gInterpreter->CallFunc_SetFuncProto(otherCloser, socket->IsA()->GetClassInfo(), "Close", "", &other_offset);
+               gInterpreter->CallFunc_SetFuncProto(otherCloser, socket->IsA()->GetClassInfo(), "Close", "",
+                                                   &other_offset);
                if (gInterpreter->CallFunc_IsValid(otherCloser)) {
-                  gInterpreter->CallFunc_Exec(otherCloser, ((char*)socket)+other_offset);
+                  gInterpreter->CallFunc_Exec(otherCloser, ((char *)socket) + other_offset);
                   // Put the object in the closed list for later deletion.
                   socket->SetBit(kMustCleanup);
                   fClosedObjects->AddLast(socket);
@@ -1222,16 +1248,15 @@ void TROOT::CloseFiles()
          // Read the one we did not close
          cursor = notclosed.FirstLink();
          while (cursor) {
-            static_cast<TList*>(fSockets)->AddLast(cursor->GetObject());
+            static_cast<TList *>(fSockets)->AddLast(cursor->GetObject());
             cursor = cursor->Next();
          }
       }
       gInterpreter->CallFunc_Delete(socketCloser);
    }
    if (fMappedFiles && fMappedFiles->First()) {
-      R__ListSlowClose(static_cast<TList*>(fMappedFiles));
+      R__ListSlowClose(static_cast<TList *>(fMappedFiles));
    }
-
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1251,7 +1276,7 @@ void TROOT::EndOfProcessCleanups()
    // Now delete the objects 'held' by the TFiles so that it
    // is done before the tear down of the libraries.
    if (fClosedObjects && fClosedObjects->First()) {
-      R__ListSlowDeleteContent(static_cast<TList*>(fClosedObjects));
+      R__ListSlowDeleteContent(static_cast<TList *>(fClosedObjects));
    }
 
    // Now a set of simpler things to delete.  See the same ordering in
@@ -1264,13 +1289,12 @@ void TROOT::EndOfProcessCleanups()
    fStyles->Delete();
 }
 
-
 ////////////////////////////////////////////////////////////////////////////////
 /// Find an object in one Root folder
 
 TObject *TROOT::FindObject(const TObject *) const
 {
-   Error("FindObject","Not yet implemented");
+   Error("FindObject", "Not yet implemented");
    return 0;
 }
 
@@ -1296,35 +1320,55 @@ TObject *TROOT::FindObject(const TObject *) const
 
 TObject *TROOT::FindObject(const char *name) const
 {
-   if (name && strstr(name,"/")) return FindObjectAny(name);
+   if (name && strstr(name, "/"))
+      return FindObjectAny(name);
 
    TObject *temp = 0;
 
-   temp   = fFiles->FindObject(name);       if (temp) return temp;
-   temp   = fMappedFiles->FindObject(name); if (temp) return temp;
+   temp = fFiles->FindObject(name);
+   if (temp)
+      return temp;
+   temp = fMappedFiles->FindObject(name);
+   if (temp)
+      return temp;
    {
       R__LOCKGUARD(gROOTMutex);
-      temp   = fFunctions->FindObject(name);if (temp) return temp;
+      temp = fFunctions->FindObject(name);
+      if (temp)
+         return temp;
    }
-   temp   = fGeometries->FindObject(name);  if (temp) return temp;
-   temp   = fCanvases->FindObject(name);    if (temp) return temp;
-   temp   = fStyles->FindObject(name);      if (temp) return temp;
+   temp = fGeometries->FindObject(name);
+   if (temp)
+      return temp;
+   temp = fCanvases->FindObject(name);
+   if (temp)
+      return temp;
+   temp = fStyles->FindObject(name);
+   if (temp)
+      return temp;
    {
       R__LOCKGUARD(gROOTMutex);
-      temp = fSpecials->FindObject(name);   if (temp) return temp;
+      temp = fSpecials->FindObject(name);
+      if (temp)
+         return temp;
    }
    TIter next(fGeometries);
    TObject *obj;
-   while ((obj=next())) {
-      temp = obj->FindObject(name);         if (temp) return temp;
+   while ((obj = next())) {
+      temp = obj->FindObject(name);
+      if (temp)
+         return temp;
    }
-   if (gDirectory) temp = gDirectory->Get(name);
-   if (temp) return temp;
+   if (gDirectory)
+      temp = gDirectory->Get(name);
+   if (temp)
+      return temp;
    if (gPad) {
       TVirtualPad *canvas = gPad->GetVirtCanvas();
-      if (fCanvases->FindObject(canvas)) {  //this check in case call from TCanvas ctor
+      if (fCanvases->FindObject(canvas)) { // this check in case call from TCanvas ctor
          temp = canvas->FindObject(name);
-         if (!temp && canvas != gPad) temp  = gPad->FindObject(name);
+         if (!temp && canvas != gPad)
+            temp = gPad->FindObject(name);
       }
    }
    return temp;
@@ -1354,51 +1398,56 @@ TObject *TROOT::FindSpecialObject(const char *name, void *&where)
    where = 0;
 
    if (!temp) {
-      temp  = fFiles->FindObject(name);
+      temp = fFiles->FindObject(name);
       where = fFiles;
    }
    if (!temp) {
-      temp  = fMappedFiles->FindObject(name);
+      temp = fMappedFiles->FindObject(name);
       where = fMappedFiles;
    }
    if (!temp) {
       R__LOCKGUARD(gROOTMutex);
-      temp  = fFunctions->FindObject(name);
+      temp = fFunctions->FindObject(name);
       where = fFunctions;
    }
    if (!temp) {
-      temp  = fCanvases->FindObject(name);
+      temp = fCanvases->FindObject(name);
       where = fCanvases;
    }
    if (!temp) {
-      temp  = fStyles->FindObject(name);
+      temp = fStyles->FindObject(name);
       where = fStyles;
    }
    if (!temp) {
-      temp  = fSpecials->FindObject(name);
+      temp = fSpecials->FindObject(name);
       where = fSpecials;
    }
    if (!temp) {
       TObject *glast = fGeometries->Last();
-      if (glast) {where = glast; temp = glast->FindObject(name);}
+      if (glast) {
+         where = glast;
+         temp = glast->FindObject(name);
+      }
    }
    if (!temp && gDirectory) {
-      temp  = gDirectory->Get(name);
+      temp = gDirectory->Get(name);
       where = gDirectory;
    }
    if (!temp && gPad) {
       TVirtualPad *canvas = gPad->GetVirtCanvas();
-      if (fCanvases->FindObject(canvas)) {  //this check in case call from TCanvas ctor
-         temp  = canvas->FindObject(name);
+      if (fCanvases->FindObject(canvas)) { // this check in case call from TCanvas ctor
+         temp = canvas->FindObject(name);
          where = canvas;
          if (!temp && canvas != gPad) {
-            temp  = gPad->FindObject(name);
+            temp = gPad->FindObject(name);
             where = gPad;
          }
       }
    }
-   if (!temp) return 0;
-   if (temp->TestBit(kNotDeleted)) return temp;
+   if (!temp)
+      return 0;
+   if (temp->TestBit(kNotDeleted))
+      return temp;
    return 0;
 }
 
@@ -1410,7 +1459,8 @@ TObject *TROOT::FindSpecialObject(const char *name, void *&where)
 TObject *TROOT::FindObjectAny(const char *name) const
 {
    TObject *obj = fRootFolder->FindObjectAny(name);
-   if (obj) return obj;
+   if (obj)
+      return obj;
    return gDirectory->FindObjectAnyFile(name);
 }
 
@@ -1422,11 +1472,12 @@ TObject *TROOT::FindObjectAnyFile(const char *name) const
    R__LOCKGUARD(gROOTMutex);
    TDirectory *d;
    TIter next(GetListOfFiles());
-   while ((d = (TDirectory*)next())) {
+   while ((d = (TDirectory *)next())) {
       // Call explicitly TDirectory::FindObject to restrict the search to the
       // already in memory object.
       TObject *obj = d->TDirectory::FindObject(name);
-      if (obj) return obj;
+      if (obj)
+         return obj;
    }
    return 0;
 }
@@ -1438,11 +1489,13 @@ const char *TROOT::FindObjectClassName(const char *name) const
 {
    // Search first in the list of "standard" objects
    TObject *obj = FindObject(name);
-   if (obj) return obj->ClassName();
+   if (obj)
+      return obj->ClassName();
 
    // Is it a global variable?
    TGlobal *g = GetGlobal(name);
-   if (g) return g->GetTypeName();
+   if (g)
+      return g->GetTypeName();
 
    return 0;
 }
@@ -1456,7 +1509,7 @@ const char *TROOT::FindObjectClassName(const char *name) const
 
 const char *TROOT::FindObjectPathName(const TObject *) const
 {
-   Error("FindObjectPathName","Not yet implemented");
+   Error("FindObjectPathName", "Not yet implemented");
    return "??";
 }
 
@@ -1486,9 +1539,10 @@ TClass *TROOT::FindSTLClass(const char *name, Bool_t load, Bool_t silent) const
    TClassEdit::GetNormalizedName(normalized, name);
 
    TClass *cl = 0;
-   if (normalized != name) cl = TClass::GetClass(normalized.c_str(),load,silent);
+   if (normalized != name)
+      cl = TClass::GetClass(normalized.c_str(), load, silent);
 
-   if (load && cl==0) {
+   if (load && cl == 0) {
       // Create an Emulated class for this container.
       cl = gInterpreter->GenerateTClass(normalized.c_str(), kTRUE, silent);
    }
@@ -1501,17 +1555,16 @@ TClass *TROOT::FindSTLClass(const char *name, Bool_t load, Bool_t silent) const
 
 TClass *TROOT::GetClass(const char *name, Bool_t load, Bool_t silent) const
 {
-   return TClass::GetClass(name,load,silent);
+   return TClass::GetClass(name, load, silent);
 }
-
 
 ////////////////////////////////////////////////////////////////////////////////
 /// Return pointer to class from its name. Obsolete, use TClass::GetClass directly
 /// See TClass::GetClass
 
-TClass *TROOT::GetClass(const std::type_info& typeinfo, Bool_t load, Bool_t silent) const
+TClass *TROOT::GetClass(const std::type_info &typeinfo, Bool_t load, Bool_t silent) const
 {
-   return TClass::GetClass(typeinfo,load,silent);
+   return TClass::GetClass(typeinfo, load, silent);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1520,14 +1573,18 @@ TClass *TROOT::GetClass(const std::type_info& typeinfo, Bool_t load, Bool_t sile
 TColor *TROOT::GetColor(Int_t color) const
 {
    TColor::InitializeColors();
-   TObjArray *lcolors = (TObjArray*) GetListOfColors();
-   if (!lcolors) return 0;
-   if (color < 0 || color >= lcolors->GetSize()) return 0;
-   TColor *col = (TColor*)lcolors->At(color);
-   if (col && col->GetNumber() == color) return col;
-   TIter   next(lcolors);
-   while ((col = (TColor *) next()))
-      if (col->GetNumber() == color) return col;
+   TObjArray *lcolors = (TObjArray *)GetListOfColors();
+   if (!lcolors)
+      return 0;
+   if (color < 0 || color >= lcolors->GetSize())
+      return 0;
+   TColor *col = (TColor *)lcolors->At(color);
+   if (col && col->GetNumber() == color)
+      return col;
+   TIter next(lcolors);
+   while ((col = (TColor *)next()))
+      if (col->GetNumber() == color)
+         return col;
 
    return 0;
 }
@@ -1537,7 +1594,7 @@ TColor *TROOT::GetColor(Int_t color) const
 
 TCanvas *TROOT::MakeDefCanvas() const
 {
-   return (TCanvas*)gROOT->ProcessLine("TCanvas::MakeDefCanvas();");
+   return (TCanvas *)gROOT->ProcessLine("TCanvas::MakeDefCanvas();");
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1545,7 +1602,7 @@ TCanvas *TROOT::MakeDefCanvas() const
 
 TDataType *TROOT::GetType(const char *name, Bool_t /* load */) const
 {
-   return (TDataType*)gROOT->GetListOfTypes()->FindObject(name);
+   return (TDataType *)gROOT->GetListOfTypes()->FindObject(name);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1554,7 +1611,7 @@ TDataType *TROOT::GetType(const char *name, Bool_t /* load */) const
 TFile *TROOT::GetFile(const char *name) const
 {
    R__LOCKGUARD(gROOTMutex);
-   return (TFile*)GetListOfFiles()->FindObject(name);
+   return (TFile *)GetListOfFiles()->FindObject(name);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1562,7 +1619,7 @@ TFile *TROOT::GetFile(const char *name) const
 
 TStyle *TROOT::GetStyle(const char *name) const
 {
-   return (TStyle*)GetListOfStyles()->FindObject(name);
+   return (TStyle *)GetListOfStyles()->FindObject(name);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1577,7 +1634,8 @@ TObject *TROOT::GetFunction(const char *name) const
    {
       R__LOCKGUARD(gROOTMutex);
       TObject *f1 = fFunctions->FindObject(name);
-      if (f1) return f1;
+      if (f1)
+         return f1;
    }
 
    gROOT->ProcessLine("TF1::InitStandardFunctions();");
@@ -1590,11 +1648,13 @@ TObject *TROOT::GetFunction(const char *name) const
 
 TFunctionTemplate *TROOT::GetFunctionTemplate(const char *name)
 {
-   if (!gInterpreter) return 0;
+   if (!gInterpreter)
+      return 0;
 
-   if (!fFuncTemplate) fFuncTemplate = new TListOfFunctionTemplates(0);
+   if (!fFuncTemplate)
+      fFuncTemplate = new TListOfFunctionTemplates(0);
 
-   return (TFunctionTemplate*)fFuncTemplate->FindObject(name);
+   return (TFunctionTemplate *)fFuncTemplate->FindObject(name);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1611,20 +1671,21 @@ TGlobal *TROOT::GetGlobal(const char *name, Bool_t load) const
 
 TGlobal *TROOT::GetGlobal(const TObject *addr, Bool_t /* load */) const
 {
-   if (addr == 0 || ((Long_t)addr) == -1) return 0;
+   if (addr == 0 || ((Long_t)addr) == -1)
+      return 0;
 
    TInterpreter::DeclId_t decl = gInterpreter->GetDataMemberAtAddr(addr);
    if (decl) {
-      TListOfDataMembers *globals = ((TListOfDataMembers*)(gROOT->GetListOfGlobals(kFALSE)));
-      return (TGlobal*)globals->Get(decl);
+      TListOfDataMembers *globals = ((TListOfDataMembers *)(gROOT->GetListOfGlobals(kFALSE)));
+      return (TGlobal *)globals->Get(decl);
    }
    // If we are actually looking for a global that is held by a global
    // pointer (for example gRandom), we need to find a pointer with the
    // correct value.
    decl = gInterpreter->GetDataMemberWithValue(addr);
    if (decl) {
-      TListOfDataMembers *globals = ((TListOfDataMembers*)(gROOT->GetListOfGlobals(kFALSE)));
-      return (TGlobal*)globals->Get(decl);
+      TListOfDataMembers *globals = ((TListOfDataMembers *)(gROOT->GetListOfGlobals(kFALSE)));
+      return (TGlobal *)globals->Get(decl);
    }
    return 0;
 }
@@ -1635,16 +1696,17 @@ TGlobal *TROOT::GetGlobal(const TObject *addr, Bool_t /* load */) const
 
 TListOfFunctions *TROOT::GetGlobalFunctions()
 {
-   if (!fGlobalFunctions) fGlobalFunctions = new TListOfFunctions(0);
+   if (!fGlobalFunctions)
+      fGlobalFunctions = new TListOfFunctions(0);
    return fGlobalFunctions;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 /// Return the collection of functions named "name".
 
-TCollection *TROOT::GetListOfFunctionOverloads(const char* name) const
+TCollection *TROOT::GetListOfFunctionOverloads(const char *name) const
 {
-   return ((TListOfFunctions*)fGlobalFunctions)->GetListForObject(name);
+   return ((TListOfFunctions *)fGlobalFunctions)->GetListForObject(name);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -1655,8 +1717,7 @@ TCollection *TROOT::GetListOfFunctionOverloads(const char* name) const
 /// global functions from Cling.
 /// The param string must be of the form: "3189,\"aap\",1.3".
 
-TFunction *TROOT::GetGlobalFunction(const char *function, const char *params,
-                                    Bool_t load)
+TFunction *TROOT::GetGlobalFunction(const char *function, const char *params, Bool_t load)
 {
    if (!params) {
       R__LOCKGUARD(gROOTMutex);
@@ -1666,18 +1727,16 @@ TFunction *TROOT::GetGlobalFunction(const char *function, const char *params,
          Fatal("GetGlobalFunction", "fInterpreter not initialized");
 
       R__LOCKGUARD(gROOTMutex);
-      TInterpreter::DeclId_t decl = gInterpreter->GetFunctionWithValues(0,
-                                                                 function, params,
-                                                                 false);
+      TInterpreter::DeclId_t decl = gInterpreter->GetFunctionWithValues(0, function, params, false);
 
-      if (!decl) return 0;
+      if (!decl)
+         return 0;
 
       TFunction *f = GetGlobalFunctions()->Get(decl);
-      if (f) return f;
+      if (f)
+         return f;
 
-      Error("GetGlobalFunction",
-            "\nDid not find matching TFunction <%s> with \"%s\".",
-            function,params);
+      Error("GetGlobalFunction", "\nDid not find matching TFunction <%s> with \"%s\".", function, params);
       return 0;
    }
 }
@@ -1688,8 +1747,7 @@ TFunction *TROOT::GetGlobalFunction(const char *function, const char *params,
 /// of all currently defined global functions from CINT (more expensive).
 /// The proto string must be of the form: "int, char*, float".
 
-TFunction *TROOT::GetGlobalFunctionWithPrototype(const char *function,
-                                               const char *proto, Bool_t load)
+TFunction *TROOT::GetGlobalFunctionWithPrototype(const char *function, const char *proto, Bool_t load)
 {
    if (!proto) {
       R__LOCKGUARD(gROOTMutex);
@@ -1699,17 +1757,16 @@ TFunction *TROOT::GetGlobalFunctionWithPrototype(const char *function,
          Fatal("GetGlobalFunctionWithPrototype", "fInterpreter not initialized");
 
       R__LOCKGUARD(gROOTMutex);
-      TInterpreter::DeclId_t decl = gInterpreter->GetFunctionWithPrototype(0,
-                                                                           function, proto);
+      TInterpreter::DeclId_t decl = gInterpreter->GetFunctionWithPrototype(0, function, proto);
 
-      if (!decl) return 0;
+      if (!decl)
+         return 0;
 
       TFunction *f = GetGlobalFunctions()->Get(decl);
-      if (f) return f;
+      if (f)
+         return f;
 
-      Error("GetGlobalFunctionWithPrototype",
-            "\nDid not find matching TFunction <%s> with \"%s\".",
-            function,proto);
+      Error("GetGlobalFunctionWithPrototype", "\nDid not find matching TFunction <%s> with \"%s\".", function, proto);
       return 0;
    }
 }
@@ -1726,11 +1783,12 @@ TObject *TROOT::GetGeometry(const char *name) const
 
 TCollection *TROOT::GetListOfEnums(Bool_t load /* = kTRUE */)
 {
-   if(!fEnums.load()) {
+   if (!fEnums.load()) {
       R__LOCKGUARD(gROOTMutex);
       // Test again just in case, another thread did the work while we were
       // waiting.
-      if (!fEnums.load()) fEnums = new TListOfEnumsWithLock(0);
+      if (!fEnums.load())
+         fEnums = new TListOfEnumsWithLock(0);
    }
    if (load) {
       R__LOCKGUARD(gROOTMutex);
@@ -1744,7 +1802,7 @@ TCollection *TROOT::GetListOfEnums(Bool_t load /* = kTRUE */)
 TCollection *TROOT::GetListOfFunctionTemplates()
 {
    R__LOCKGUARD(gROOTMutex);
-   if(!fFuncTemplate) {
+   if (!fFuncTemplate) {
       fFuncTemplate = new TListOfFunctionTemplates(0);
    }
    return fFuncTemplate;
@@ -1763,16 +1821,15 @@ TCollection *TROOT::GetListOfGlobals(Bool_t load)
    if (!fGlobals) {
       // We add to the list the "funcky-fake" globals.
       fGlobals = new TListOfDataMembers(0);
-      fGlobals->Add(new TGlobalMappedFunction("gROOT", "TROOT*",
-                                              (TGlobalMappedFunction::GlobalFunc_t)&ROOT::GetROOT));
-      fGlobals->Add(new TGlobalMappedFunction("gPad", "TVirtualPad*",
-                                            (TGlobalMappedFunction::GlobalFunc_t)&TVirtualPad::Pad));
+      fGlobals->Add(new TGlobalMappedFunction("gROOT", "TROOT*", (TGlobalMappedFunction::GlobalFunc_t)&ROOT::GetROOT));
+      fGlobals->Add(
+         new TGlobalMappedFunction("gPad", "TVirtualPad*", (TGlobalMappedFunction::GlobalFunc_t)&TVirtualPad::Pad));
       fGlobals->Add(new TGlobalMappedFunction("gInterpreter", "TInterpreter*",
-                                            (TGlobalMappedFunction::GlobalFunc_t)&TInterpreter::Instance));
+                                              (TGlobalMappedFunction::GlobalFunc_t)&TInterpreter::Instance));
       fGlobals->Add(new TGlobalMappedFunction("gVirtualX", "TVirtualX*",
-                                            (TGlobalMappedFunction::GlobalFunc_t)&TVirtualX::Instance));
+                                              (TGlobalMappedFunction::GlobalFunc_t)&TVirtualX::Instance));
       fGlobals->Add(new TGlobalMappedFunction("gDirectory", "TDirectory*",
-                                            (TGlobalMappedFunction::GlobalFunc_t)&TDirectory::CurrentDirectory));
+                                              (TGlobalMappedFunction::GlobalFunc_t)&TDirectory::CurrentDirectory));
       // Don't let TGlobalMappedFunction delete our globals, now that we take them.
       fGlobals->AddAll(&TGlobalMappedFunction::GetEarlyRegisteredGlobals());
       TGlobalMappedFunction::GetEarlyRegisteredGlobals().SetOwner(kFALSE);
@@ -1782,7 +1839,8 @@ TCollection *TROOT::GetListOfGlobals(Bool_t load)
    if (!fInterpreter)
       Fatal("GetListOfGlobals", "fInterpreter not initialized");
 
-   if (load) fGlobals->Load();
+   if (load)
+      fGlobals->Load();
 
    return fGlobals;
 }
@@ -1810,7 +1868,8 @@ TCollection *TROOT::GetListOfGlobalFunctions(Bool_t load)
    // will conflict here (the load==true will be updating the list while the
    // other is reading it).  To solve the problem, we could use a read-write lock
    // inside the list itself.
-   if (load) fGlobalFunctions->Load();
+   if (load)
+      fGlobalFunctions->Load();
 
    return fGlobalFunctions;
 }
@@ -1842,7 +1901,6 @@ TCollection *TROOT::GetListOfTypes(Bool_t /* load */)
    return fTypes;
 }
 
-
 ////////////////////////////////////////////////////////////////////////////////
 /// Execute command when system has been idle for idleTimeInSec seconds.
 
@@ -1861,16 +1919,15 @@ void TROOT::Idle(UInt_t idleTimeInSec, const char *command)
 /// Check whether className is a known class, and only autoload
 /// if we can. Helper function for TROOT::IgnoreInclude().
 
-static TClass* R__GetClassIfKnown(const char* className)
+static TClass *R__GetClassIfKnown(const char *className)
 {
    // Check whether the class is available for auto-loading first:
-   const char* libsToLoad = gInterpreter->GetClassSharedLibs(className);
-   TClass* cla = 0;
+   const char *libsToLoad = gInterpreter->GetClassSharedLibs(className);
+   TClass *cla = 0;
    if (libsToLoad) {
       // trigger autoload, and only create TClass in this case.
       return TClass::GetClass(className);
-   } else if (gROOT->GetListOfClasses()
-              && (cla = (TClass*)gROOT->GetListOfClasses()->FindObject(className))) {
+   } else if (gROOT->GetListOfClasses() && (cla = (TClass *)gROOT->GetListOfClasses()->FindObject(className))) {
       // cla assigned in if statement
    } else if (gClassTable->FindObject(className)) {
       return TClass::GetClass(className);
@@ -1884,21 +1941,21 @@ static TClass* R__GetClassIfKnown(const char* className)
 
 Int_t TROOT::IgnoreInclude(const char *fname, const char * /*expandedfname*/)
 {
-   if (fname == 0) return 0;
+   if (fname == 0)
+      return 0;
 
    TString stem(fname);
    // Remove extension if any, ignore files with extension not being .h*
    Int_t where = stem.Last('.');
    if (where != kNPOS) {
-      if (stem.EndsWith(".so") || stem.EndsWith(".sl") ||
-          stem.EndsWith(".dl") || stem.EndsWith(".a")  ||
+      if (stem.EndsWith(".so") || stem.EndsWith(".sl") || stem.EndsWith(".dl") || stem.EndsWith(".a") ||
           stem.EndsWith(".dll", TString::kIgnoreCase))
          return 0;
       stem.Remove(where);
    }
 
    TString className = gSystem->BaseName(stem);
-   TClass* cla = R__GetClassIfKnown(className);
+   TClass *cla = R__GetClassIfKnown(className);
    if (!cla) {
       // Try again with modifications to the file name:
       className = stem;
@@ -1921,7 +1978,8 @@ Int_t TROOT::IgnoreInclude(const char *fname, const char * /*expandedfname*/)
    }
 
    // cla is valid, check wether it's actually in the header of the same name:
-   if (cla->GetDeclFileLine() <= 0) return 0; // to a void an error with VisualC++
+   if (cla->GetDeclFileLine() <= 0)
+      return 0; // to a void an error with VisualC++
    TString decfile = gSystem->BaseName(cla->GetDeclFileName());
    if (decfile != gSystem->BaseName(fname)) {
       return 0;
@@ -1981,7 +2039,8 @@ void TROOT::InitSystem()
       }
 
       Int_t zipmode = gEnv->GetValue("Root.CompressionAlgorithm", oldzipmode);
-      if (zipmode != 0) R__SetZipMode(zipmode);
+      if (zipmode != 0)
+         R__SetZipMode(zipmode);
 
       const char *sdeb;
       if ((sdeb = gSystem->Getenv("ROOTDEBUG")))
@@ -1993,7 +2052,7 @@ void TROOT::InitSystem()
       if (gEnv->GetValue("Root.MemStat", 0))
          TStorage::EnableStatistics();
       int msize = gEnv->GetValue("Root.MemStat.size", -1);
-      int mcnt  = gEnv->GetValue("Root.MemStat.cnt", -1);
+      int mcnt = gEnv->GetValue("Root.MemStat.cnt", -1);
       if (msize != -1 || mcnt != -1)
          TStorage::EnableStatistics(msize, mcnt);
 
@@ -2004,7 +2063,9 @@ void TROOT::InitSystem()
       // objects that are deleted after recording is turned-off (in next line),
       // like the TUrl::fgSpecialProtocols list entries which are created in the
       // TMacOSXSystem ctor.
-      { TUrl dummy("/dummy"); }
+      {
+         TUrl dummy("/dummy");
+      }
 #endif
       TObject::SetObjectStat(gEnv->GetValue("Root.ObjectStat", 0));
    }
@@ -2028,8 +2089,7 @@ void TROOT::InitInterpreter()
 {
    // usedToIdentifyRootClingByDlSym is available when TROOT is part of
    // rootcling.
-   if (!dlsym(RTLD_DEFAULT, "usedToIdentifyRootClingByDlSym")
-       && !dlsym(RTLD_DEFAULT, "usedToIdentifyStaticRoot")) {
+   if (!dlsym(RTLD_DEFAULT, "usedToIdentifyRootClingByDlSym") && !dlsym(RTLD_DEFAULT, "usedToIdentifyStaticRoot")) {
       // Make sure no llvm symbols are visible before loading libCling. If they
       // exist libCling will use those and not ours, causing havoc in the
       // interpreter. Look for an extern "C" symbol to avoid mangling; look for a
@@ -2042,13 +2102,13 @@ void TROOT::InitInterpreter()
       // FIXME: When we configure with -Dclingtest=On we intentionally export the symbols. Silence this error.
       if (LLVMEnablePrettyStackTraceAddr) {
          Error("InitInterpreter()", "LLVM SYMBOLS ARE EXPOSED TO CLING! "
-               "This will cause problems; please hide them or dlopen() them "
-               "after the call to TROOT::InitInterpreter()!");
+                                    "This will cause problems; please hide them or dlopen() them "
+                                    "after the call to TROOT::InitInterpreter()!");
       }
 
       char *libRIO = gSystem->DynamicPathName("libRIO");
-      void *libRIOHandle = dlopen(libRIO, RTLD_NOW|RTLD_GLOBAL);
-      delete [] libRIO;
+      void *libRIOHandle = dlopen(libRIO, RTLD_NOW | RTLD_GLOBAL);
+      delete[] libRIO;
       if (!libRIOHandle) {
          TString err = dlerror();
          fprintf(stderr, "Fatal in <TROOT::InitInterpreter>: cannot load library %s\n", err.Data());
@@ -2056,19 +2116,19 @@ void TROOT::InitInterpreter()
       }
 
       char *libcling = gSystem->DynamicPathName("libCling");
-      gInterpreterLib = dlopen(libcling, RTLD_LAZY|RTLD_LOCAL);
-      delete [] libcling;
+      gInterpreterLib = dlopen(libcling, RTLD_LAZY | RTLD_LOCAL);
+      delete[] libcling;
 
       if (!gInterpreterLib) {
          TString err = dlerror();
          fprintf(stderr, "Fatal in <TROOT::InitInterpreter>: cannot load library %s\n", err.Data());
          exit(1);
       }
-      dlerror();   // reset error message
+      dlerror(); // reset error message
    } else {
       gInterpreterLib = RTLD_DEFAULT;
    }
-   CreateInterpreter_t *CreateInterpreter = (CreateInterpreter_t*) dlsym(gInterpreterLib, "CreateInterpreter");
+   CreateInterpreter_t *CreateInterpreter = (CreateInterpreter_t *)dlsym(gInterpreterLib, "CreateInterpreter");
    if (!CreateInterpreter) {
       TString err = dlerror();
       fprintf(stderr, "Fatal in <TROOT::InitInterpreter>: cannot load symbol %s\n", err.Data());
@@ -2077,7 +2137,7 @@ void TROOT::InitInterpreter()
    // Schedule the destruction of TROOT.
    atexit(at_exit_of_TROOT);
 
-   gDestroyInterpreter = (DestroyInterpreter_t*) dlsym(gInterpreterLib, "DestroyInterpreter");
+   gDestroyInterpreter = (DestroyInterpreter_t *)dlsym(gInterpreterLib, "DestroyInterpreter");
    if (!gDestroyInterpreter) {
       TString err = dlerror();
       fprintf(stderr, "Fatal in <TROOT::InitInterpreter>: cannot load symbol %s\n", err.Data());
@@ -2114,20 +2174,13 @@ void TROOT::InitInterpreter()
       new TClassTable;
 
    // Initialize all registered dictionaries.
-   for (std::vector<ModuleHeaderInfo_t>::const_iterator
-           li = GetModuleHeaderInfoBuffer().begin(),
-           le = GetModuleHeaderInfoBuffer().end(); li != le; ++li) {
-         // process buffered module registrations
-      fInterpreter->RegisterModule(li->fModuleName,
-                                   li->fHeaders,
-                                   li->fIncludePaths,
-                                   li->fPayloadCode,
-                                   li->fFwdDeclCode,
-                                   li->fTriggerFunc,
-                                   li->fFwdNargsToKeepColl,
-                                   li->fClassesHeaders,
-                                   kTRUE /*lateRegistration*/,
-                                   li->fHasCxxModule);
+   for (std::vector<ModuleHeaderInfo_t>::const_iterator li = GetModuleHeaderInfoBuffer().begin(),
+                                                        le = GetModuleHeaderInfoBuffer().end();
+        li != le; ++li) {
+      // process buffered module registrations
+      fInterpreter->RegisterModule(li->fModuleName, li->fHeaders, li->fIncludePaths, li->fPayloadCode, li->fFwdDeclCode,
+                                   li->fTriggerFunc, li->fFwdNargsToKeepColl, li->fClassesHeaders,
+                                   kTRUE /*lateRegistration*/, li->fHasCxxModule);
    }
    GetModuleHeaderInfoBuffer().clear();
 
@@ -2167,8 +2220,7 @@ TClass *TROOT::LoadClass(const char *requestedname, Bool_t silent) const
 /// Returns 0 on successful loading, -1 in case libname does not
 /// exist or in case of error and -2 in case of version mismatch.
 
-Int_t TROOT::LoadClass(const char * /*classname*/, const char *libname,
-                       Bool_t check)
+Int_t TROOT::LoadClass(const char * /*classname*/, const char *libname, Bool_t check)
 {
    TString lib(libname);
 
@@ -2176,14 +2228,14 @@ Int_t TROOT::LoadClass(const char * /*classname*/, const char *libname,
    if (char *path = gSystem->DynamicPathName(lib, kTRUE)) {
       // If check == true, only check if it exists and if it's readable
       if (check) {
-         delete [] path;
+         delete[] path;
          return 0;
       }
 
       // If check == false, try to load the library
       else {
          int err = gSystem->Load(path, 0, kTRUE);
-         delete [] path;
+         delete[] path;
 
          // TSystem::Load returns 1 when the library was already loaded, return success in this case.
          if (err == 1)
@@ -2194,8 +2246,8 @@ Int_t TROOT::LoadClass(const char * /*classname*/, const char *libname,
       // This is the branch where libname didn't exist
       if (check) {
          FileStat_t stat;
-         if (!gSystem->GetPathInfo(libname, stat) && (R_ISREG(stat.fMode) &&
-             !gSystem->AccessPathName(libname, kReadPermission)))
+         if (!gSystem->GetPathInfo(libname, stat) &&
+             (R_ISREG(stat.fMode) && !gSystem->AccessPathName(libname, kReadPermission)))
             return 0;
       }
 
@@ -2217,11 +2269,11 @@ Int_t TROOT::LoadClass(const char * /*classname*/, const char *libname,
 Bool_t TROOT::IsRootFile(const char *filename) const
 {
    Bool_t result = kFALSE;
-   FILE *mayberootfile = fopen(filename,"rb");
+   FILE *mayberootfile = fopen(filename, "rb");
    if (mayberootfile) {
       char header[5];
-      if (fgets(header,5,mayberootfile)) {
-         result = strncmp(header,"root",4)==0;
+      if (fgets(header, 5, mayberootfile)) {
+         result = strncmp(header, "root", 4) == 0;
       }
       fclose(mayberootfile);
    }
@@ -2236,8 +2288,8 @@ Bool_t TROOT::IsRootFile(const char *filename) const
 
 void TROOT::ls(Option_t *option) const
 {
-//   TObject::SetDirLevel();
-//   GetList()->R__FOR_EACH(TObject,ls)(option);
+   //   TObject::SetDirLevel();
+   //   GetList()->R__FOR_EACH(TObject,ls)(option);
    TDirectory::ls(option);
 }
 
@@ -2281,12 +2333,12 @@ Int_t TROOT::LoadMacro(const char *filename, int *error, Bool_t check)
             fname = mac;
             fname += aclicMode;
             fname += io;
-            gInterpreter->LoadMacro(fname.Data(), (TInterpreter::EErrorCode*)terr);
+            gInterpreter->LoadMacro(fname.Data(), (TInterpreter::EErrorCode *)terr);
             if (*terr)
                err = -1;
          }
       }
-      delete [] mac;
+      delete[] mac;
    }
    return err;
 }
@@ -2320,9 +2372,9 @@ Long_t TROOT::Macro(const char *filename, Int_t *error, Bool_t padUpdate)
          fname += aclicMode;
          fname += arguments;
          fname += io;
-         result = gInterpreter->ExecuteMacro(fname, (TInterpreter::EErrorCode*)error);
+         result = gInterpreter->ExecuteMacro(fname, (TInterpreter::EErrorCode *)error);
       }
-      delete [] mac;
+      delete[] mac;
 
       if (padUpdate && gPad)
          gPad->Update();
@@ -2334,12 +2386,12 @@ Long_t TROOT::Macro(const char *filename, Int_t *error, Bool_t padUpdate)
 ////////////////////////////////////////////////////////////////////////////////
 /// Process message id called by obj.
 
-void  TROOT::Message(Int_t id, const TObject *obj)
+void TROOT::Message(Int_t id, const TObject *obj)
 {
    TIter next(fMessageHandlers);
    TMessageHandler *mh;
-   while ((mh = (TMessageHandler*)next())) {
-      mh->HandleMessage(id,obj);
+   while ((mh = (TMessageHandler *)next())) {
+      mh->HandleMessage(id, obj);
    }
 }
 
@@ -2402,7 +2454,7 @@ Long_t TROOT::ProcessLineFast(const char *line, Int_t *error)
    Long_t result = 0;
 
    if (fInterpreter) {
-      TInterpreter::EErrorCode *code = (TInterpreter::EErrorCode*)error;
+      TInterpreter::EErrorCode *code = (TInterpreter::EErrorCode *)error;
       result = gInterpreter->Calc(sline, code);
    }
 
@@ -2439,10 +2491,11 @@ void TROOT::ReadGitInfo()
       fGitDate = s;
       fclose(fp);
    }
-   delete [] filename;
+   delete[] filename;
 }
 
-Bool_t &GetReadingObject() {
+Bool_t &GetReadingObject()
+{
    TTHREAD_TLS(Bool_t) fgReadingObject = false;
    return fgReadingObject;
 }
@@ -2460,24 +2513,23 @@ void TROOT::SetReadingObject(Bool_t flag)
    GetReadingObject() = flag;
 }
 
-
 ////////////////////////////////////////////////////////////////////////////////
 /// Return date/time make was run.
 
 const char *TROOT::GetGitDate()
 {
    if (fGitDate == "") {
-      Int_t iday,imonth,iyear, ihour, imin;
-      static const char *months[] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                                      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+      Int_t iday, imonth, iyear, ihour, imin;
+      static const char *months[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                                     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
       Int_t idate = gROOT->GetBuiltDate();
       Int_t itime = gROOT->GetBuiltTime();
-      iday   = idate%100;
-      imonth = (idate/100)%100;
-      iyear  = idate/10000;
-      ihour  = itime/100;
-      imin   = itime%100;
-      fGitDate.Form("%s %02d %4d, %02d:%02d:00", months[imonth-1], iday, iyear, ihour, imin);
+      iday = idate % 100;
+      imonth = (idate / 100) % 100;
+      iyear = idate / 10000;
+      ihour = itime / 100;
+      imin = itime % 100;
+      fGitDate.Form("%s %02d %4d, %02d:%02d:00", months[imonth - 1], iday, iyear, ihour, imin);
    }
    return fGitDate;
 }
@@ -2506,7 +2558,7 @@ void TROOT::RefreshBrowsers()
 {
    TIter next(GetListOfBrowsers());
    TBrowser *b;
-   while ((b = (TBrowser*) next()))
+   while ((b = (TBrowser *)next()))
       b->SetRefreshFlag(kTRUE);
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -2525,15 +2577,10 @@ static void CallCloseFiles()
 /// is NULL, i.e. during startup, where the information is buffered in
 /// the static GetModuleHeaderInfoBuffer().
 
-void TROOT::RegisterModule(const char* modulename,
-                           const char** headers,
-                           const char** includePaths,
-                           const char* payloadCode,
-                           const char* fwdDeclCode,
-                           void (*triggerFunc)(),
-                           const TInterpreter::FwdDeclArgsToKeepCollection_t& fwdDeclsArgToSkip,
-                           const char** classesHeaders,
-                           bool hasCxxModule)
+void TROOT::RegisterModule(const char *modulename, const char **headers, const char **includePaths,
+                           const char *payloadCode, const char *fwdDeclCode, void (*triggerFunc)(),
+                           const TInterpreter::FwdDeclArgsToKeepCollection_t &fwdDeclsArgToSkip,
+                           const char **classesHeaders, bool hasCxxModule)
 {
 
    // First a side track to insure proper end of process behavior.
@@ -2608,7 +2655,7 @@ void TROOT::RegisterModule(const char* modulename,
 /// Remove an object from the in-memory list.
 ///    Since TROOT is global resource, this is lock protected.
 
-TObject *TROOT::Remove(TObject* obj)
+TObject *TROOT::Remove(TObject *obj)
 {
    R__LOCKGUARD(gROOTMutex);
    return TDirectory::Remove(obj);
@@ -2643,7 +2690,8 @@ void TROOT::RemoveClass(TClass *oldcl)
 
 void TROOT::Reset(Option_t *option)
 {
-   if (IsExecutingMacro()) return;  //True when TMacro::Exec runs
+   if (IsExecutingMacro())
+      return; // True when TMacro::Exec runs
    if (fInterpreter) {
       if (!strncmp(option, "a", 1)) {
          fInterpreter->Reset();
@@ -2651,8 +2699,10 @@ void TROOT::Reset(Option_t *option)
       } else
          gInterpreter->ResetGlobals();
 
-      if (fGlobals) fGlobals->Unload();
-      if (fGlobalFunctions) fGlobalFunctions->Unload();
+      if (fGlobals)
+         fGlobals->Unload();
+      if (fGlobalFunctions)
+         fGlobalFunctions->Unload();
 
       SaveContext();
    }
@@ -2676,16 +2726,16 @@ void TROOT::SaveContext()
 void TROOT::SetCutClassName(const char *name)
 {
    if (!name) {
-      Error("SetCutClassName","Invalid class name");
+      Error("SetCutClassName", "Invalid class name");
       return;
    }
    TClass *cl = TClass::GetClass(name);
    if (!cl) {
-      Error("SetCutClassName","Unknown class:%s",name);
+      Error("SetCutClassName", "Unknown class:%s", name);
       return;
    }
    if (!cl->InheritsFrom("TCutG")) {
-      Error("SetCutClassName","Class:%s does not derive from TCutG",name);
+      Error("SetCutClassName", "Class:%s does not derive from TCutG", name);
       return;
    }
    fCutClassName = name;
@@ -2697,24 +2747,76 @@ void TROOT::SetCutClassName(const char *name)
 void TROOT::SetEditorMode(const char *mode)
 {
    fEditorMode = 0;
-   if (!mode[0]) return;
-   if (!strcmp(mode,"Arc"))      {fEditorMode = kArc;        return;}
-   if (!strcmp(mode,"Line"))     {fEditorMode = kLine;       return;}
-   if (!strcmp(mode,"Arrow"))    {fEditorMode = kArrow;      return;}
-   if (!strcmp(mode,"Button"))   {fEditorMode = kButton;     return;}
-   if (!strcmp(mode,"Diamond"))  {fEditorMode = kDiamond;    return;}
-   if (!strcmp(mode,"Ellipse"))  {fEditorMode = kEllipse;    return;}
-   if (!strcmp(mode,"Pad"))      {fEditorMode = kPad;        return;}
-   if (!strcmp(mode,"Pave"))     {fEditorMode = kPave;       return;}
-   if (!strcmp(mode,"PaveLabel")){fEditorMode = kPaveLabel;  return;}
-   if (!strcmp(mode,"PaveText")) {fEditorMode = kPaveText;   return;}
-   if (!strcmp(mode,"PavesText")){fEditorMode = kPavesText;  return;}
-   if (!strcmp(mode,"PolyLine")) {fEditorMode = kPolyLine;   return;}
-   if (!strcmp(mode,"CurlyLine")){fEditorMode = kCurlyLine;  return;}
-   if (!strcmp(mode,"CurlyArc")) {fEditorMode = kCurlyArc;   return;}
-   if (!strcmp(mode,"Text"))     {fEditorMode = kText;       return;}
-   if (!strcmp(mode,"Marker"))   {fEditorMode = kMarker;     return;}
-   if (!strcmp(mode,"CutG"))     {fEditorMode = kCutG;       return;}
+   if (!mode[0])
+      return;
+   if (!strcmp(mode, "Arc")) {
+      fEditorMode = kArc;
+      return;
+   }
+   if (!strcmp(mode, "Line")) {
+      fEditorMode = kLine;
+      return;
+   }
+   if (!strcmp(mode, "Arrow")) {
+      fEditorMode = kArrow;
+      return;
+   }
+   if (!strcmp(mode, "Button")) {
+      fEditorMode = kButton;
+      return;
+   }
+   if (!strcmp(mode, "Diamond")) {
+      fEditorMode = kDiamond;
+      return;
+   }
+   if (!strcmp(mode, "Ellipse")) {
+      fEditorMode = kEllipse;
+      return;
+   }
+   if (!strcmp(mode, "Pad")) {
+      fEditorMode = kPad;
+      return;
+   }
+   if (!strcmp(mode, "Pave")) {
+      fEditorMode = kPave;
+      return;
+   }
+   if (!strcmp(mode, "PaveLabel")) {
+      fEditorMode = kPaveLabel;
+      return;
+   }
+   if (!strcmp(mode, "PaveText")) {
+      fEditorMode = kPaveText;
+      return;
+   }
+   if (!strcmp(mode, "PavesText")) {
+      fEditorMode = kPavesText;
+      return;
+   }
+   if (!strcmp(mode, "PolyLine")) {
+      fEditorMode = kPolyLine;
+      return;
+   }
+   if (!strcmp(mode, "CurlyLine")) {
+      fEditorMode = kCurlyLine;
+      return;
+   }
+   if (!strcmp(mode, "CurlyArc")) {
+      fEditorMode = kCurlyArc;
+      return;
+   }
+   if (!strcmp(mode, "Text")) {
+      fEditorMode = kText;
+      return;
+   }
+   if (!strcmp(mode, "Marker")) {
+      fEditorMode = kMarker;
+      return;
+   }
+   if (!strcmp(mode, "CutG")) {
+      fEditorMode = kCutG;
+      return;
+   }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -2725,13 +2827,13 @@ void TROOT::SetStyle(const char *stylename)
    TString style_name = stylename;
 
    TStyle *style = GetStyle(style_name);
-   if (style) style->cd();
-   else       Error("SetStyle","Unknown style:%s",style_name.Data());
+   if (style)
+      style->cd();
+   else
+      Error("SetStyle", "Unknown style:%s", style_name.Data());
 }
 
-
 //-------- Static Member Functions ---------------------------------------------
-
 
 ////////////////////////////////////////////////////////////////////////////////
 /// Decrease the indentation level for ls().
@@ -2742,7 +2844,7 @@ Int_t TROOT::DecreaseDirLevel()
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-///return directory level
+/// return directory level
 
 Int_t TROOT::GetDirLevel()
 {
@@ -2757,7 +2859,7 @@ const char *TROOT::GetMacroPath()
    TString &macroPath = ROOT::GetMacroPath();
 
    if (macroPath.Length() == 0) {
-      macroPath = gEnv->GetValue("Root.MacroPath", (char*)0);
+      macroPath = gEnv->GetValue("Root.MacroPath", (char *)0);
 #if defined(R__WIN32)
       macroPath.ReplaceAll("; ", ";");
 #else
@@ -2843,7 +2945,8 @@ Int_t TROOT::IncreaseDirLevel()
 
 void TROOT::IndentLevel()
 {
-   for (int i = 0; i < fgDirLevel; i++) std::cout.put(' ');
+   for (int i = 0; i < fgDirLevel; i++)
+      std::cout.put(' ');
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -2875,7 +2978,7 @@ void TROOT::SetDirLevel(Int_t level)
 
 Int_t TROOT::ConvertVersionCode2Int(Int_t code)
 {
-   return 10000*(code>>16) + 100*((code&65280)>>8) + (code&255);
+   return 10000 * (code >> 16) + 100 * ((code & 65280) >> 8) + (code & 255);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -2883,9 +2986,9 @@ Int_t TROOT::ConvertVersionCode2Int(Int_t code)
 
 Int_t TROOT::ConvertVersionInt2Code(Int_t v)
 {
-   int a = v/10000;
-   int b = (v - a*10000)/100;
-   int c = v - a*10000 - b*100;
+   int a = v / 10000;
+   int b = (v - a * 10000) / 100;
+   int c = v - a * 10000 - b * 100;
    return (a << 16) + (b << 8) + c;
 }
 
@@ -2899,15 +3002,17 @@ Int_t TROOT::RootVersionCode()
 
 ////////////////////////////////////////////////////////////////////////////////
 
-const char**& TROOT::GetExtraInterpreterArgs() {
-   static const char** extraInterpArgs = 0;
+const char **&TROOT::GetExtraInterpreterArgs()
+{
+   static const char **extraInterpArgs = 0;
    return extraInterpArgs;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 
 #ifdef ROOTPREFIX
-static Bool_t IgnorePrefix() {
+static Bool_t IgnorePrefix()
+{
    static Bool_t ignorePrefix = gSystem->Getenv("ROOTIGNOREPREFIX");
    return ignorePrefix;
 }
@@ -2916,7 +3021,8 @@ static Bool_t IgnorePrefix() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the rootsys directory in the installation. Static utility function.
 
-const TString& TROOT::GetRootSys() {
+const TString &TROOT::GetRootSys()
+{
 #ifdef ROOTPREFIX
    if (IgnorePrefix()) {
 #endif
@@ -2937,7 +3043,8 @@ const TString& TROOT::GetRootSys() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the binary directory in the installation. Static utility function.
 
-const TString& TROOT::GetBinDir() {
+const TString &TROOT::GetBinDir()
+{
 #ifdef ROOTBINDIR
    if (IgnorePrefix()) {
 #endif
@@ -2958,7 +3065,8 @@ const TString& TROOT::GetBinDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the library directory in the installation. Static utility function.
 
-const TString& TROOT::GetLibDir() {
+const TString &TROOT::GetLibDir()
+{
 #ifdef ROOTLIBDIR
    if (IgnorePrefix()) {
 #endif
@@ -2979,7 +3087,8 @@ const TString& TROOT::GetLibDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the include directory in the installation. Static utility function.
 
-const TString& TROOT::GetIncludeDir() {
+const TString &TROOT::GetIncludeDir()
+{
 #ifdef ROOTINCDIR
    if (IgnorePrefix()) {
 #endif
@@ -3000,7 +3109,8 @@ const TString& TROOT::GetIncludeDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the sysconfig directory in the installation. Static utility function.
 
-const TString& TROOT::GetEtcDir() {
+const TString &TROOT::GetEtcDir()
+{
 #ifdef ROOTETCDIR
    if (IgnorePrefix()) {
 #endif
@@ -3021,7 +3131,8 @@ const TString& TROOT::GetEtcDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the data directory in the installation. Static utility function.
 
-const TString& TROOT::GetDataDir() {
+const TString &TROOT::GetDataDir()
+{
 #ifdef ROOTDATADIR
    if (IgnorePrefix()) {
 #endif
@@ -3037,7 +3148,8 @@ const TString& TROOT::GetDataDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the documentation directory in the installation. Static utility function.
 
-const TString& TROOT::GetDocDir() {
+const TString &TROOT::GetDocDir()
+{
 #ifdef ROOTDOCDIR
    if (IgnorePrefix()) {
 #endif
@@ -3053,7 +3165,8 @@ const TString& TROOT::GetDocDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the macro directory in the installation. Static utility function.
 
-const TString& TROOT::GetMacroDir() {
+const TString &TROOT::GetMacroDir()
+{
 #ifdef ROOTMACRODIR
    if (IgnorePrefix()) {
 #endif
@@ -3074,7 +3187,8 @@ const TString& TROOT::GetMacroDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the tutorials directory in the installation. Static utility function.
 
-const TString& TROOT::GetTutorialDir() {
+const TString &TROOT::GetTutorialDir()
+{
 #ifdef ROOTTUTDIR
    if (IgnorePrefix()) {
 #endif
@@ -3095,7 +3209,8 @@ const TString& TROOT::GetTutorialDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the source directory in the installation. Static utility function.
 
-const TString& TROOT::GetSourceDir() {
+const TString &TROOT::GetSourceDir()
+{
 #ifdef ROOTSRCDIR
    if (IgnorePrefix()) {
 #endif
@@ -3116,7 +3231,8 @@ const TString& TROOT::GetSourceDir() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the icon path in the installation. Static utility function.
 
-const TString& TROOT::GetIconPath() {
+const TString &TROOT::GetIconPath()
+{
 #ifdef ROOTICONPATH
    if (IgnorePrefix()) {
 #endif
@@ -3137,7 +3253,8 @@ const TString& TROOT::GetIconPath() {
 ////////////////////////////////////////////////////////////////////////////////
 /// Get the fonts directory in the installation. Static utility function.
 
-const TString& TROOT::GetTTFFontDir() {
+const TString &TROOT::GetTTFFontDir()
+{
 #ifdef TTFFONTDIR
    if (IgnorePrefix()) {
 #endif
@@ -3159,6 +3276,7 @@ const TString& TROOT::GetTTFFontDir() {
 /// Get the tutorials directory in the installation. Static utility function.
 /// Backward compatibility function - do not use for new code
 
-const char *TROOT::GetTutorialsDir() {
+const char *TROOT::GetTutorialsDir()
+{
    return GetTutorialDir();
 }

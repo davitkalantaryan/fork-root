@@ -7,6 +7,10 @@
 //
 //===----------------------------------------------------------------------===//
 
+#ifndef GUID_DEFINED
+#define GUID_DEFINED
+#endif
+
 #include "llvm/DebugInfo/CodeView/CodeViewRecordIO.h"
 #include "llvm/DebugInfo/CodeView/CodeView.h"
 #include "llvm/DebugInfo/CodeView/RecordSerialization.h"

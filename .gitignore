@@ -23,6 +23,28 @@ prj/*/*/*
 !prj/common/*/*/*
 prj/common/common_qt/sys_common.pri.autosave
 
+contrib/sys/*/*/*/*
+contrib/sys/*/*/.objects/*
+contrib/sys/*/lib/*
+contrib/sys/*/dll/*
+contrib/sys/*/bin/*
+!contrib/sys/*/*/*.udoc
+!contrib/sys/*/*.udoc
+!contrib/sys/*.udoc
+!contrib/sys/*/doocs64_install/server/*.bat
+#sys/*/*/*/*
+sys/*/*/.objects/*
+sys/*/*/.objects/*/*
+sys/*/*/.objects/*/*/*
+#sys/*/lib/*
+#sys/*/dll/*
+#sys/*/bin/*
+sys/*/src/*
+#!sys/*/*/*.udoc
+#!sys/*/*.udoc
+#!sys/*.udoc
+#!sys/*/install/server/*.bat
+
 # Compiled Object files
 *.slo
 *.lo
