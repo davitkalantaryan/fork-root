@@ -18,6 +18,7 @@ Revision History:
 #ifndef _WINNT_MACROSES_
 #define _WINNT_MACROSES_
 
+#ifdef __cplusplus
 
 #define IMAGE_SIZEOF_FILE_HEADER 20
 
@@ -414,5 +415,7 @@ Revision History:
 #define IMAGE_DEBUG_TYPE_MPX 15
 #define IMAGE_DEBUG_TYPE_REPRO 16
 
+
+#endif  // #ifndef __cplusplus
 
 #endif  // #ifndef _WINNT_MACROSES_

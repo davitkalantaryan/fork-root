@@ -150,7 +150,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\core\base\src;D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\core\base\src;D:\davit\dev\forks\root\original\build\win_1;D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedUsingFiles>
       </ForcedUsingFiles>
       <ForcedIncludeFiles>root_intrinsic.h;w32pragma.h;sehmap.h</ForcedIncludeFiles>
@@ -215,7 +215,6 @@
     <ClInclude Include="..\..\..\original\build\win\root_intrinsic.h" />
     <ClInclude Include="..\..\..\original\build\win\root_warning_disable.h" />
     <ClInclude Include="..\..\..\original\build\win\w32pragma.h" />
-    <ClInclude Include="..\..\..\original\build\win\winnt.h" />
     <ClInclude Include="..\..\..\original\build\win\winnt_macroses.h" />
     <ClInclude Include="..\..\root\root_cmake\win64\include\ROOT\typetraits.hxx" />
   </ItemGroup>

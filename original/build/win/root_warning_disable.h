@@ -20,6 +20,10 @@
                    // available for virtual member function from base 'llvm::Pass'; function is hidden
 #pragma warning(disable : 4146) // mathextras.h(372): warning C4146: unary minus operator applied to unsigned type,
                                 // result still unsigned
+#pragma warning(disable : 4477) // streamreaderwin.cpp(212) : warning C4477 : 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'LPVOID'
+#pragma warning(disable : 4838)  // terminaldisplaywin.cpp(129): warning C4838: conversion from 'size_t' to 'SHORT'
+                                // requires a narrowing conversion
+
 
 #elif defined(_GCC_)
 #endif

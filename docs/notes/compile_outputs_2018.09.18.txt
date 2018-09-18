@@ -1,0 +1,190 @@
+
+Microsoft Visual Studio 2017 Version 15.0.28010.2026.
+Copyright (C) Microsoft Corp. All rights reserved.
+
+The license for Visual Studio expires in 26 days.
+1>------ Build started: Project: obj.llvm-tblgen, Configuration: Debug x64 ------
+2>------ Build started: Project: LLVMTableGen, Configuration: Debug x64 ------
+3>------ Build started: Project: obj.clang-tblgen, Configuration: Debug x64 ------
+4>------ Build started: Project: LLVMDemangle, Configuration: Debug x64 ------
+2>Main.cpp
+2>StringMatcher.cpp
+3>ClangAttrEmitter.cpp
+2>TGLexer.cpp
+3>ClangCommentHTMLTagsEmitter.cpp
+2>TGParser.cpp
+3>ClangDiagnosticsEmitter.cpp
+3>ClangOptionDocEmitter.cpp
+1>AsmMatcherEmitter.cpp
+1>AsmWriterEmitter.cpp
+1>AsmWriterInst.cpp
+1>CTagsEmitter.cpp
+2>TableGenBackend.cpp
+3>ClangSACheckersEmitter.cpp
+1>CallingConvEmitter.cpp
+3>NeonEmitter.cpp
+1>CodeEmitterGen.cpp
+4>LLVMDemangle.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMDemangle.lib
+3>TableGen.cpp
+1>CodeGenDAGPatterns.cpp
+1>CodeGenInstruction.cpp
+5>------ Build started: Project: LLVMSupport, Configuration: Debug x64 ------
+1>CodeGenMapTable.cpp
+2>LLVMTableGen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMTableGen.lib
+1>CodeGenRegisters.cpp
+6>------ Build started: Project: xxhash, Configuration: Debug x64 ------
+6>cl : Command line warning D9002: ignoring unknown option '-fvisibility=hidden'
+6>xxhash.c
+1>CodeGenSchedule.cpp
+6>xxhash.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\lib\xxhash.lib
+1>CodeGenTarget.cpp
+1>DAGISelMatcher.cpp
+6>Done building project "xxhash.vcxproj".
+7>------ Build started: Project: move_header_geom_geombuilder, Configuration: Debug x64 ------
+1>DAGISelMatcherEmitter.cpp
+1>DAGISelMatcherGen.cpp
+1>DAGISelMatcherOpt.cpp
+1>DFAPacketizerEmitter.cpp
+1>DisassemblerEmitter.cpp
+1>FastISelEmitter.cpp
+1>FixedLenDecoderEmitter.cpp
+8>------ Build started: Project: move_header_geom_geompainter, Configuration: Debug x64 ------
+1>GlobalISelEmitter.cpp
+1>InstrInfoEmitter.cpp
+1>IntrinsicEmitter.cpp
+1>OptParserEmitter.cpp
+9>------ Build started: Project: move_header_graf2d_asimage, Configuration: Debug x64 ------
+1>PseudoLoweringEmitter.cpp
+1>RegisterBankEmitter.cpp
+1>RegisterInfoEmitter.cpp
+1>SearchableTableEmitter.cpp
+1>SubtargetEmitter.cpp
+1>SubtargetFeatureInfo.cpp
+1>TableGen.cpp
+10>------ Build started: Project: move_header_graf2d_gpad, Configuration: Debug x64 ------
+1>Types.cpp
+1>X86DisassemblerTables.cpp
+1>X86EVEX2VEXTablesEmitter.cpp
+1>X86ModRMFilters.cpp
+1>X86RecognizableInstr.cpp
+11>------ Build started: Project: move_header_graf2d_graf, Configuration: Debug x64 ------
+12>------ Build started: Project: move_header_graf2d_postscript, Configuration: Debug x64 ------
+13>------ Build started: Project: move_header_graf2d_win32gdk, Configuration: Debug x64 ------
+14>------ Build started: Project: move_header_graf3d_ftgl, Configuration: Debug x64 ------
+1>obj.llvm-tblgen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\utils\TableGen\obj.llvm-tblgen.dir\Debug\obj.llvm-tblgen.lib
+15>------ Build started: Project: move_header_graf3d_g3d, Configuration: Debug x64 ------
+16>------ Build started: Project: move_header_graf3d_gl, Configuration: Debug x64 ------
+17>------ Build started: Project: move_header_graf3d_glew, Configuration: Debug x64 ------
+18>------ Build started: Project: move_header_graf3d_gviz3d, Configuration: Debug x64 ------
+19>------ Build started: Project: move_header_gui_fitpanel, Configuration: Debug x64 ------
+20>------ Build started: Project: move_header_gui_ged, Configuration: Debug x64 ------
+21>------ Build started: Project: move_header_gui_gui, Configuration: Debug x64 ------
+22>------ Build started: Project: move_header_gui_guibuilder, Configuration: Debug x64 ------
+23>------ Build started: Project: move_header_gui_guihtml, Configuration: Debug x64 ------
+24>------ Build started: Project: move_header_gui_recorder, Configuration: Debug x64 ------
+25>------ Build started: Project: move_header_gui_sessionviewer, Configuration: Debug x64 ------
+26>------ Build started: Project: move_header_hist_hist, Configuration: Debug x64 ------
+27>------ Build started: Project: move_header_hist_histpainter, Configuration: Debug x64 ------
+28>------ Build started: Project: move_header_hist_spectrum, Configuration: Debug x64 ------
+29>------ Build started: Project: move_header_hist_spectrumpainter, Configuration: Debug x64 ------
+30>------ Build started: Project: move_header_io_xml, Configuration: Debug x64 ------
+31>------ Build started: Project: move_header_html, Configuration: Debug x64 ------
+32>------ Build started: Project: move_header_io_io, Configuration: Debug x64 ------
+33>------ Build started: Project: move_header_io_sql, Configuration: Debug x64 ------
+34>------ Build started: Project: move_header_math_foam, Configuration: Debug x64 ------
+35>------ Build started: Project: move_header_math_fumili, Configuration: Debug x64 ------
+36>------ Build started: Project: move_header_math_genvector, Configuration: Debug x64 ------
+37>------ Build started: Project: move_header_math_mathcore, Configuration: Debug x64 ------
+38>------ Build started: Project: move_header_math_mathmore, Configuration: Debug x64 ------
+39>------ Build started: Project: move_header_math_matrix, Configuration: Debug x64 ------
+40>------ Build started: Project: move_header_math_mlp, Configuration: Debug x64 ------
+41>------ Build started: Project: move_header_math_physics, Configuration: Debug x64 ------
+42>------ Build started: Project: move_header_math_quadp, Configuration: Debug x64 ------
+43>------ Build started: Project: move_header_math_smatrix, Configuration: Debug x64 ------
+44>------ Build started: Project: move_header_math_splot, Configuration: Debug x64 ------
+45>------ Build started: Project: move_header_math_vecops, Configuration: Debug x64 ------
+46>------ Build started: Project: move_header_montecarlo_eg, Configuration: Debug x64 ------
+47>------ Build started: Project: move_header_montecarlo_vmc, Configuration: Debug x64 ------
+48>------ Build started: Project: move_header_net_auth, Configuration: Debug x64 ------
+49>------ Build started: Project: move_header_net_http, Configuration: Debug x64 ------
+50>------ Build started: Project: move_header_net_httpsniff, Configuration: Debug x64 ------
+51>------ Build started: Project: move_header_net_net, Configuration: Debug x64 ------
+52>------ Build started: Project: move_header_proof_proof, Configuration: Debug x64 ------
+53>------ Build started: Project: move_header_proof_proofplayer, Configuration: Debug x64 ------
+54>------ Build started: Project: move_header_tree_dataframe, Configuration: Debug x64 ------
+55>------ Build started: Project: move_header_tree_tree, Configuration: Debug x64 ------
+56>------ Build started: Project: move_header_tree_treeplayer, Configuration: Debug x64 ------
+57>------ Build started: Project: move_header_tree_treeviewer, Configuration: Debug x64 ------
+58>------ Build started: Project: move_header_math_minuit, Configuration: Debug x64 ------
+59>------ Build started: Project: move_header_graf3d_eve, Configuration: Debug x64 ------
+60>------ Build started: Project: ZLIB, Configuration: Debug x64 ------
+61>------ Build started: Project: lz4, Configuration: Debug x64 ------
+61>cl : Command line warning D9002: ignoring unknown option '-fvisibility=hidden'
+61>lz4.c
+61>lz4frame.c
+61>lz4hc.c
+61>Generating Code...
+62>------ Build started: Project: move_header_bindings_pyroot, Configuration: Debug x64 ------
+61>lz4.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\lib\lz4.lib
+61>Done building project "lz4.vcxproj".
+63>------ Build started: Project: move_header_core_base, Configuration: Debug x64 ------
+64>------ Build started: Project: move_header_core_clib, Configuration: Debug x64 ------
+65>------ Build started: Project: move_header_core_clingutils, Configuration: Debug x64 ------
+66>------ Build started: Project: move_header_core_cont, Configuration: Debug x64 ------
+67>------ Build started: Project: move_header_core_foundation, Configuration: Debug x64 ------
+68>------ Build started: Project: move_header_core_imt, Configuration: Debug x64 ------
+69>------ Build started: Project: move_header_core_lz4, Configuration: Debug x64 ------
+70>------ Build started: Project: move_header_core_lzma, Configuration: Debug x64 ------
+71>------ Build started: Project: move_header_core_meta, Configuration: Debug x64 ------
+72>------ Build started: Project: move_header_core_rint, Configuration: Debug x64 ------
+73>------ Build started: Project: move_header_core_textinput, Configuration: Debug x64 ------
+74>------ Build started: Project: move_header_core_thread, Configuration: Debug x64 ------
+75>------ Build started: Project: move_header_core_winnt, Configuration: Debug x64 ------
+76>------ Build started: Project: move_header_core_zip, Configuration: Debug x64 ------
+77>------ Build started: Project: move_header_geom_gdml, Configuration: Debug x64 ------
+78>------ Build started: Project: move_header_geom_geom, Configuration: Debug x64 ------
+79>------ Build started: Project: llvm_vcsrevision_h, Configuration: Debug x64 ------
+80>------ Build started: Project: move_headers, Configuration: Debug x64 ------
+81>------ Build started: Project: LLVMMC, Configuration: Debug x64 ------
+82>------ Build started: Project: LLVMMCDisassembler, Configuration: Debug x64 ------
+3>obj.clang-tblgen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\utils\TableGen\obj.clang-tblgen.dir\Debug\obj.clang-tblgen.lib
+81>ConstantPools.cpp
+81>ELFObjectWriter.cpp
+81>MCAsmBackend.cpp
+81>MCAsmInfo.cpp
+83>------ Build started: Project: LLVMMCParser, Configuration: Debug x64 ------
+82>Disassembler.cpp
+82>MCDisassembler.cpp
+82>MCExternalSymbolizer.cpp
+82>MCRelocationInfo.cpp
+81>MCAsmInfoCOFF.cpp
+83>AsmLexer.cpp
+83>AsmParser.cpp
+83>COFFAsmParser.cpp
+83>DarwinAsmParser.cpp
+81>MCAsmInfoDarwin.cpp
+82>MCSymbolizer.cpp
+81>MCAsmInfoELF.cpp
+81>MCAsmInfoWasm.cpp
+81>MCAsmStreamer.cpp
+83>ELFAsmParser.cpp
+81>MCAssembler.cpp
+81>MCCodeEmitter.cpp
+81>MCCodeView.cpp
+83>MCAsmLexer.cpp
+82>LLVMMCDisassembler.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMMCDisassembler.lib
+83>MCAsmParser.cpp
+81>MCContext.cpp
+83>MCAsmParserExtension.cpp
+83>MCTargetAsmParser.cpp
+81>MCDwarf.cpp
+84>------ Build started: Project: LLVMOption, Configuration: Debug x64 ------
+81>MCELFObjectTargetWriter.cpp
+81>MCELFStreamer.cpp
+84>Arg.cpp
+84>ArgList.cpp
+84>OptTable.cpp
+84>Option.cpp
+81>MCExpr.cpp
+81>MCFragment.cpp
+81>MCInst.cpp

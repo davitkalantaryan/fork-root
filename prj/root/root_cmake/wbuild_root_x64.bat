@@ -34,6 +34,8 @@ cd %scriptDir%%lsbCodeName%
 cmake -G"Visual Studio 15 2017 Win64" ..\..\..\..\original
 ::cmake -G"Visual Studio 15 2017" ..\..\..\..\original
 
+devenv ROOT.sln /build Debug /project Core
+
 
 cd %currentDir%
 ENDLOCAL

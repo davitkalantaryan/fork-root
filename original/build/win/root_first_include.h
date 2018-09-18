@@ -27,6 +27,9 @@
 
 #ifdef _MSC_VER
 
+#ifdef __cplusplus
+#pragma include_alias(<winnt.h>, <redesigned/winnt.h>)
+#endif
 
 #ifndef _NOT_USE_WIN
 

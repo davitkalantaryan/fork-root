@@ -16544,7 +16544,7 @@ typedef PIMAGE_NT_HEADERS32                 PIMAGE_NT_HEADERS;
 // Directory Entries
 
 #define IMAGE_DIRECTORY_ENTRY_EXPORT          0   // Export Directory
-#define IMAGE_DIRECTORY_ENTRY_IMPORT         IMAGE_FILE_MACHINE_AMD64 1   // Import Directory
+#define IMAGE_DIRECTORY_ENTRY_IMPORT          1   // Import Directory
 #define IMAGE_DIRECTORY_ENTRY_RESOURCE        2   // Resource Directory
 #define IMAGE_DIRECTORY_ENTRY_EXCEPTION       3   // Exception Directory
 #define IMAGE_DIRECTORY_ENTRY_SECURITY        4   // Security Directory

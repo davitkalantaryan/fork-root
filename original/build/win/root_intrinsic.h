@@ -31,6 +31,13 @@
 #include <WS2tcpip.h>
 #include <Windows.h>
 #include <DbgHelp.h>
+#include <LMaccess.h>
+#include <LMRemUtl.h>
+#include <LMRepl.h>
+#include <LMServer.h>
+#include <lmwksta.h>
+#include <LMConfig.h>
+#include <LMaudit.h>
 
 
 #endif // #ifdef _WIN32

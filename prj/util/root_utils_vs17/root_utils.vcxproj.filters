@@ -21,9 +21,6 @@
     <ClInclude Include="..\..\..\original\build\win\root_first_include.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\original\build\win\winnt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\original\build\win\winnt_macroses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -31,6 +28,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\original\build\win\root_warning_disable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\root\root_cmake\win64\include\ROOT\typetraits.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
