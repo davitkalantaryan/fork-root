@@ -188,3 +188,1744 @@ The license for Visual Studio expires in 26 days.
 81>MCExpr.cpp
 81>MCFragment.cpp
 81>MCInst.cpp
+83>LLVMMCParser.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMMCParser.lib
+81>MCInstPrinter.cpp
+85>------ Build started: Project: LLVMBinaryFormat, Configuration: Debug x64 ------
+81>MCInstrAnalysis.cpp
+81>MCInstrDesc.cpp
+81>MCLabel.cpp
+84>LLVMOption.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMOption.lib
+85>Dwarf.cpp
+81>MCLinkerOptimizationHint.cpp
+85>Magic.cpp
+81>MCMachOStreamer.cpp
+86>------ Build started: Project: Clib, Configuration: Debug x64 ------
+81>MCMachObjectTargetWriter.cpp
+81>MCNullStreamer.cpp
+87>------ Build started: Project: clang-tblgen, Configuration: Debug x64 ------
+81>MCObjectFileInfo.cpp
+86>Demangle.c
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\lib\mc\mcmachostreamer.cpp(111): warning C4266: 'void llvm::MCObjectStreamer::EmitLabel(llvm::MCSymbol *,llvm::SMLoc,llvm::MCFragment *)': no override available for virtual member function from base 'llvm::MCObjectStreamer'; function is hidden
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(630): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcobjectstreamer.h(93): note: see declaration of 'llvm::MCObjectStreamer::EmitLabel'
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(668): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcobjectstreamer.h(36): note: see declaration of 'llvm::MCObjectStreamer'
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(711): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+81>MCObjectStreamer.cpp
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(1089): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(1892): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+81>MCObjectWriter.cpp
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(2234): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(2470): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(2513): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+85>LLVMBinaryFormat.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMBinaryFormat.lib
+81>MCRegisterInfo.cpp
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(2529): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(2628): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(2695): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\demangle.c(2733): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+81>MCSchedule.cpp
+86>attach.c
+81>MCSection.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>d:\davit\dev\forks\root\original\core\clib\src\attach.c(253): warning C4244: 'initializing': conversion from 'intptr_t' to 'long', possible loss of data
+86>detach.c
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>d:\davit\dev\forks\root\original\core\clib\src\detach.c(58): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+86>getpagesize.c
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>keys.c
+81>MCSectionCOFF.cpp
+81>MCSectionELF.cpp
+88>------ Build started: Project: llvm-tblgen, Configuration: Debug x64 ------
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>mcalloc.c
+81>MCSectionMachO.cpp
+81>MCSectionWasm.cpp
+81>MCStreamer.cpp
+81>MCSubtargetInfo.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>mfree.c
+81>MCSymbol.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>d:\davit\dev\forks\root\original\core\clib\src\mfree.c(136): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+86>d:\davit\dev\forks\root\original\core\clib\src\mfree.c(138): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+86>mmalloc.c
+81>MCSymbolELF.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>d:\davit\dev\forks\root\original\core\clib\src\mmalloc.c(205): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+86>d:\davit\dev\forks\root\original\core\clib\src\mmalloc.c(207): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+86>mmapsup.c
+81>MCTargetOptions.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+81>MCValue.cpp
+86>d:\davit\dev\forks\root\original\core\clib\src\mmapsup.c(147): warning C4244: '=': conversion from '__int64' to 'off_t', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\mmapsup.c(247): warning C4244: 'function': conversion from '__int64' to 'DWORD', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\mmapsup.c(256): warning C4313: 'fprintf': '%x' in format string conflicts with argument 1 of type 'char *'
+86>d:\davit\dev\forks\root\original\core\clib\src\mmapsup.c(264): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+81>MCWasmObjectTargetWriter.cpp
+86>d:\davit\dev\forks\root\original\core\clib\src\mmapsup.c(273): warning C4244: 'function': conversion from '__int64' to 'DWORD', possible loss of data
+86>d:\davit\dev\forks\root\original\core\clib\src\mmapsup.c(282): warning C4313: 'fprintf': '%x' in format string conflicts with argument 1 of type 'char *'
+86>d:\davit\dev\forks\root\original\core\clib\src\mmapsup.c(328): warning C4244: '=': conversion from '__int64' to 'off_t', possible loss of data
+86>mmcheck.c
+81>MCWasmStreamer.cpp
+81>MCWin64EH.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>mmemalign.c
+81>MCWinCOFFStreamer.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>mmstats.c
+81>MCWinEH.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>mmtrace.c
+81>MachObjectWriter.cpp
+81>StringTableBuilder.cpp
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcwincoffstreamer.h(76): warning C4266: 'void llvm::MCObjectStreamer::EmitLabel(llvm::MCSymbol *,llvm::SMLoc,llvm::MCFragment *)': no override available for virtual member function from base 'llvm::MCObjectStreamer'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\MC\MCWinCOFFStreamer.cpp)
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcobjectstreamer.h(93): note: see declaration of 'llvm::MCObjectStreamer::EmitLabel' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\MC\MCWinCOFFStreamer.cpp)
+86>mrealloc.c
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcobjectstreamer.h(36): note: see declaration of 'llvm::MCObjectStreamer' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\MC\MCWinCOFFStreamer.cpp)
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>mvalloc.c
+81>SubtargetFeature.cpp
+81>WasmObjectWriter.cpp
+81>WinCOFFObjectWriter.cpp
+87>clang-tblgen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\bin\clang-tblgen.exe
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>sbrksup.c
+86>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'function': different '__unaligned' qualifiers
+86>snprintf.c
+86>strlcat.c
+86>strlcpy.c
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\lib\mc\wincoffobjectwriter.cpp(207): warning C4266: 'bool llvm::MCObjectWriter::isSymbolRefDifferenceFullyResolvedImpl(const llvm::MCAssembler &,const llvm::MCSymbol &,const llvm::MCSymbol &,bool) const': no override available for virtual member function from base 'llvm::MCObjectWriter'; function is hidden
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcobjectwriter.h(101): note: see declaration of 'llvm::MCObjectWriter::isSymbolRefDifferenceFullyResolvedImpl'
+86>Generating Code...
+81>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcwincoffobjectwriter.h(18): note: see declaration of 'llvm::MCObjectWriter'
+86>Clib.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\clib\Clib.dir\Debug\Clib.lib
+88>llvm-tblgen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\bin\llvm-tblgen.exe
+81>LLVMMC.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMMC.lib
+81>Done building project "LLVMMC.vcxproj".
+86>Done building project "Clib.vcxproj".
+89>------ Build started: Project: LLVMDebugInfoCodeView, Configuration: Debug x64 ------
+90>------ Build started: Project: ClangDriverOptions, Configuration: Debug x64 ------
+91>------ Build started: Project: ClangDiagnosticFrontend, Configuration: Debug x64 ------
+92>------ Build started: Project: ClangDiagnosticGroups, Configuration: Debug x64 ------
+90>Building Options.inc...
+92>Building DiagnosticGroups.inc...
+91>Building DiagnosticFrontendKinds.inc...
+89>CVSymbolVisitor.cpp
+89>CVTypeVisitor.cpp
+89>CodeViewError.cpp
+89>CodeViewRecordIO.cpp
+92>Updating DiagnosticGroups.inc...
+91>Updating DiagnosticFrontendKinds.inc...
+90>Updating Options.inc...
+89>DebugChecksumsSubsection.cpp
+89>DebugCrossExSubsection.cpp
+89>DebugCrossImpSubsection.cpp
+93>------ Build started: Project: ClangDiagnosticIndexName, Configuration: Debug x64 ------
+94>------ Build started: Project: ClangDiagnosticLex, Configuration: Debug x64 ------
+95>------ Build started: Project: ClangDiagnosticParse, Configuration: Debug x64 ------
+89>DebugFrameDataSubsection.cpp
+93>Building DiagnosticIndexName.inc...
+94>Building DiagnosticLexKinds.inc...
+93>Updating DiagnosticIndexName.inc...
+94>Updating DiagnosticLexKinds.inc...
+89>DebugInlineeLinesSubsection.cpp
+89>DebugLinesSubsection.cpp
+89>DebugStringTableSubsection.cpp
+89>DebugSubsection.cpp
+96>------ Build started: Project: ClangDiagnosticCommon, Configuration: Debug x64 ------
+97>------ Build started: Project: ClangDiagnosticSerialization, Configuration: Debug x64 ------
+98>------ Build started: Project: ClangSACheckers, Configuration: Debug x64 ------
+89>DebugSubsectionRecord.cpp
+96>Building DiagnosticCommonKinds.inc...
+89>DebugSubsectionVisitor.cpp
+89>DebugSymbolRVASubsection.cpp
+89>DebugSymbolsSubsection.cpp
+98>Building Checkers.inc...
+97>Building DiagnosticSerializationKinds.inc...
+96>Updating DiagnosticCommonKinds.inc...
+98>Updating Checkers.inc...
+89>EnumTables.cpp
+97>Updating DiagnosticSerializationKinds.inc...
+89>Formatters.cpp
+89>LazyRandomTypeCollection.cpp
+89>Line.cpp
+99>------ Build started: Project: ClangStmtNodes, Configuration: Debug x64 ------
+100>------ Build started: Project: intrinsics_gen, Configuration: Debug x64 ------
+99>Building StmtNodes.inc...
+100>Building Attributes.gen...
+89>RecordSerialization.cpp
+99>Updating StmtNodes.inc...
+89>StringsAndChecksums.cpp
+101>------ Build started: Project: ClangDiagnosticSema, Configuration: Debug x64 ------
+100>Building Intrinsics.gen...
+89>SymbolDumper.cpp
+101>Building DiagnosticSemaKinds.inc...
+89>SymbolRecordMapping.cpp
+101>Updating DiagnosticSemaKinds.inc...
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolrecordmapping.h(43): warning C4266: 'llvm::Error llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin(llvm::codeview::CVSymbol &,uint32_t)': no override available for virtual member function from base 'llvm::codeview::SymbolVisitorCallbacks'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolDumper.cpp)
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(33): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolDumper.cpp)
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(19): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolDumper.cpp)
+89>SymbolSerializer.cpp
+102>------ Build started: Project: clang-headers, Configuration: Debug x64 ------
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\lib\debuginfo\codeview\symboldumper.cpp(62): warning C4266: 'llvm::Error llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin(llvm::codeview::CVSymbol &,uint32_t)': no override available for virtual member function from base 'llvm::codeview::SymbolVisitorCallbacks'; function is hidden
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(33): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin'
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(19): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks'
+89>TypeDumpVisitor.cpp
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolrecordmapping.h(43): warning C4266: 'llvm::Error llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin(llvm::codeview::CVSymbol &,uint32_t)': no override available for virtual member function from base 'llvm::codeview::SymbolVisitorCallbacks'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolRecordMapping.cpp)
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(33): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolRecordMapping.cpp)
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(19): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolRecordMapping.cpp)
+100>Updating Attributes.gen...
+89>TypeIndex.cpp
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolrecordmapping.h(43): warning C4266: 'llvm::Error llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin(llvm::codeview::CVSymbol &,uint32_t)': no override available for virtual member function from base 'llvm::codeview::SymbolVisitorCallbacks'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolSerializer.cpp)
+102>Building arm_neon.h...
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(33): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolSerializer.cpp)
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(19): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolSerializer.cpp)
+89>TypeIndexDiscovery.cpp
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolserializer.h(76): warning C4266: 'llvm::Error llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin(llvm::codeview::CVSymbol &,uint32_t)': no override available for virtual member function from base 'llvm::codeview::SymbolVisitorCallbacks'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolSerializer.cpp)
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(33): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks::visitSymbolBegin' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolSerializer.cpp)
+89>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\debuginfo\codeview\symbolvisitorcallbacks.h(19): note: see declaration of 'llvm::codeview::SymbolVisitorCallbacks' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\DebugInfo\CodeView\SymbolSerializer.cpp)
+103>------ Build started: Project: ClangDiagnosticAnalysis, Configuration: Debug x64 ------
+100>Updating Intrinsics.gen...
+89>TypeName.cpp
+89>TypeRecordMapping.cpp
+103>Building DiagnosticAnalysisKinds.inc...
+89>TypeSerializer.cpp
+89>TypeStreamMerger.cpp
+103>Updating DiagnosticAnalysisKinds.inc...
+102>Updating arm_neon.h...
+104>------ Build started: Project: ClangDiagnosticComment, Configuration: Debug x64 ------
+89>TypeTableCollection.cpp
+102>Copying clang's arm_neon.h...
+104>Building DiagnosticCommentKinds.inc...
+105>------ Build started: Project: ClangDiagnosticDriver, Configuration: Debug x64 ------
+104>Updating DiagnosticCommentKinds.inc...
+105>Building DiagnosticDriverKinds.inc...
+106>------ Build started: Project: ClangARMNeon, Configuration: Debug x64 ------
+106>Building arm_neon.inc...
+107>------ Build started: Project: ClangAttrClasses, Configuration: Debug x64 ------
+105>Updating DiagnosticDriverKinds.inc...
+107>Building Attrs.inc...
+106>Updating arm_neon.inc...
+108>------ Build started: Project: ClangAttrDump, Configuration: Debug x64 ------
+107>Updating Attrs.inc...
+108>Building AttrDump.inc...
+109>------ Build started: Project: ClangAttrHasAttributeImpl, Configuration: Debug x64 ------
+108>Updating AttrDump.inc...
+109>Building AttrHasAttributeImpl.inc...
+110>------ Build started: Project: ClangAttrImpl, Configuration: Debug x64 ------
+109>Updating AttrHasAttributeImpl.inc...
+110>Building AttrImpl.inc...
+111>------ Build started: Project: ClangAttrList, Configuration: Debug x64 ------
+110>Updating AttrImpl.inc...
+111>Building AttrList.inc...
+112>------ Build started: Project: ClangAttrPCHRead, Configuration: Debug x64 ------
+111>Updating AttrList.inc...
+112>Building AttrPCHRead.inc...
+113>------ Build started: Project: ClangAttrPCHWrite, Configuration: Debug x64 ------
+112>Updating AttrPCHRead.inc...
+113>Building AttrPCHWrite.inc...
+114>------ Build started: Project: ClangAttrParsedAttrImpl, Configuration: Debug x64 ------
+113>Updating AttrPCHWrite.inc...
+114>Building AttrParsedAttrImpl.inc...
+115>------ Build started: Project: ClangAttrParsedAttrKinds, Configuration: Debug x64 ------
+114>Updating AttrParsedAttrImpl.inc...
+115>Building AttrParsedAttrKinds.inc...
+116>------ Build started: Project: ClangAttrParsedAttrList, Configuration: Debug x64 ------
+115>Updating AttrParsedAttrKinds.inc...
+116>Building AttrParsedAttrList.inc...
+116>Updating AttrParsedAttrList.inc...
+117>------ Build started: Project: ClangAttrParserStringSwitches, Configuration: Debug x64 ------
+118>------ Build started: Project: ClangAttrSpellingListIndex, Configuration: Debug x64 ------
+89>LLVMDebugInfoCodeView.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMDebugInfoCodeView.lib
+89>Done building project "LLVMDebugInfoCodeView.vcxproj".
+119>------ Build started: Project: ClangAttrSubMatchRulesParserStringSwitches, Configuration: Debug x64 ------
+118>Building AttrSpellingListIndex.inc...
+117>Building AttrParserStringSwitches.inc...
+119>Building AttrSubMatchRulesParserStringSwitches.inc...
+118>Updating AttrSpellingListIndex.inc...
+117>Updating AttrParserStringSwitches.inc...
+119>Updating AttrSubMatchRulesParserStringSwitches.inc...
+120>------ Build started: Project: ClangAttrSubjectMatchRuleList, Configuration: Debug x64 ------
+121>------ Build started: Project: ClangAttrTemplateInstantiate, Configuration: Debug x64 ------
+122>------ Build started: Project: ClangAttrVisitor, Configuration: Debug x64 ------
+120>Building AttrSubMatchRulesList.inc...
+121>Building AttrTemplateInstantiate.inc...
+122>Building AttrVisitor.inc...
+120>Updating AttrSubMatchRulesList.inc...
+123>------ Build started: Project: ClangCommentCommandInfo, Configuration: Debug x64 ------
+121>Updating AttrTemplateInstantiate.inc...
+122>Updating AttrVisitor.inc...
+123>Building CommentCommandInfo.inc...
+124>------ Build started: Project: ClangCommentCommandList, Configuration: Debug x64 ------
+123>Updating CommentCommandInfo.inc...
+125>------ Build started: Project: ClangCommentHTMLNamedCharacterReferences, Configuration: Debug x64 ------
+126>------ Build started: Project: ClangCommentHTMLTags, Configuration: Debug x64 ------
+124>Building CommentCommandList.inc...
+125>Building CommentHTMLNamedCharacterReferences.inc...
+124>Updating CommentCommandList.inc...
+125>Updating CommentHTMLNamedCharacterReferences.inc...
+126>Building CommentHTMLTags.inc...
+126>Updating CommentHTMLTags.inc...
+127>------ Build started: Project: ClangCommentHTMLTagsProperties, Configuration: Debug x64 ------
+128>------ Build started: Project: ClangCommentNodes, Configuration: Debug x64 ------
+129>------ Build started: Project: ClangDeclNodes, Configuration: Debug x64 ------
+127>Building CommentHTMLTagsProperties.inc...
+128>Building CommentNodes.inc...
+127>Updating CommentHTMLTagsProperties.inc...
+129>Building DeclNodes.inc...
+128>Updating CommentNodes.inc...
+129>Updating DeclNodes.inc...
+130>------ Build started: Project: ClangDiagnosticAST, Configuration: Debug x64 ------
+131>------ Build started: Project: X86CommonTableGen, Configuration: Debug x64 ------
+132>------ Build started: Project: AttributeCompatFuncTableGen, Configuration: Debug x64 ------
+130>Building DiagnosticASTKinds.inc...
+132>Building AttributesCompatFunc.inc...
+131>Building X86GenRegisterInfo.inc...
+132>Updating AttributesCompatFunc.inc...
+133>------ Build started: Project: LLVMipo, Configuration: Debug x64 ------
+130>Updating DiagnosticASTKinds.inc...
+134>------ Build started: Project: LLVMObjCARCOpts, Configuration: Debug x64 ------
+135>------ Build started: Project: obj.clingUtils, Configuration: Debug x64 ------
+134>DependencyAnalysis.cpp
+134>ObjCARC.cpp
+134>ObjCARCAPElim.cpp
+134>ObjCARCContract.cpp
+133>AlwaysInliner.cpp
+133>ArgumentPromotion.cpp
+133>BarrierNoopPass.cpp
+133>ConstantMerge.cpp
+133>CrossDSOCFI.cpp
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\transforms\ipo\inliner.h(78): warning C4266: 'bool llvm::Pass::doInitialization(llvm::Module &)': no override available for virtual member function from base 'llvm::Pass'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\AlwaysInliner.cpp)
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\pass.h(110): note: see declaration of 'llvm::Pass::doInitialization' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\AlwaysInliner.cpp)
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\transforms\ipo.h(27): note: see declaration of 'llvm::Pass' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\AlwaysInliner.cpp)
+133>DeadArgumentElimination.cpp
+134>ObjCARCExpand.cpp
+134>ObjCARCOpts.cpp
+134>ProvenanceAnalysis.cpp
+133>ElimAvailExtern.cpp
+134>ProvenanceAnalysisEvaluator.cpp
+133>ExtractGV.cpp
+133>ForceFunctionAttrs.cpp
+133>FunctionAttrs.cpp
+133>FunctionImport.cpp
+133>GlobalDCE.cpp
+134>PtrState.cpp
+133>GlobalOpt.cpp
+133>GlobalSplit.cpp
+133>IPConstantPropagation.cpp
+134>LLVMObjCARCOpts.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMObjCARCOpts.lib
+133>IPO.cpp
+133>InferFunctionAttrs.cpp
+133>InlineSimple.cpp
+133>Inliner.cpp
+133>Internalize.cpp
+133>LoopExtractor.cpp
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\transforms\ipo\inliner.h(78): warning C4266: 'bool llvm::Pass::doInitialization(llvm::Module &)': no override available for virtual member function from base 'llvm::Pass'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\InlineSimple.cpp)
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\pass.h(110): note: see declaration of 'llvm::Pass::doInitialization' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\InlineSimple.cpp)
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\transforms\ipo.h(27): note: see declaration of 'llvm::Pass' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\InlineSimple.cpp)
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\transforms\ipo\inliner.h(78): warning C4266: 'bool llvm::Pass::doInitialization(llvm::Module &)': no override available for virtual member function from base 'llvm::Pass'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\Inliner.cpp)
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\pass.h(110): note: see declaration of 'llvm::Pass::doInitialization' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\Inliner.cpp)
+133>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\passinfo.h(23): note: see declaration of 'llvm::Pass' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Transforms\IPO\Inliner.cpp)
+133>LowerTypeTests.cpp
+131>Building X86GenDisassemblerTables.inc...
+133>MergeFunctions.cpp
+133>PartialInlining.cpp
+133>PassManagerBuilder.cpp
+133>PruneEH.cpp
+133>SampleProfile.cpp
+133>StripDeadPrototypes.cpp
+133>StripSymbols.cpp
+133>ThinLTOBitcodeWriter.cpp
+133>WholeProgramDevirt.cpp
+133>LLVMipo.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMipo.lib
+131>Building X86GenInstrInfo.inc...
+131>Building X86GenAsmWriter.inc...
+131>Building X86GenAsmWriter1.inc...
+131>Building X86GenAsmMatcher.inc...
+131>Building X86GenDAGISel.inc...
+131>Building X86GenFastISel.inc...
+131>Building X86GenCallingConv.inc...
+131>Building X86GenSubtargetInfo.inc...
+131>Building X86GenEVEX2VEXTables.inc...
+131>Building X86GenRegisterBank.inc...
+131>Building X86GenGlobalISel.inc...
+131>Updating X86GenRegisterInfo.inc...
+131>Updating X86GenDisassemblerTables.inc...
+131>Updating X86GenInstrInfo.inc...
+131>Updating X86GenAsmWriter.inc...
+131>Updating X86GenAsmWriter1.inc...
+131>Updating X86GenAsmMatcher.inc...
+131>Updating X86GenDAGISel.inc...
+131>Updating X86GenFastISel.inc...
+131>Updating X86GenCallingConv.inc...
+131>Updating X86GenSubtargetInfo.inc...
+131>Updating X86GenEVEX2VEXTables.inc...
+131>Updating X86GenRegisterBank.inc...
+131>Updating X86GenGlobalISel.inc...
+133>Done building project "LLVMipo.vcxproj".
+136>------ Build started: Project: obj.clingMetaProcessor, Configuration: Debug x64 ------
+137>------ Build started: Project: obj.clingInterpreter, Configuration: Debug x64 ------
+138>------ Build started: Project: LLVMObject, Configuration: Debug x64 ------
+136>Display.cpp
+136>InputValidator.cpp
+136>MetaLexer.cpp
+136>MetaParser.cpp
+136>MetaProcessor.cpp
+136>MetaSema.cpp
+137>ASTTransformer.cpp
+137>AutoSynthesizer.cpp
+137>AutoloadCallback.cpp
+137>BackendPasses.cpp
+135>AST.cpp
+135>Diagnostics.cpp
+135>Output.cpp
+135>ParserStateRAII.cpp
+135>Paths.cpp
+135>PlatformMac.cpp
+138>Archive.cpp
+138>ArchiveWriter.cpp
+138>Binary.cpp
+138>COFFImportFile.cpp
+135>PlatformPosix.cpp
+138>COFFModuleDefinition.cpp
+137>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\transforms\ipo\inliner.h(78): warning C4266: 'bool llvm::Pass::doInitialization(llvm::Module &)': no override available for virtual member function from base 'llvm::Pass'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Interpreter\BackendPasses.cpp)
+137>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\pass.h(110): note: see declaration of 'llvm::Pass::doInitialization' (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Interpreter\BackendPasses.cpp)
+137>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\transforms\ipo.h(27): note: see declaration of 'llvm::Pass' (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Interpreter\BackendPasses.cpp)
+135>PlatformWin.cpp
+138>COFFObjectFile.cpp
+138>Decompressor.cpp
+138>ELF.cpp
+135>SourceNormalization.cpp
+137>CIFactory.cpp
+137>CheckEmptyTransactionTransformer.cpp
+138>ELFObjectFile.cpp
+138>Error.cpp
+138>IRObjectFile.cpp
+138>IRSymtab.cpp
+135>d:\davit\dev\forks\root\original\build\win\winnt_macroses.h(159): warning C4005: 'IMAGE_SYM_ABSOLUTE': macro redefinition (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformWin.cpp)
+135>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winnt.h(16807): note: see previous definition of 'IMAGE_SYM_ABSOLUTE' (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformWin.cpp)
+135>d:\davit\dev\forks\root\original\build\win\winnt_macroses.h(160): warning C4005: 'IMAGE_SYM_DEBUG': macro redefinition (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformWin.cpp)
+135>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winnt.h(16808): note: see previous definition of 'IMAGE_SYM_DEBUG' (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformWin.cpp)
+135>d:\davit\dev\forks\root\original\build\win\winnt_macroses.h(202): warning C4005: 'IMAGE_SYM_CLASS_END_OF_FUNCTION': macro redefinition (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformWin.cpp)
+135>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winnt.h(16845): note: see previous definition of 'IMAGE_SYM_CLASS_END_OF_FUNCTION' (compiling source file D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformWin.cpp)
+135>UTF8.cpp
+138>MachOObjectFile.cpp
+135>Validation.cpp
+138>MachOUniversal.cpp
+138>ModuleSymbolTable.cpp
+138>Object.cpp
+138>ObjectFile.cpp
+137>ClangInternalState.cpp
+137>ClingCodeCompleteConsumer.cpp
+138>RecordStreamer.cpp
+138>SymbolSize.cpp
+138>SymbolicFile.cpp
+138>WasmObjectFile.cpp
+138>WindowsResource.cpp
+136>obj.clingMetaProcessor.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\MetaProcessor\obj.clingMetaProcessor.dir\Debug\obj.clingMetaProcessor.lib
+135>obj.clingUtils.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils\obj.clingUtils.dir\Debug\obj.clingUtils.lib
+137>ClingPragmas.cpp
+135>Done building project "obj.clingUtils.vcxproj".
+139>------ Build started: Project: clingUtils (Cling libraries\clingUtils), Configuration: Debug x64 ------
+140>------ Build started: Project: clingMetaProcessor, Configuration: Debug x64 ------
+138>LLVMObject.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMObject.lib
+139>clingUtils.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clingUtils.lib
+141>------ Build started: Project: LLVMOrcJIT, Configuration: Debug x64 ------
+140>clingMetaProcessor.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clingMetaProcessor.lib
+142>------ Build started: Project: LLVMPasses, Configuration: Debug x64 ------
+137>DeclCollector.cpp
+143>------ Build started: Project: LLVMAnalysis, Configuration: Debug x64 ------
+143>AliasAnalysis.cpp
+143>AliasAnalysisEvaluator.cpp
+143>AliasAnalysisSummary.cpp
+137>DeclExtractor.cpp
+143>AliasSetTracker.cpp
+141>ExecutionUtils.cpp
+141>IndirectionUtils.cpp
+141>NullResolver.cpp
+141>OrcABISupport.cpp
+141>OrcCBindings.cpp
+141>OrcError.cpp
+141>OrcMCJITReplacement.cpp
+141>RPCUtils.cpp
+143>Analysis.cpp
+137>DeclUnloader.cpp
+137>DynamicExprInfo.cpp
+143>AssumptionCache.cpp
+143>BasicAliasAnalysis.cpp
+143>BlockFrequencyInfo.cpp
+137>DynamicLibraryManager.cpp
+137>DynamicLookup.cpp
+143>BlockFrequencyInfoImpl.cpp
+137>Exception.cpp
+141>LLVMOrcJIT.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMOrcJIT.lib
+137>ExternalInterpreterSource.cpp
+143>BranchProbabilityInfo.cpp
+143>CFG.cpp
+143>CFGPrinter.cpp
+143>CFLAndersAliasAnalysis.cpp
+144>------ Build started: Project: LLVMAsmParser, Configuration: Debug x64 ------
+143>CFLSteensAliasAnalysis.cpp
+143>CGSCCPassManager.cpp
+143>CallGraph.cpp
+144>LLLexer.cpp
+144>LLParser.cpp
+144>Parser.cpp
+143>CallGraphSCCPass.cpp
+137>ForwardDeclPrinter.cpp
+137>IncrementalCUDADeviceCompiler.cpp
+137>IncrementalExecutor.cpp
+143>CallPrinter.cpp
+137>IncrementalJIT.cpp
+143>CaptureTracking.cpp
+143>CodeMetrics.cpp
+145>------ Build started: Project: LLVMAsmPrinter, Configuration: Debug x64 ------
+143>ConstantFolding.cpp
+137>IncrementalParser.cpp
+143>CostModel.cpp
+143>Delinearization.cpp
+145>ARMException.cpp
+145>AddressPool.cpp
+145>AsmPrinter.cpp
+143>DemandedBits.cpp
+145>AsmPrinterDwarf.cpp
+137>Interpreter.cpp
+137>InterpreterCallbacks.cpp
+143>DependenceAnalysis.cpp
+143>DivergenceAnalysis.cpp
+137>InvocationOptions.cpp
+143>DomPrinter.cpp
+145>AsmPrinterInlineAsm.cpp
+143>DominanceFrontier.cpp
+145>CodeViewDebug.cpp
+137>LookupHelper.cpp
+145>DIE.cpp
+143>EHPersonalities.cpp
+143>GlobalsModRef.cpp
+143>IVUsers.cpp
+143>IndirectCallPromotionAnalysis.cpp
+143>InlineCost.cpp
+145>DIEHash.cpp
+145>DbgValueHistoryCalculator.cpp
+145>DebugHandlerBase.cpp
+143>InstCount.cpp
+143>InstructionSimplify.cpp
+145>DebugLocStream.cpp
+137>NullDerefProtectionTransformer.cpp
+143>Interval.cpp
+143>IntervalPartition.cpp
+137>RequiredSymbols.cpp
+137>Transaction.cpp
+143>IteratedDominanceFrontier.cpp
+137>TransactionUnloader.cpp
+137>Value.cpp
+145>DwarfAccelTable.cpp
+143>LazyBlockFrequencyInfo.cpp
+143>LazyBranchProbabilityInfo.cpp
+145>DwarfCFIException.cpp
+145>DwarfCompileUnit.cpp
+143>LazyCallGraph.cpp
+145>DwarfDebug.cpp
+143>LazyValueInfo.cpp
+143>Lint.cpp
+143>Loads.cpp
+145>DwarfExpression.cpp
+145>DwarfFile.cpp
+143>LoopAccessAnalysis.cpp
+143>LoopAnalysisManager.cpp
+143>LoopInfo.cpp
+137>ValueExtractionSynthesizer.cpp
+143>LoopPass.cpp
+145>DwarfStringPool.cpp
+137>ValuePrinter.cpp
+137>ValuePrinterSynthesizer.cpp
+145>DwarfUnit.cpp
+145>EHStreamer.cpp
+145>ErlangGCPrinter.cpp
+145>OcamlGCPrinter.cpp
+143>LoopUnrollAnalyzer.cpp
+143>MemDepPrinter.cpp
+143>MemDerefPrinter.cpp
+143>MemoryBuiltins.cpp
+145>WinException.cpp
+143>MemoryDependenceAnalysis.cpp
+143>MemoryLocation.cpp
+143>MemorySSA.cpp
+143>MemorySSAUpdater.cpp
+143>ModuleDebugInfoPrinter.cpp
+143>ModuleSummaryAnalysis.cpp
+143>ObjCARCAliasAnalysis.cpp
+143>ObjCARCAnalysisUtils.cpp
+143>ObjCARCInstKind.cpp
+143>OptimizationDiagnosticInfo.cpp
+137>obj.clingInterpreter.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Interpreter\obj.clingInterpreter.dir\Debug\obj.clingInterpreter.lib
+137>Done building project "obj.clingInterpreter.vcxproj".
+144>LLVMAsmParser.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMAsmParser.lib
+146>------ Build started: Project: clingInterpreter, Configuration: Debug x64 ------
+143>OrderedBasicBlock.cpp
+147>------ Build started: Project: LLVMBitReader, Configuration: Debug x64 ------
+145>LLVMAsmPrinter.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMAsmPrinter.lib
+147>BitReader.cpp
+147>BitcodeReader.cpp
+147>BitstreamReader.cpp
+147>MetadataLoader.cpp
+143>PHITransAddr.cpp
+143>PostDominators.cpp
+147>ValueList.cpp
+143>ProfileSummaryInfo.cpp
+143>PtrUseVisitor.cpp
+146>clingInterpreter.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clingInterpreter.lib
+148>------ Build started: Project: LLVMBitWriter, Configuration: Debug x64 ------
+143>RegionInfo.cpp
+143>RegionPass.cpp
+143>RegionPrinter.cpp
+148>BitWriter.cpp
+148>BitcodeWriter.cpp
+148>BitcodeWriterPass.cpp
+148>ValueEnumerator.cpp
+149>------ Build started: Project: LLVMProfileData, Configuration: Debug x64 ------
+143>ScalarEvolution.cpp
+143>ScalarEvolutionAliasAnalysis.cpp
+143>ScalarEvolutionExpander.cpp
+143>ScalarEvolutionNormalization.cpp
+147>LLVMBitReader.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMBitReader.lib
+150>------ Build started: Project: LLVMCodeGen, Configuration: Debug x64 ------
+143>ScopedNoAliasAA.cpp
+143>SparsePropagation.cpp
+143>TargetLibraryInfo.cpp
+143>TargetTransformInfo.cpp
+148>LLVMBitWriter.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMBitWriter.lib
+151>------ Build started: Project: LLVMCore, Configuration: Debug x64 ------
+151>AsmWriter.cpp
+151>Attributes.cpp
+151>AutoUpgrade.cpp
+151>BasicBlock.cpp
+150>AggressiveAntiDepBreaker.cpp
+150>AllocationOrder.cpp
+150>Analysis.cpp
+143>Trace.cpp
+150>AtomicExpandPass.cpp
+143>TypeBasedAliasAnalysis.cpp
+150>BasicTargetTransformInfo.cpp
+143>TypeMetadataUtils.cpp
+150>BranchCoalescing.cpp
+143>ValueTracking.cpp
+150>BranchFolding.cpp
+143>VectorUtils.cpp
+150>BranchRelaxation.cpp
+152>------ Build started: Project: LLVMCoroutines, Configuration: Debug x64 ------
+151>Comdat.cpp
+151>ConstantFold.cpp
+151>ConstantRange.cpp
+150>BuiltinGCs.cpp
+151>Constants.cpp
+151>Core.cpp
+150>CalcSpillWeights.cpp
+150>CallingConvLower.cpp
+151>DIBuilder.cpp
+150>CodeGen.cpp
+150>CodeGenPrepare.cpp
+150>CountingFunctionInserter.cpp
+151>DataLayout.cpp
+151>DebugInfo.cpp
+151>DebugInfoMetadata.cpp
+151>DebugLoc.cpp
+150>CriticalAntiDepBreaker.cpp
+151>DiagnosticInfo.cpp
+150>DFAPacketizer.cpp
+150>DeadMachineInstructionElim.cpp
+151>DiagnosticPrinter.cpp
+151>Dominators.cpp
+151>Function.cpp
+150>DetectDeadLanes.cpp
+151>GCOV.cpp
+153>------ Build started: Project: LLVMX86Utils, Configuration: Debug x64 ------
+151>GVMaterializer.cpp
+151>Globals.cpp
+150>DwarfEHPrepare.cpp
+151>IRBuilder.cpp
+153>X86ShuffleDecode.cpp
+150>EarlyIfConversion.cpp
+150>EdgeBundles.cpp
+151>IRPrintingPasses.cpp
+153>LLVMX86Utils.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMX86Utils.lib
+151>InlineAsm.cpp
+150>ExecutionDepsFix.cpp
+151>Instruction.cpp
+151>Instructions.cpp
+151>IntrinsicInst.cpp
+154>------ Build started: Project: LLVMX86Info, Configuration: Debug x64 ------
+151>LLVMContext.cpp
+150>ExpandISelPseudos.cpp
+150>ExpandPostRAPseudos.cpp
+154>X86TargetInfo.cpp
+150>ExpandReductions.cpp
+151>LLVMContextImpl.cpp
+151>LegacyPassManager.cpp
+154>LLVMX86Info.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMX86Info.lib
+150>FEntryInserter.cpp
+151>MDBuilder.cpp
+151>Mangler.cpp
+150>FaultMaps.cpp
+151>Metadata.cpp
+150>FuncletLayout.cpp
+155>------ Build started: Project: LLVMCoverage, Configuration: Debug x64 ------
+150>GCMetadata.cpp
+151>Module.cpp
+151>ModuleSummaryIndex.cpp
+151>Operator.cpp
+150>GCMetadataPrinter.cpp
+150>GCRootLowering.cpp
+155>CoverageMapping.cpp
+155>CoverageMappingReader.cpp
+155>CoverageMappingWriter.cpp
+150>GCStrategy.cpp
+150>GlobalMerge.cpp
+151>OptBisect.cpp
+151>Pass.cpp
+150>IfConversion.cpp
+151>PassManager.cpp
+150>ImplicitNullChecks.cpp
+151>PassRegistry.cpp
+155>LLVMCoverage.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMCoverage.lib
+156>------ Build started: Project: ClingUtils, Configuration: Debug x64 ------
+151>ProfileSummary.cpp
+151>SafepointIRVerifier.cpp
+156>RStl.cxx
+151>Statepoint.cpp
+151>Type.cpp
+151>TypeFinder.cpp
+150>InlineSpiller.cpp
+150>InterferenceCache.cpp
+150>InterleavedAccessPass.cpp
+151>Use.cpp
+151>User.cpp
+150>IntrinsicLowering.cpp
+151>Value.cpp
+151>ValueSymbolTable.cpp
+151>ValueTypes.cpp
+151>Verifier.cpp
+150>LLVMTargetMachine.cpp
+150>LatencyPriorityQueue.cpp
+150>LazyMachineBlockFrequencyInfo.cpp
+150>LexicalScopes.cpp
+156>TClingUtils.cxx
+150>LiveDebugValues.cpp
+150>LiveDebugVariables.cpp
+150>LiveInterval.cpp
+150>LiveIntervalAnalysis.cpp
+151>LLVMCore.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMCore.lib
+157>------ Build started: Project: LLVMX86Disassembler, Configuration: Debug x64 ------
+150>LiveIntervalUnion.cpp
+150>LivePhysRegs.cpp
+157>X86Disassembler.cpp
+157>X86DisassemblerDecoder.cpp
+150>LiveRangeCalc.cpp
+150>LiveRangeEdit.cpp
+156>Generating Code...
+150>LiveRangeShrink.cpp
+150>LiveRegMatrix.cpp
+150>LiveRegUnits.cpp
+150>LiveStackAnalysis.cpp
+150>LiveVariables.cpp
+150>LocalStackSlotAllocation.cpp
+150>LowLevelType.cpp
+150>LowerEmuTLS.cpp
+150>MIRPrinter.cpp
+150>MIRPrintingPass.cpp
+150>MachineBasicBlock.cpp
+150>MachineBlockFrequencyInfo.cpp
+150>MachineBlockPlacement.cpp
+150>MachineBranchProbabilityInfo.cpp
+150>MachineCSE.cpp
+150>MachineCombiner.cpp
+150>MachineCopyPropagation.cpp
+150>MachineDominanceFrontier.cpp
+150>MachineDominators.cpp
+157>LLVMX86Disassembler.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMX86Disassembler.lib
+158>------ Build started: Project: Dictgen, Configuration: Debug x64 ------
+156>ClingUtils.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\clingutils\ClingUtils.dir\Debug\ClingUtils.lib
+150>MachineFrameInfo.cpp
+159>------ Build started: Project: LLVMDebugInfoMSF, Configuration: Debug x64 ------
+159>MSFBuilder.cpp
+159>MSFCommon.cpp
+159>MSFError.cpp
+159>MappedBlockStream.cpp
+150>MachineFunction.cpp
+150>MachineFunctionPass.cpp
+159>LLVMDebugInfoMSF.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMDebugInfoMSF.lib
+150>MachineFunctionPrinterPass.cpp
+160>------ Build started: Project: LLVMExecutionEngine, Configuration: Debug x64 ------
+158>BaseSelectionRule.cxx
+160>ExecutionEngine.cpp
+160>ExecutionEngineBindings.cpp
+160>GDBRegistrationListener.cpp
+160>SectionMemoryManager.cpp
+150>MachineInstr.cpp
+160>TargetSelect.cpp
+158>ClassSelectionRule.cxx
+150>MachineInstrBundle.cpp
+150>MachineLICM.cpp
+158>DictSelectionReader.cxx
+150>MachineLoopInfo.cpp
+150>MachineModuleInfo.cpp
+160>LLVMExecutionEngine.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMExecutionEngine.lib
+161>------ Build started: Project: LLVMGlobalISel, Configuration: Debug x64 ------
+150>MachineModuleInfoImpls.cpp
+150>MachineOptimizationRemarkEmitter.cpp
+150>MachineOutliner.cpp
+150>MachinePassRegistry.cpp
+161>CallLowering.cpp
+161>GlobalISel.cpp
+161>IRTranslator.cpp
+161>InstructionSelect.cpp
+161>InstructionSelector.cpp
+150>MachinePipeliner.cpp
+150>MachinePostDominators.cpp
+158>LinkdefReader.cxx
+161>Legalizer.cpp
+161>LegalizerHelper.cpp
+150>MachineRegionInfo.cpp
+161>LegalizerInfo.cpp
+150>MachineRegisterInfo.cpp
+150>MachineSSAUpdater.cpp
+161>Localizer.cpp
+150>MachineScheduler.cpp
+158>Scanner.cxx
+161>MachineIRBuilder.cpp
+161>RegBankSelect.cpp
+161>RegisterBank.cpp
+161>RegisterBankInfo.cpp
+150>MachineSink.cpp
+150>MachineTraceMetrics.cpp
+150>MachineVerifier.cpp
+161>Utils.cpp
+150>MacroFusion.cpp
+150>OptimizePHIs.cpp
+150>PHIElimination.cpp
+150>PHIEliminationUtils.cpp
+158>SelectionRules.cxx
+150>ParallelCG.cpp
+150>PatchableFunction.cpp
+161>LLVMGlobalISel.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMGlobalISel.lib
+150>PeepholeOptimizer.cpp
+162>------ Build started: Project: LLVMIRReader, Configuration: Debug x64 ------
+150>PostRAHazardRecognizer.cpp
+162>IRReader.cpp
+150>PostRASchedulerList.cpp
+150>PreISelIntrinsicLowering.cpp
+162>LLVMIRReader.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMIRReader.lib
+150>ProcessImplicitDefs.cpp
+150>PrologEpilogInserter.cpp
+158>TModuleGenerator.cxx
+163>------ Build started: Project: Foundation_Stage1, Configuration: Debug x64 ------
+163>RConversionRuleParser.cxx
+163>TClassEdit.cxx
+150>PseudoSourceValue.cpp
+163>Generating Code...
+163>Foundation_Stage1.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\foundation\Foundation_Stage1.dir\Debug\Foundation_Stage1.lib
+150>RegAllocBase.cpp
+150>RegAllocBasic.cpp
+158>VariableSelectionRule.cxx
+150>RegAllocFast.cpp
+164>------ Build started: Project: LLVMInstCombine, Configuration: Debug x64 ------
+150>RegAllocGreedy.cpp
+158>XMLReader.cxx
+164>InstCombineAddSub.cpp
+164>InstCombineAndOrXor.cpp
+164>InstCombineCalls.cpp
+164>InstCombineCasts.cpp
+150>RegAllocPBQP.cpp
+150>RegUsageInfoCollector.cpp
+158>rootcling_impl.cxx
+150>RegUsageInfoPropagate.cpp
+164>InstCombineCompares.cpp
+164>InstCombineLoadStoreAlloca.cpp
+164>InstCombineMulDivRem.cpp
+164>InstCombinePHI.cpp
+150>RegisterClassInfo.cpp
+164>InstCombineSelect.cpp
+150>RegisterCoalescer.cpp
+150>RegisterPressure.cpp
+164>InstCombineShifts.cpp
+164>InstCombineSimplifyDemanded.cpp
+164>InstCombineVectorOps.cpp
+150>RegisterScavenging.cpp
+150>RegisterUsageInfo.cpp
+164>InstructionCombining.cpp
+150>RenameIndependentSubregs.cpp
+150>ResetMachineFunctionPass.cpp
+150>SafeStack.cpp
+150>SafeStackColoring.cpp
+158>Generating Code...
+150>SafeStackLayout.cpp
+150>ScalarizeMaskedMemIntrin.cpp
+150>ScheduleDAG.cpp
+164>LLVMInstCombine.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMInstCombine.lib
+150>ScheduleDAGInstrs.cpp
+165>------ Build started: Project: LLVMInstrumentation, Configuration: Debug x64 ------
+150>ScheduleDAGPrinter.cpp
+150>ScoreboardHazardRecognizer.cpp
+165>AddressSanitizer.cpp
+165>BoundsChecking.cpp
+165>DataFlowSanitizer.cpp
+165>EfficiencySanitizer.cpp
+150>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\codegen\scoreboardhazardrecognizer.h(124): warning C4266: 'void llvm::ScheduleHazardRecognizer::EmitInstruction(llvm::MachineInstr *)': no override available for virtual member function from base 'llvm::ScheduleHazardRecognizer'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\CodeGen\ScoreboardHazardRecognizer.cpp)
+150>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\codegen\schedulehazardrecognizer.h(76): note: see declaration of 'llvm::ScheduleHazardRecognizer::EmitInstruction' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\CodeGen\ScoreboardHazardRecognizer.cpp)
+150>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\codegen\schedulehazardrecognizer.h(26): note: see declaration of 'llvm::ScheduleHazardRecognizer' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\CodeGen\ScoreboardHazardRecognizer.cpp)
+158>Dictgen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\dictgen\Dictgen.dir\Debug\Dictgen.lib
+150>ShadowStackGCLowering.cpp
+166>------ Build started: Project: LLVMLinker, Configuration: Debug x64 ------
+150>ShrinkWrap.cpp
+150>SjLjEHPrepare.cpp
+165>GCOVProfiling.cpp
+165>IndirectCallPromotion.cpp
+165>InstrProfiling.cpp
+150>SlotIndexes.cpp
+150>SpillPlacement.cpp
+165>Instrumentation.cpp
+166>IRMover.cpp
+165>MemorySanitizer.cpp
+166>LinkModules.cpp
+165>PGOInstrumentation.cpp
+150>SplitKit.cpp
+150>StackColoring.cpp
+150>StackMapLivenessAnalysis.cpp
+150>StackMaps.cpp
+165>PGOMemOPSizeOpt.cpp
+165>SanitizerCoverage.cpp
+165>ThreadSanitizer.cpp
+166>LLVMLinker.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMLinker.lib
+167>------ Build started: Project: LLVMRES, Configuration: Debug x64 ------
+150>StackProtector.cpp
+150>StackSlotColoring.cpp
+150>TailDuplication.cpp
+168>------ Build started: Project: LLVMRuntimeDyld, Configuration: Debug x64 ------
+150>TailDuplicator.cpp
+168>JITSymbol.cpp
+168>RTDyldMemoryManager.cpp
+168>RuntimeDyld.cpp
+168>RuntimeDyldCOFF.cpp
+168>RuntimeDyldChecker.cpp
+168>RuntimeDyldELF.cpp
+168>RuntimeDyldMachO.cpp
+168>RuntimeDyldELFMips.cpp
+150>TargetFrameLoweringImpl.cpp
+150>TargetInstrInfo.cpp
+150>TargetLoweringBase.cpp
+150>TargetLoweringObjectFileImpl.cpp
+165>LLVMInstrumentation.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMInstrumentation.lib
+169>------ Build started: Project: LLVMScalarOpts, Configuration: Debug x64 ------
+150>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\codegen\scoreboardhazardrecognizer.h(124): warning C4266: 'void llvm::ScheduleHazardRecognizer::EmitInstruction(llvm::MachineInstr *)': no override available for virtual member function from base 'llvm::ScheduleHazardRecognizer'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\CodeGen\TargetInstrInfo.cpp)
+150>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\codegen\schedulehazardrecognizer.h(76): note: see declaration of 'llvm::ScheduleHazardRecognizer::EmitInstruction' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\CodeGen\TargetInstrInfo.cpp)
+150>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\codegen\schedulehazardrecognizer.h(26): note: see declaration of 'llvm::ScheduleHazardRecognizer' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\CodeGen\TargetInstrInfo.cpp)
+168>LLVMRuntimeDyld.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMRuntimeDyld.lib
+150>TargetOptionsImpl.cpp
+170>------ Build started: Project: LLVMSelectionDAG, Configuration: Debug x64 ------
+150>TargetPassConfig.cpp
+150>TargetRegisterInfo.cpp
+150>TargetSchedule.cpp
+170>DAGCombiner.cpp
+170>FastISel.cpp
+170>FunctionLoweringInfo.cpp
+170>InstrEmitter.cpp
+169>ADCE.cpp
+169>AlignmentFromAssumptions.cpp
+169>BDCE.cpp
+169>ConstantHoisting.cpp
+169>ConstantProp.cpp
+150>TargetSubtargetInfo.cpp
+169>CorrelatedValuePropagation.cpp
+169>DCE.cpp
+169>DeadStoreElimination.cpp
+150>TwoAddressInstructionPass.cpp
+150>UnreachableBlockElim.cpp
+150>VirtRegMap.cpp
+169>EarlyCSE.cpp
+150>WinEHPrepare.cpp
+169>FlattenCFGPass.cpp
+170>LegalizeDAG.cpp
+170>LegalizeFloatTypes.cpp
+169>Float2Int.cpp
+170>LegalizeIntegerTypes.cpp
+170>LegalizeTypes.cpp
+169>GVN.cpp
+150>XRayInstrumentation.cpp
+169>GVNHoist.cpp
+169>GVNSink.cpp
+169>GuardWidening.cpp
+170>LegalizeTypesGeneric.cpp
+170>LegalizeVectorOps.cpp
+170>LegalizeVectorTypes.cpp
+170>ResourcePriorityQueue.cpp
+169>IVUsersPrinter.cpp
+169>IndVarSimplify.cpp
+169>InductiveRangeCheckElimination.cpp
+169>InferAddressSpaces.cpp
+170>ScheduleDAGFast.cpp
+170>ScheduleDAGRRList.cpp
+170>ScheduleDAGSDNodes.cpp
+169>JumpThreading.cpp
+170>ScheduleDAGVLIW.cpp
+169>LICM.cpp
+169>LoopAccessAnalysisPrinter.cpp
+169>LoopDataPrefetch.cpp
+170>SelectionDAG.cpp
+170>SelectionDAGAddressAnalysis.cpp
+170>SelectionDAGBuilder.cpp
+169>LoopDeletion.cpp
+170>SelectionDAGDumper.cpp
+143>LLVMAnalysis.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMAnalysis.lib
+169>LoopDistribute.cpp
+169>LoopIdiomRecognize.cpp
+169>LoopInstSimplify.cpp
+171>------ Build started: Project: LLVMTarget, Configuration: Debug x64 ------
+169>LoopInterchange.cpp
+170>SelectionDAGISel.cpp
+171>Target.cpp
+171>TargetIntrinsicInfo.cpp
+171>TargetLoweringObjectFile.cpp
+171>TargetMachine.cpp
+169>LoopLoadElimination.cpp
+169>LoopPassManager.cpp
+169>LoopPredication.cpp
+170>SelectionDAGPrinter.cpp
+171>TargetMachineC.cpp
+170>SelectionDAGTargetInfo.cpp
+170>StatepointLowering.cpp
+170>TargetLowering.cpp
+169>LoopRerollPass.cpp
+169>LoopRotation.cpp
+171>LLVMTarget.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMTarget.lib
+169>LoopSimplifyCFG.cpp
+169>LoopSink.cpp
+172>------ Build started: Project: LLVMTransformUtils, Configuration: Debug x64 ------
+169>LoopStrengthReduce.cpp
+172>ASanStackFrameLayout.cpp
+172>AddDiscriminators.cpp
+172>BasicBlockUtils.cpp
+172>BreakCriticalEdges.cpp
+169>LoopUnrollPass.cpp
+169>LoopUnswitch.cpp
+169>LoopVersioningLICM.cpp
+172>BuildLibCalls.cpp
+172>BypassSlowDivision.cpp
+172>CloneFunction.cpp
+172>CloneModule.cpp
+172>CmpInstAnalysis.cpp
+169>LowerAtomic.cpp
+169>LowerExpectIntrinsic.cpp
+169>LowerGuardIntrinsic.cpp
+169>MemCpyOptimizer.cpp
+150>LLVMCodeGen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMCodeGen.lib
+150>Done building project "LLVMCodeGen.vcxproj".
+172>CodeExtractor.cpp
+172>CtorUtils.cpp
+173>------ Build started: Project: LLVMVectorize, Configuration: Debug x64 ------
+172>DemoteRegToStack.cpp
+172>EscapeEnumerator.cpp
+169>MergedLoadStoreMotion.cpp
+172>Evaluator.cpp
+169>NaryReassociate.cpp
+169>NewGVN.cpp
+169>PartiallyInlineLibCalls.cpp
+172>FlattenCFG.cpp
+173>LoadStoreVectorizer.cpp
+173>LoopVectorize.cpp
+173>SLPVectorizer.cpp
+173>Vectorize.cpp
+172>FunctionComparator.cpp
+172>FunctionImportUtils.cpp
+172>GlobalStatus.cpp
+169>PlaceSafepoints.cpp
+169>Reassociate.cpp
+169>Reg2Mem.cpp
+172>ImportedFunctionsInliningStatistics.cpp
+172>InlineFunction.cpp
+172>InstructionNamer.cpp
+172>IntegerDivision.cpp
+169>RewriteStatepointsForGC.cpp
+172>LCSSA.cpp
+173>LLVMVectorize.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMVectorize.lib
+169>SCCP.cpp
+169>SROA.cpp
+172>LibCallsShrinkWrap.cpp
+169>Scalar.cpp
+172>Local.cpp
+174>------ Build started: Project: LLVMX86AsmParser, Configuration: Debug x64 ------
+172>LoopSimplify.cpp
+169>Scalarizer.cpp
+172>LoopUnroll.cpp
+172>LoopUnrollPeel.cpp
+174>X86AsmInstrumentation.cpp
+174>X86AsmParser.cpp
+169>SeparateConstOffsetFromGEP.cpp
+169>SimpleLoopUnswitch.cpp
+174>d:\davit\dev\forks\root\original\interpreter\llvm\src\lib\target\x86\asmparser\x86asmparser.cpp(878): warning C4266: 'bool llvm::MCTargetAsmParser::ParseInstruction(llvm::ParseInstructionInfo &,llvm::StringRef,llvm::AsmToken,llvm::OperandVector &)': no override available for virtual member function from base 'llvm::MCTargetAsmParser'; function is hidden
+174>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcparser\mctargetasmparser.h(167): note: see declaration of 'llvm::MCTargetAsmParser::ParseInstruction'
+174>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\support\targetregistry.h(54): note: see declaration of 'llvm::MCTargetAsmParser'
+172>LoopUnrollRuntime.cpp
+169>SimplifyCFGPass.cpp
+172>LoopUtils.cpp
+169>Sink.cpp
+172>LoopVersioning.cpp
+169>SpeculativeExecution.cpp
+172>LowerInvoke.cpp
+174>LLVMX86AsmParser.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMX86AsmParser.lib
+169>StraightLineStrengthReduce.cpp
+169>StructurizeCFG.cpp
+174>Done building project "LLVMX86AsmParser.vcxproj".
+175>------ Build started: Project: LLVMX86AsmPrinter, Configuration: Debug x64 ------
+172>LowerMemIntrinsics.cpp
+169>TailRecursionElimination.cpp
+172>LowerSwitch.cpp
+169>d:\davit\dev\forks\root\original\interpreter\llvm\src\lib\transforms\scalar\structurizecfg.cpp(243): warning C4266: 'bool llvm::Pass::doInitialization(llvm::Module &)': no override available for virtual member function from base 'llvm::Pass'; function is hidden
+172>Mem2Reg.cpp
+169>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\pass.h(110): note: see declaration of 'llvm::Pass::doInitialization'
+169>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\transforms\scalar.h(26): note: see declaration of 'llvm::Pass'
+175>X86ATTInstPrinter.cpp
+175>X86InstComments.cpp
+175>X86IntelInstPrinter.cpp
+172>MetaRenamer.cpp
+172>ModuleUtils.cpp
+172>NameAnonGlobals.cpp
+175>LLVMX86AsmPrinter.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMX86AsmPrinter.lib
+176>------ Build started: Project: LLVMX86CodeGen, Configuration: Debug x64 ------
+172>OrderedInstructions.cpp
+172>PredicateInfo.cpp
+172>PromoteMemoryToRegister.cpp
+172>SSAUpdater.cpp
+172>SanitizerStats.cpp
+176>X86AsmPrinter.cpp
+176>X86CallFrameOptimization.cpp
+176>X86CallLowering.cpp
+176>X86CallingConv.cpp
+172>SimplifyCFG.cpp
+172>SimplifyIndVar.cpp
+172>SimplifyInstructions.cpp
+172>SimplifyLibCalls.cpp
+176>X86CmovConversion.cpp
+176>X86EvexToVex.cpp
+176>X86ExpandPseudo.cpp
+176>X86FastISel.cpp
+172>SplitModule.cpp
+172>StripGCRelocates.cpp
+172>StripNonLineTableDebugInfo.cpp
+172>SymbolRewriter.cpp
+172>UnifyFunctionExitNodes.cpp
+172>Utils.cpp
+176>X86FixupBWInsts.cpp
+176>X86FixupLEAs.cpp
+176>X86FixupSetCC.cpp
+172>VNCoercion.cpp
+172>ValueMapper.cpp
+176>X86FloatingPoint.cpp
+176>X86FrameLowering.cpp
+176>X86ISelDAGToDAG.cpp
+176>X86ISelLowering.cpp
+170>LLVMSelectionDAG.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMSelectionDAG.lib
+176>X86InstrFMA3Info.cpp
+177>------ Build started: Project: LLVMX86Desc, Configuration: Debug x64 ------
+172>LLVMTransformUtils.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMTransformUtils.lib
+176>X86InstrInfo.cpp
+178>------ Build started: Project: clangAST, Configuration: Debug x64 ------
+177>X86AsmBackend.cpp
+177>X86ELFObjectWriter.cpp
+177>X86MCAsmInfo.cpp
+177>X86MCCodeEmitter.cpp
+177>X86MCTargetDesc.cpp
+177>X86MachObjectWriter.cpp
+177>X86WinCOFFObjectWriter.cpp
+177>X86WinCOFFStreamer.cpp
+176>X86InstructionSelector.cpp
+177>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcwincoffstreamer.h(76): warning C4266: 'void llvm::MCObjectStreamer::EmitLabel(llvm::MCSymbol *,llvm::SMLoc,llvm::MCFragment *)': no override available for virtual member function from base 'llvm::MCObjectStreamer'; function is hidden (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Target\X86\MCTargetDesc\X86WinCOFFStreamer.cpp)
+177>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcobjectstreamer.h(93): note: see declaration of 'llvm::MCObjectStreamer::EmitLabel' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Target\X86\MCTargetDesc\X86WinCOFFStreamer.cpp)
+177>d:\davit\dev\forks\root\original\interpreter\llvm\src\include\llvm\mc\mcobjectstreamer.h(36): note: see declaration of 'llvm::MCObjectStreamer' (compiling source file D:\davit\dev\forks\root\original\interpreter\llvm\src\lib\Target\X86\MCTargetDesc\X86WinCOFFStreamer.cpp)
+178>APValue.cpp
+178>ASTConsumer.cpp
+178>ASTContext.cpp
+178>ASTDiagnostic.cpp
+176>X86InterleavedAccess.cpp
+177>LLVMX86Desc.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMX86Desc.lib
+178>ASTDumper.cpp
+177>Done building project "LLVMX86Desc.vcxproj".
+179>------ Build started: Project: clangAnalysis, Configuration: Debug x64 ------
+176>X86LegalizerInfo.cpp
+176>X86MCInstLower.cpp
+178>ASTImporter.cpp
+176>X86MachineFunctionInfo.cpp
+178>ASTStructuralEquivalence.cpp
+176>X86MacroFusion.cpp
+179>AnalysisDeclContext.cpp
+179>BodyFarm.cpp
+179>CFG.cpp
+179>CFGReachabilityAnalysis.cpp
+179>CFGStmtMap.cpp
+179>CallGraph.cpp
+179>CloneDetection.cpp
+176>X86OptimizeLEAs.cpp
+178>ASTTypeTraits.cpp
+176>X86PadShortFunction.cpp
+176>X86RegisterBankInfo.cpp
+178>AttrImpl.cpp
+178>CXXInheritance.cpp
+178>Comment.cpp
+179>CocoaConventions.cpp
+179>CodeInjector.cpp
+179>Consumed.cpp
+176>X86RegisterInfo.cpp
+178>CommentBriefParser.cpp
+179>Dominators.cpp
+179>FormatString.cpp
+179>LiveVariables.cpp
+176>X86SelectionDAGInfo.cpp
+178>CommentCommandTraits.cpp
+178>CommentLexer.cpp
+176>X86ShuffleDecodeConstantPool.cpp
+178>CommentParser.cpp
+178>CommentSema.cpp
+176>X86Subtarget.cpp
+178>Decl.cpp
+176>X86TargetMachine.cpp
+179>OSLog.cpp
+179>ObjCNoReturn.cpp
+178>DeclBase.cpp
+176>X86TargetObjectFile.cpp
+178>DeclCXX.cpp
+179>PostOrderCFGView.cpp
+179>PrintfFormatString.cpp
+176>X86TargetTransformInfo.cpp
+179>ProgramPoint.cpp
+178>DeclFriend.cpp
+179>PseudoConstantAnalysis.cpp
+179>ReachableCode.cpp
+178>DeclGroup.cpp
+176>X86VZeroUpper.cpp
+176>X86WinAllocaExpander.cpp
+178>DeclObjC.cpp
+178>DeclOpenMP.cpp
+179>ScanfFormatString.cpp
+176>X86WinEHState.cpp
+179>ThreadSafety.cpp
+179>ThreadSafetyCommon.cpp
+178>DeclPrinter.cpp
+178>DeclTemplate.cpp
+179>ThreadSafetyLogical.cpp
+179>ThreadSafetyTIL.cpp
+178>DeclarationName.cpp
+178>Expr.cpp
+179>UninitializedValues.cpp
+178>ExprCXX.cpp
+178>ExprClassification.cpp
+178>ExprConstant.cpp
+178>ExprObjC.cpp
+178>ExternalASTMerger.cpp
+178>ExternalASTSource.cpp
+178>InheritViz.cpp
+169>LLVMScalarOpts.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMScalarOpts.lib
+169>Done building project "LLVMScalarOpts.vcxproj".
+178>ItaniumCXXABI.cpp
+180>------ Build started: Project: clangBasic, Configuration: Debug x64 ------
+178>ItaniumMangle.cpp
+179>clangAnalysis.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangAnalysis.lib
+181>------ Build started: Project: clangCodeGen, Configuration: Debug x64 ------
+178>Mangle.cpp
+176>LLVMX86CodeGen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMX86CodeGen.lib
+178>MicrosoftCXXABI.cpp
+182>------ Build started: Project: clangDriver, Configuration: Debug x64 ------
+180>Attributes.cpp
+180>Builtins.cpp
+178>MicrosoftMangle.cpp
+180>CharInfo.cpp
+180>Cuda.cpp
+181>BackendUtil.cpp
+180>Diagnostic.cpp
+181>CGAtomic.cpp
+180>DiagnosticIDs.cpp
+181>CGBlocks.cpp
+181>CGBuiltin.cpp
+180>DiagnosticOptions.cpp
+178>NSAPI.cpp
+180>FileManager.cpp
+178>NestedNameSpecifier.cpp
+180>FileSystemStatCache.cpp
+178>ODRHash.cpp
+180>IdentifierTable.cpp
+180>LangOptions.cpp
+180>MemoryBufferCache.cpp
+182>Action.cpp
+178>OpenMPClause.cpp
+180>Module.cpp
+182>Compilation.cpp
+180>ObjCRuntime.cpp
+178>ParentMap.cpp
+182>Distro.cpp
+180>OpenMPKinds.cpp
+182>Driver.cpp
+180>OperatorPrecedence.cpp
+182>DriverOptions.cpp
+180>SanitizerBlacklist.cpp
+182>Job.cpp
+180>Sanitizers.cpp
+182>Multilib.cpp
+180>SourceLocation.cpp
+180>SourceManager.cpp
+180>TargetInfo.cpp
+180>Targets.cpp
+178>RawCommentList.cpp
+180>TokenKinds.cpp
+182>Phases.cpp
+180>Version.cpp
+182>SanitizerArgs.cpp
+180>VersionTuple.cpp
+180>VirtualFileSystem.cpp
+182>Tool.cpp
+180>Warnings.cpp
+182>ToolChain.cpp
+178>RecordLayout.cpp
+182>AMDGPU.cpp
+180>XRayLists.cpp
+178>RecordLayoutBuilder.cpp
+178>SelectorLocationsKind.cpp
+182>AVR.cpp
+181>CGCUDANV.cpp
+178>Stmt.cpp
+182>Ananas.cpp
+182>AArch64.cpp
+181>CGCUDARuntime.cpp
+181>CGCXX.cpp
+182>ARM.cpp
+181>CGCXXABI.cpp
+178>StmtCXX.cpp
+182>Mips.cpp
+178>StmtIterator.cpp
+182>PPC.cpp
+180>clangBasic.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangBasic.lib
+182>Sparc.cpp
+182>SystemZ.cpp
+182>X86.cpp
+182>BareMetal.cpp
+178>StmtObjC.cpp
+182>Bitrig.cpp
+182>Clang.cpp
+178>StmtOpenMP.cpp
+178>StmtPrinter.cpp
+178>StmtProfile.cpp
+183>------ Build started: Project: clangEdit, Configuration: Debug x64 ------
+182>CloudABI.cpp
+178>StmtViz.cpp
+182>CommonArgs.cpp
+182>Contiki.cpp
+181>CGCall.cpp
+182>CrossWindows.cpp
+182>Cuda.cpp
+178>TemplateBase.cpp
+181>CGClass.cpp
+182>Darwin.cpp
+178>TemplateName.cpp
+178>Type.cpp
+178>TypeLoc.cpp
+182>DragonFly.cpp
+183>Commit.cpp
+183>EditedSource.cpp
+183>RewriteObjCFoundationAPI.cpp
+181>CGCleanup.cpp
+181>CGCoroutine.cpp
+182>FreeBSD.cpp
+182>Fuchsia.cpp
+182>Gnu.cpp
+178>TypePrinter.cpp
+182>Haiku.cpp
+178>VTTBuilder.cpp
+182>Hexagon.cpp
+178>VTableBuilder.cpp
+182>Linux.cpp
+183>clangEdit.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangEdit.lib
+182>MSVC.cpp
+182>MinGW.cpp
+182>Minix.cpp
+182>MipsLinux.cpp
+184>------ Build started: Project: clangFrontend, Configuration: Debug x64 ------
+182>Myriad.cpp
+182>NaCl.cpp
+182>NetBSD.cpp
+182>OpenBSD.cpp
+181>CGDebugInfo.cpp
+181>CGDecl.cpp
+181>CGDeclCXX.cpp
+182>PS4CPU.cpp
+182>Solaris.cpp
+181>CGException.cpp
+182>TCE.cpp
+184>ASTConsumers.cpp
+184>ASTMerge.cpp
+184>ASTUnit.cpp
+184>CacheTokens.cpp
+182>WebAssembly.cpp
+182>XCore.cpp
+182>Types.cpp
+184>ChainedDiagnosticConsumer.cpp
+182>XRayArgs.cpp
+178>clangAST.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangAST.lib
+184>ChainedIncludesSource.cpp
+185>------ Build started: Project: clangLex, Configuration: Debug x64 ------
+184>CodeGenOptions.cpp
+184>CompilerInstance.cpp
+181>CGExpr.cpp
+184>CompilerInvocation.cpp
+181>CGExprAgg.cpp
+185>HeaderMap.cpp
+185>HeaderSearch.cpp
+185>Lexer.cpp
+185>LiteralSupport.cpp
+181>CGExprCXX.cpp
+181>CGExprComplex.cpp
+185>MacroArgs.cpp
+182>clangDriver.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangDriver.lib
+184>CreateInvocationFromCommandLine.cpp
+185>MacroInfo.cpp
+185>ModuleMap.cpp
+185>PPCaching.cpp
+185>PPCallbacks.cpp
+184>DependencyFile.cpp
+186>------ Build started: Project: clangParse, Configuration: Debug x64 ------
+185>PPConditionalDirectiveRecord.cpp
+185>PPDirectives.cpp
+184>DependencyGraph.cpp
+185>PPExpressions.cpp
+185>PPLexerChange.cpp
+184>DiagnosticRenderer.cpp
+184>FrontendAction.cpp
+185>PPMacroExpansion.cpp
+186>ParseAST.cpp
+184>FrontendActions.cpp
+186>ParseCXXInlineMethods.cpp
+186>ParseDecl.cpp
+186>ParseDeclCXX.cpp
+185>PTHLexer.cpp
+184>FrontendOptions.cpp
+185>Pragma.cpp
+185>PreprocessingRecord.cpp
+181>CGExprConstant.cpp
+184>HeaderIncludeGen.cpp
+181>CGExprScalar.cpp
+184>InitHeaderSearch.cpp
+181>CGGPUBuiltin.cpp
+181>CGLoopInfo.cpp
+185>Preprocessor.cpp
+185>PreprocessorLexer.cpp
+185>ScratchBuffer.cpp
+185>TokenConcatenation.cpp
+184>InitPreprocessor.cpp
+184>LangStandards.cpp
+185>TokenLexer.cpp
+184>LayoutOverrideSource.cpp
+186>ParseExpr.cpp
+184>LogDiagnosticPrinter.cpp
+186>ParseExprCXX.cpp
+186>ParseInit.cpp
+186>ParseObjc.cpp
+184>ModuleDependencyCollector.cpp
+181>CGObjC.cpp
+184>MultiplexConsumer.cpp
+184>PCHContainerOperations.cpp
+184>PrecompiledPreamble.cpp
+184>PrintPreprocessedOutput.cpp
+184>SerializedDiagnosticPrinter.cpp
+185>clangLex.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangLex.lib
+181>CGObjCGNU.cpp
+181>CGObjCMac.cpp
+181>CGObjCRuntime.cpp
+186>ParseOpenMP.cpp
+186>ParsePragma.cpp
+187>------ Build started: Project: clangRewrite, Configuration: Debug x64 ------
+186>ParseStmt.cpp
+184>SerializedDiagnosticReader.cpp
+184>TestModuleFileExtension.cpp
+186>ParseStmtAsm.cpp
+184>TextDiagnostic.cpp
+184>TextDiagnosticBuffer.cpp
+184>TextDiagnosticPrinter.cpp
+184>VerifyDiagnosticConsumer.cpp
+187>DeltaTree.cpp
+187>HTMLRewrite.cpp
+187>RewriteRope.cpp
+187>Rewriter.cpp
+187>TokenRewriter.cpp
+181>CGOpenCLRuntime.cpp
+186>ParseTemplate.cpp
+186>ParseTentative.cpp
+186>Parser.cpp
+187>clangRewrite.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangRewrite.lib
+181>CGOpenMPRuntime.cpp
+181>CGOpenMPRuntimeNVPTX.cpp
+181>CGRecordLayoutBuilder.cpp
+184>clangFrontend.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangFrontend.lib
+188>------ Build started: Project: clangRewriteFrontend, Configuration: Debug x64 ------
+189>------ Build started: Project: clangSema, Configuration: Debug x64 ------
+188>FixItRewriter.cpp
+188>FrontendActions.cpp
+188>HTMLPrint.cpp
+181>CGStmt.cpp
+188>InclusionRewriter.cpp
+188>RewriteMacros.cpp
+186>clangParse.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangParse.lib
+188>RewriteModernObjC.cpp
+190>------ Build started: Project: clangSerialization, Configuration: Debug x64 ------
+188>RewriteObjC.cpp
+188>RewriteTest.cpp
+181>CGStmtOpenMP.cpp
+181>CGVTT.cpp
+181>CGVTables.cpp
+190>ASTCommon.cpp
+190>ASTReader.cpp
+190>ASTReaderDecl.cpp
+190>ASTReaderStmt.cpp
+190>ASTWriter.cpp
+188>RewriteModernObjC.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+181>CodeGenABITypes.cpp
+188>clangRewriteFrontend.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangRewriteFrontend.lib
+190>ASTWriterDecl.cpp
+190>ASTWriterStmt.cpp
+188>Done building project "clangRewriteFrontend.vcxproj".
+191>------ Build started: Project: LLVMLTO, Configuration: Debug x64 ------
+181>CodeGenAction.cpp
+190>GeneratePCH.cpp
+181>CodeGenFunction.cpp
+181>CodeGenModule.cpp
+191>Caching.cpp
+191>LTO.cpp
+191>LTOBackend.cpp
+191>LTOCodeGenerator.cpp
+190>GlobalModuleIndex.cpp
+181>CodeGenPGO.cpp
+190>Module.cpp
+190>ModuleFileExtension.cpp
+190>ModuleManager.cpp
+191>LTOModule.cpp
+191>ThinLTOCodeGenerator.cpp
+191>UpdateCompilerUsed.cpp
+190>clangSerialization.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangSerialization.lib
+181>CodeGenTBAA.cpp
+181>CodeGenTypes.cpp
+192>------ Build started: Project: copymodulemap, Configuration: Debug x64 ------
+191>LLVMLTO.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\LLVMLTO.lib
+181>ConstantInitBuilder.cpp
+181>CoverageMappingGen.cpp
+181>ItaniumCXXABI.cpp
+193>------ Build started: Project: LZMA (ExternalProjectTargets\LZMA\LZMA), Configuration: Debug x64 ------
+194>------ Build started: Project: PCRE (ExternalProjectTargets\PCRE\PCRE), Configuration: Debug x64 ------
+195>------ Build started: Project: Cont, Configuration: Debug x64 ------
+181>MacroPPCallbacks.cpp
+196>------ Build started: Project: Zip, Configuration: Debug x64 ------
+195>TArray.cxx
+195>TArrayC.cxx
+181>MicrosoftCXXABI.cpp
+195>TArrayD.cxx
+195>TArrayF.cxx
+195>TArrayI.cxx
+196>Bits.c
+196>ZDeflate.c
+196>ZInflate.c
+181>ModuleBuilder.cpp
+196>ZTrees.c
+196>Generating Code...
+181>ObjectFilePCHContainerOperations.cpp
+196>Compression.cxx
+196>RZip.cxx
+195>TArrayL.cxx
+196>Generating Code...
+195>TArrayL64.cxx
+196>Zip.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\zip\Zip.dir\Debug\Zip.lib
+195>TArrayS.cxx
+197>------ Build started: Project: TextInput, Configuration: Debug x64 ------
+181>SanitizerMetadata.cpp
+195>TBits.cxx
+195>TBtree.cxx
+195>TClassTable.cxx
+197>Getline.cxx
+195>TClonesArray.cxx
+181>SwiftCallingConv.cpp
+181>TargetInfo.cpp
+195>TCollection.cxx
+197>Getline_color.cxx
+195>TExMap.cxx
+181>VarBypassDetector.cpp
+195>THashList.cxx
+197>Editor.cpp
+195>THashTable.cxx
+197>History.cpp
+195>TIterator.cxx
+195>TList.cxx
+197>KeyBinding.cpp
+195>TMap.cxx
+197>Range.cpp
+195>TObjArray.cxx
+197>SignalHandler.cpp
+195>Generating Code...
+197>StreamReader.cpp
+195>Compiling...
+195>TObjectTable.cxx
+197>StreamReaderUnix.cpp
+197>StreamReaderWin.cpp
+195>TOrdCollection.cxx
+197>TerminalConfigUnix.cpp
+195>TRefArray.cxx
+197>TerminalDisplay.cpp
+195>TRefTable.cxx
+197>TerminalDisplayUnix.cpp
+195>TSeqCollection.cxx
+197>TerminalDisplayWin.cpp
+195>TSortedList.cxx
+197>TextInput.cpp
+195>Generating Code...
+197>TextInputContext.cpp
+195>Cont.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\cont\Cont.dir\Debug\Cont.lib
+197>Generating Code...
+198>------ Build started: Project: Foundation, Configuration: Debug x64 ------
+197>TextInput.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\textinput\TextInput.dir\Debug\TextInput.lib
+199>------ Build started: Project: Meta, Configuration: Debug x64 ------
+199>TBaseClass.cxx
+199>TClass.cxx
+200>------ Build started: Project: Lzma, Configuration: Debug x64 ------
+199>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+199>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+199>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+199>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+199>TClassGenerator.cxx
+201>------ Build started: Project: Lz4, Configuration: Debug x64 ------
+199>TClassMenuItem.cxx
+199>TClassRef.cxx
+201>ZipLZ4.cxx
+201>Lz4.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\lz4\Lz4.dir\Debug\Lz4.lib
+202>------ Build started: Project: move_artifacts, Configuration: Debug x64 ------
+199>TDataMember.cxx
+199>TDataType.cxx
+199>TDictAttributeMap.cxx
+199>TDictionary.cxx
+199>TEnum.cxx
+199>TEnumConstant.cxx
+199>TFunction.cxx
+199>TFunctionTemplate.cxx
+199>TGenericClassInfo.cxx
+199>TGlobal.cxx
+199>TInterpreter.cxx
+199>TIsAProxy.cxx
+181>clangCodeGen.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\Debug\lib\clangCodeGen.lib
+203>------ Build started: Project: Winnt, Configuration: Debug x64 ------
+199>TListOfDataMembers.cxx
+199>TListOfEnums.cxx
+199>TListOfEnumsWithLock.cxx
+203>TWin32SplashThread.cxx
+203>TWinNTSystem.cxx
+199>Generating Code...
+199>Compiling...
+199>TListOfFunctionTemplates.cxx
+199>TListOfFunctions.cxx
+203>Win32Splash.cxx
+203>Generating Code...
+203>Winnt.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\winnt\Winnt.dir\Debug\Winnt.lib
+199>TMethod.cxx
+199>TMethodArg.cxx
+199>TMethodCall.cxx
+199>TProtoClass.cxx
+199>TRealData.cxx
+199>TSchemaRule.cxx
+199>TSchemaRuleSet.cxx
+199>TStatusBitsChecker.cxx
+199>TStreamerElement.cxx
+199>TToggle.cxx
+204>------ Build started: Project: rootcling_stage1, Configuration: Debug x64 ------
+199>TToggleGroup.cxx
+204>rootcling_stage1.cxx
+199>TViewPubDataMembers.cxx
+199>TViewPubFunctions.cxx
+199>TVirtualStreamerInfo.cxx
+199>Generating Code...
+199>Done building project "Meta.vcxproj" -- FAILED.
+204>   Creating library D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/rootcling_stage1.lib and object D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/rootcling_stage1.exp
+204>LINK : the 32-bit linker (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX86\x64\link.exe) failed to do memory mapped file I/O on `..\..\interpreter\llvm\src\Debug\lib\clangCodeGen.lib' and is going to restart linking with a 64-bit linker for better throughput
+204>LINK : failed to locate a 64-bit linker on %PATH%, continuing the current linking; please consider switching to 64-bit linker
+204>TClingUtils.obj : warning LNK4049: locally defined symbol ?gReadRules@ROOT@@3V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$list@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@V?$allocator@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$list@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@V?$allocator@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@2@@2@@std@@@2@@std@@A (class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::list<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >,class std::allocator<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::list<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >,class std::allocator<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > > > > > ROOT::gReadRules) imported
+204>rootcling_impl.obj : warning LNK4049: locally defined symbol ?gReadRules@ROOT@@3V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$list@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@V?$allocator@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$list@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@V?$allocator@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@2@@2@@std@@@2@@std@@A (class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::list<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >,class std::allocator<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::list<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >,class std::allocator<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > > > > > ROOT::gReadRules) imported
+204>TClingUtils.obj : warning LNK4049: locally defined symbol ?gReadRawRules@ROOT@@3V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$list@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@V?$allocator@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$list@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@V?$allocator@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@2@@2@@std@@@2@@std@@A (class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::list<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >,class std::allocator<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::list<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >,class std::allocator<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > > > > > ROOT::gReadRawRules) imported
+204>rootcling_impl.obj : warning LNK4049: locally defined symbol ?gReadRawRules@ROOT@@3V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$list@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@V?$allocator@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$list@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@V?$allocator@V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V12@@std@@@2@@std@@@2@@2@@std@@@2@@std@@A (class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::list<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >,class std::allocator<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::list<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > >,class std::allocator<class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > > > > > ROOT::gReadRawRules) imported
+204>TClingUtils.obj : error LNK2019: unresolved external symbol "public: __cdecl cling::Interpreter::PushTransactionRAII::PushTransactionRAII(class cling::Interpreter const *)" (??0PushTransactionRAII@Interpreter@cling@@QEAA@PEBV12@@Z) referenced in function "bool __cdecl ROOT::TMetaUtils::RequireCompleteType(class cling::Interpreter const &,class clang::SourceLocation,class clang::QualType)" (?RequireCompleteType@TMetaUtils@ROOT@@YA_NAEBVInterpreter@cling@@VSourceLocation@clang@@VQualType@6@@Z)
+204>DictSelectionReader.obj : error LNK2001: unresolved external symbol "public: __cdecl cling::Interpreter::PushTransactionRAII::PushTransactionRAII(class cling::Interpreter const *)" (??0PushTransactionRAII@Interpreter@cling@@QEAA@PEBV12@@Z)
+204>rootcling_impl.obj : error LNK2001: unresolved external symbol "public: __cdecl cling::Interpreter::PushTransactionRAII::PushTransactionRAII(class cling::Interpreter const *)" (??0PushTransactionRAII@Interpreter@cling@@QEAA@PEBV12@@Z)
+204>clingInterpreter.lib(LookupHelper.obj) : error LNK2001: unresolved external symbol "public: __cdecl cling::Interpreter::PushTransactionRAII::PushTransactionRAII(class cling::Interpreter const *)" (??0PushTransactionRAII@Interpreter@cling@@QEAA@PEBV12@@Z)
+204>TClingUtils.obj : error LNK2019: unresolved external symbol "public: __cdecl cling::Interpreter::PushTransactionRAII::~PushTransactionRAII(void)" (??1PushTransactionRAII@Interpreter@cling@@QEAA@XZ) referenced in function "bool __cdecl ROOT::TMetaUtils::RequireCompleteType(class cling::Interpreter const &,class clang::SourceLocation,class clang::QualType)" (?RequireCompleteType@TMetaUtils@ROOT@@YA_NAEBVInterpreter@cling@@VSourceLocation@clang@@VQualType@6@@Z)
+204>DictSelectionReader.obj : error LNK2001: unresolved external symbol "public: __cdecl cling::Interpreter::PushTransactionRAII::~PushTransactionRAII(void)" (??1PushTransactionRAII@Interpreter@cling@@QEAA@XZ)
+204>rootcling_impl.obj : error LNK2001: unresolved external symbol "public: __cdecl cling::Interpreter::PushTransactionRAII::~PushTransactionRAII(void)" (??1PushTransactionRAII@Interpreter@cling@@QEAA@XZ)
+204>clingInterpreter.lib(LookupHelper.obj) : error LNK2001: unresolved external symbol "public: __cdecl cling::Interpreter::PushTransactionRAII::~PushTransactionRAII(void)" (??1PushTransactionRAII@Interpreter@cling@@QEAA@XZ)
+204>clingInterpreter.lib(InterpreterCallbacks.obj) : error LNK2001: unresolved external symbol "public: class clang::CompilerInstance * __cdecl cling::Interpreter::getCI(void)const " (?getCI@Interpreter@cling@@QEBAPEAVCompilerInstance@clang@@XZ)
+204>TClingUtils.obj : error LNK2001: unresolved external symbol "public: class clang::CompilerInstance * __cdecl cling::Interpreter::getCI(void)const " (?getCI@Interpreter@cling@@QEBAPEAVCompilerInstance@clang@@XZ)
+204>Scanner.obj : error LNK2001: unresolved external symbol "public: class clang::CompilerInstance * __cdecl cling::Interpreter::getCI(void)const " (?getCI@Interpreter@cling@@QEBAPEAVCompilerInstance@clang@@XZ)
+204>rootcling_impl.obj : error LNK2001: unresolved external symbol "public: class clang::CompilerInstance * __cdecl cling::Interpreter::getCI(void)const " (?getCI@Interpreter@cling@@QEBAPEAVCompilerInstance@clang@@XZ)
+204>clingInterpreter.lib(LookupHelper.obj) : error LNK2001: unresolved external symbol "public: class clang::CompilerInstance * __cdecl cling::Interpreter::getCI(void)const " (?getCI@Interpreter@cling@@QEBAPEAVCompilerInstance@clang@@XZ)
+204>TClingUtils.obj : error LNK2019: unresolved external symbol "public: class clang::Sema & __cdecl cling::Interpreter::getSema(void)const " (?getSema@Interpreter@cling@@QEBAAEAVSema@clang@@XZ) referenced in function "class clang::FunctionDecl const * __cdecl ROOT::TMetaUtils::ClassInfo__HasMethod(class clang::DeclContext const *,char const *,class cling::Interpreter const &)" (?ClassInfo__HasMethod@TMetaUtils@ROOT@@YAPEBVFunctionDecl@clang@@PEBVDeclContext@4@PEBDAEBVInterpreter@cling@@@Z)
+204>Scanner.obj : error LNK2001: unresolved external symbol "public: class clang::Sema & __cdecl cling::Interpreter::getSema(void)const " (?getSema@Interpreter@cling@@QEBAAEAVSema@clang@@XZ)
+204>clingInterpreter.lib(LookupHelper.obj) : error LNK2001: unresolved external symbol "public: class clang::Sema & __cdecl cling::Interpreter::getSema(void)const " (?getSema@Interpreter@cling@@QEBAAEAVSema@clang@@XZ)
+204>clingInterpreter.lib(InterpreterCallbacks.obj) : error LNK2001: unresolved external symbol "public: class clang::Sema & __cdecl cling::Interpreter::getSema(void)const " (?getSema@Interpreter@cling@@QEBAAEAVSema@clang@@XZ)
+204>TClingUtils.obj : error LNK2019: unresolved external symbol "public: void __cdecl cling::Interpreter::forwardDeclare(class cling::Transaction &,class clang::Preprocessor &,class clang::ASTContext &,class llvm::raw_ostream &,bool,class llvm::raw_ostream *,bool (__cdecl*)(class clang::PresumedLoc const &))const " (?forwardDeclare@Interpreter@cling@@QEBAXAEAVTransaction@2@AEAVPreprocessor@clang@@AEAVASTContext@5@AEAVraw_ostream@llvm@@_NPEAV78@P6A_NAEBVPresumedLoc@5@@Z@Z) referenced in function "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const __cdecl ROOT::TMetaUtils::AST2SourceTools::Decls2FwdDecls(class std::vector<class clang::Decl const *,class std::allocator<class clang::Decl const *> > const &,bool (__cdecl*)(class clang::PresumedLoc const &),class cling::Interpreter const &)" (?Decls2FwdDecls@AST2SourceTools@TMetaUtils@ROOT@@YA?BV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$vector@PEBVDecl@clang@@V?$allocator@PEBVDecl@clang@@@std@@@5@P6A_NAEBVPresumedLoc@clang@@@ZAEBVInterpreter@cling@@@Z)
+204>LinkdefReader.obj : error LNK2019: unresolved external symbol "public: enum cling::Interpreter::CompilationResult __cdecl cling::Interpreter::declare(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cling::Transaction * *)" (?declare@Interpreter@cling@@QEAA?AW4CompilationResult@12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAPEAVTransaction@2@@Z) referenced in function "public: bool __cdecl LinkdefReader::LoadIncludes(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)" (?LoadIncludes@LinkdefReader@@QEAA_NAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+204>rootcling_impl.obj : error LNK2001: unresolved external symbol "public: enum cling::Interpreter::CompilationResult __cdecl cling::Interpreter::declare(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cling::Transaction * *)" (?declare@Interpreter@cling@@QEAA?AW4CompilationResult@12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAPEAVTransaction@2@@Z)
+204>SelectionRules.obj : error LNK2019: unresolved external symbol __imp_PathMatchSpecA referenced in function "bool __cdecl Implies(class ClassSelectionRule const &,class ClassSelectionRule const &)" (?Implies@@YA_NAEBVClassSelectionRule@@0@Z)
+204>TModuleGenerator.obj : error LNK2019: unresolved external symbol "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl ROOT::TMetaUtils::GetModuleFileNameW(char const *)" (?GetModuleFileNameW@TMetaUtils@ROOT@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBD@Z) referenced in function "public: __cdecl ROOT::TModuleGenerator::TModuleGenerator(class clang::CompilerInstance *,bool,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool)" (??0TModuleGenerator@ROOT@@QEAA@PEAVCompilerInstance@clang@@_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "private: __cdecl cling::Interpreter::Interpreter(int,char const * const *,char const *,bool,class cling::Interpreter const *)" (??0Interpreter@cling@@AEAA@HPEBQEBDPEBD_NPEBV01@@Z) referenced in function "public: __cdecl cling::Interpreter::Interpreter(int,char const * const *,char const *,bool)" (??0Interpreter@cling@@QEAA@HPEBQEBDPEBD_N@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "public: void __cdecl cling::Interpreter::AddIncludePath(class llvm::StringRef)" (?AddIncludePath@Interpreter@cling@@QEAAXVStringRef@llvm@@@Z) referenced in function "int __cdecl RootClingMain(int,char * *,bool,bool)" (?RootClingMain@@YAHHPEAPEAD_N1@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "public: void __cdecl cling::Interpreter::GetIncludePaths(class llvm::SmallVectorImpl<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > &,bool,bool)" (?GetIncludePaths@Interpreter@cling@@QEAAXAEAV?$SmallVectorImpl@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@llvm@@_N1@Z) referenced in function "bool __cdecl Which(class cling::Interpreter &,char const *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &)" (?Which@@YA_NAEAVInterpreter@cling@@PEBDAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "public: void __cdecl cling::Interpreter::DumpIncludePath(class llvm::raw_ostream *)" (?DumpIncludePath@Interpreter@cling@@QEAAXPEAVraw_ostream@llvm@@@Z) referenced in function "int __cdecl RootClingMain(int,char * *,bool,bool)" (?RootClingMain@@YAHHPEAPEAD_N1@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "public: void __cdecl cling::Interpreter::printIncludedFiles(class llvm::raw_ostream &)const " (?printIncludedFiles@Interpreter@cling@@QEBAXAEAVraw_ostream@llvm@@@Z) referenced in function "int __cdecl RootClingMain(int,char * *,bool,bool)" (?RootClingMain@@YAHHPEAPEAD_N1@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "public: enum cling::Interpreter::CompilationResult __cdecl cling::Interpreter::parseForModule(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?parseForModule@Interpreter@cling@@QEAA?AW4CompilationResult@12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function "int __cdecl FinalizeStreamerInfoWriting(class cling::Interpreter &,bool)" (?FinalizeStreamerInfoWriting@@YAHAEAVInterpreter@cling@@_N@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "public: class clang::DiagnosticsEngine & __cdecl cling::Interpreter::getDiagnostics(void)const " (?getDiagnostics@Interpreter@cling@@QEBAAEAVDiagnosticsEngine@clang@@XZ) referenced in function "int __cdecl RootClingMain(int,char * *,bool,bool)" (?RootClingMain@@YAHHPEAPEAD_N1@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "public: void __cdecl cling::Interpreter::setCallbacks(class std::unique_ptr<class cling::InterpreterCallbacks,struct std::default_delete<class cling::InterpreterCallbacks> >)" (?setCallbacks@Interpreter@cling@@QEAAXV?$unique_ptr@VInterpreterCallbacks@cling@@U?$default_delete@VInterpreterCallbacks@cling@@@std@@@std@@@Z) referenced in function "int __cdecl RootClingMain(int,char * *,bool,bool)" (?RootClingMain@@YAHHPEAPEAD_N1@Z)
+204>rootcling_impl.obj : error LNK2019: unresolved external symbol "const cling::Interpreter::`vftable'" (??_7Interpreter@cling@@6B@) referenced in function "public: __cdecl cling::Interpreter::Interpreter(int,char const * const *,char const *,bool)" (??0Interpreter@cling@@QEAA@HPEBQEBDPEBD_N@Z)
+204>clingInterpreter.lib(LookupHelper.obj) : error LNK2019: unresolved external symbol "public: class clang::Parser & __cdecl cling::Interpreter::getParser(void)" (?getParser@Interpreter@cling@@QEAAAEAVParser@clang@@XZ) referenced in function "bool __cdecl cling::ParseWithShortcuts(class clang::DeclContext *,class clang::ASTContext &,class llvm::StringRef,class cling::Interpreter *,class clang::UnqualifiedId &,enum cling::LookupHelper::DiagSetting)" (?ParseWithShortcuts@cling@@YA_NPEAVDeclContext@clang@@AEAVASTContext@3@VStringRef@llvm@@PEAVInterpreter@1@AEAVUnqualifiedId@3@W4DiagSetting@LookupHelper@1@@Z)
+204>clingInterpreter.lib(LookupHelper.obj) : error LNK2019: unresolved external symbol "public: class clang::SourceLocation __cdecl cling::Interpreter::getNextAvailableLoc(void)const " (?getNextAvailableLoc@Interpreter@cling@@QEBA?AVSourceLocation@clang@@XZ) referenced in function "public: class clang::Decl const * __cdecl cling::LookupHelper::findScope(class llvm::StringRef,enum cling::LookupHelper::DiagSetting,class clang::Type const * *,bool)const " (?findScope@LookupHelper@cling@@QEBAPEBVDecl@clang@@VStringRef@llvm@@W4DiagSetting@12@PEAPEBVType@4@_N@Z)
+204>clingInterpreter.lib(LookupHelper.obj) : error LNK2019: unresolved external symbol "public: class cling::Transaction const * __cdecl cling::Interpreter::getLatestTransaction(void)const " (?getLatestTransaction@Interpreter@cling@@QEBAPEBVTransaction@2@XZ) referenced in function "public: enum cling::LookupHelper::StringType __cdecl cling::LookupHelper::getStringType(class clang::Type const *)" (?getStringType@LookupHelper@cling@@QEAA?AW4StringType@12@PEBVType@clang@@@Z)
+204>clingInterpreter.lib(InterpreterCallbacks.obj) : error LNK2019: unresolved external symbol "public: enum cling::Interpreter::CompilationResult __cdecl cling::Interpreter::process(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cling::Value *,class cling::Transaction * *,bool)" (?process@Interpreter@cling@@QEAA?AW4CompilationResult@12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVValue@2@PEAPEAVTransaction@2@_N@Z) referenced in function "public: __cdecl cling::test::SymbolResolverCallback::SymbolResolverCallback(class cling::Interpreter *,bool)" (??0SymbolResolverCallback@test@cling@@QEAA@PEAVInterpreter@2@_N@Z)
+204>D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\rootcling_stage1.exe : fatal error LNK1120: 21 unresolved externals
+204>Done building project "rootcling_stage1.vcxproj" -- FAILED.
+205>------ Build started: Project: G__Core, Configuration: Debug x64 ------
+205>Generating G__Core.cxx, ../../lib/libCore.rootmap
+205>The system cannot find the file specified
+205>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(209,5): error MSB6006: "cmd.exe" exited with code 1.
+205>Done building project "G__Core.vcxproj" -- FAILED.
+206>------ Build started: Project: Base, Configuration: Debug x64 ------
+206>Generating G__Core.cxx, ../../lib/libCore.rootmap
+206>The system cannot find the file specified
+206>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(209,5): error MSB6006: "cmd.exe" exited with code 1.
+206>Done building project "Base.vcxproj" -- FAILED.
+207>------ Build started: Project: gitcommit, Configuration: Debug x64 ------
+208>------ Build started: Project: BaseTROOT, Configuration: Debug x64 ------
+208>TROOT.cxx
+208>BaseTROOT.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\BaseTROOT.dir\Debug\BaseTROOT.lib
+209>------ Build started: Project: Core, Configuration: Debug x64 ------
+209>Auto build dll exports
+209>Couldn't open file 'D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/base/Base.dir/Debug/G__Core.obj' with CreateFile()
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: The command "setlocal
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: cd D:\davit\dev\forks\root\prj\root\root_cmake\win64
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E __create_def D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/Core.dir/Debug/exports.def D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/Core.dir/Debug//objects.txt
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmEnd
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmErrorLevel
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: exit /b %1
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmDone
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd
+209>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :VCEnd" exited with code 1.
+209>Done building project "Core.vcxproj" -- FAILED.
+========== Build: 204 succeeded, 5 failed, 2 up-to-date, 0 skipped ==========
