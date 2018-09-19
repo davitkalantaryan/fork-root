@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D55FAAD-1320-3E5B-B42E-51FC5C53D248}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>obj.clingUtils</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj.clingUtils.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj.clingUtils.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj.clingUtils</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj.clingUtils.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj.clingUtils.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj.clingUtils</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obj.clingUtils.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obj.clingUtils.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obj.clingUtils</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obj.clingUtils.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obj.clingUtils.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obj.clingUtils</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4291;4244;4049;4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>w32pragma.h;sehmap.h</ForcedIncludeFiles>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;LLVM_BUILD_GLOBAL_ISEL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLING_VERSION=ROOT_0.6~dev;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;LLVM_BUILD_GLOBAL_ISEL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLING_VERSION=ROOT_0.6~dev;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <DisableSpecificWarnings>4141;4291;4244;4049;4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>w32pragma.h;sehmap.h</ForcedIncludeFiles>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;LLVM_BUILD_GLOBAL_ISEL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLING_VERSION=ROOT_0.6~dev;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;LLVM_BUILD_GLOBAL_ISEL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLING_VERSION=ROOT_0.6~dev;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <DisableSpecificWarnings>4141;4291;4244;4049;4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>w32pragma.h;sehmap.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;LLVM_BUILD_GLOBAL_ISEL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLING_VERSION=ROOT_0.6~dev;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;LLVM_BUILD_GLOBAL_ISEL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLING_VERSION=ROOT_0.6~dev;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:strictStrings -w14062 /EHs-c-</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4291;4244;4049;4141;4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4577;4091;4592;4319;4324</DisableSpecificWarnings>
+      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>w32pragma.h;sehmap.h</ForcedIncludeFiles>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;LLVM_BUILD_GLOBAL_ISEL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLING_VERSION=ROOT_0.6~dev;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;LLVM_BUILD_GLOBAL_ISEL;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;UNICODE;_UNICODE;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLING_VERSION=ROOT_0.6~dev;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils;D:\davit\dev\forks\root\original\interpreter\cling\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include;D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include;D:\davit\dev\forks\root\original\interpreter\llvm\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/davit/dev/forks/root/original/interpreter/cling/lib/Utils/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HD:/davit/dev/forks/root/original -BD:/davit/dev/forks/root/prj/root/root_cmake/win64 --check-stamp-file D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/lib/Utils/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/davit/dev/forks/root/original/interpreter/cling/lib/Utils/CMakeLists.txt;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/davit/dev/forks/root/original/interpreter/cling/lib/Utils/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HD:/davit/dev/forks/root/original -BD:/davit/dev/forks/root/prj/root/root_cmake/win64 --check-stamp-file D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/lib/Utils/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/davit/dev/forks/root/original/interpreter/cling/lib/Utils/CMakeLists.txt;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/davit/dev/forks/root/original/interpreter/cling/lib/Utils/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HD:/davit/dev/forks/root/original -BD:/davit/dev/forks/root/prj/root/root_cmake/win64 --check-stamp-file D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/lib/Utils/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/davit/dev/forks/root/original/interpreter/cling/lib/Utils/CMakeLists.txt;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/davit/dev/forks/root/original/interpreter/cling/lib/Utils/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HD:/davit/dev/forks/root/original -BD:/davit/dev/forks/root/prj/root/root_cmake/win64 --check-stamp-file D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/lib/Utils/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/davit/dev/forks/root/original/interpreter/cling/lib/Utils/CMakeLists.txt;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt;D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\lib\Utils\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\AST.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\Diagnostics.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\ParserStateRAII.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\Output.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\Paths.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformMac.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformPosix.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\PlatformWin.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\SourceNormalization.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\UTF8.cpp" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\interpreter\cling\lib\Utils\Validation.cpp" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\AST.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\Casting.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\Diagnostics.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\OrderedMap.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\Output.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\ParserStateRAII.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\Paths.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\Platform.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\SourceNormalization.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\UTF8.h" />
+    <ClInclude Include="D:\davit\dev\forks\root\original\interpreter\cling\include\cling\Utils\Validation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\ZERO_CHECK.vcxproj">
+      <Project>{1449AF80-30A3-3358-A09A-BEAE15D73FCE}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangARMNeon.vcxproj">
+      <Project>{36B0CEB0-9781-320F-BA84-2BD0E53FAA83}</Project>
+      <Name>ClangARMNeon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangAttrClasses.vcxproj">
+      <Project>{4911613E-3A8B-3847-85F0-20F8F8EAC037}</Project>
+      <Name>ClangAttrClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangAttrDump.vcxproj">
+      <Project>{5A3093CA-C616-3EFB-9455-4C523321E04C}</Project>
+      <Name>ClangAttrDump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangAttrHasAttributeImpl.vcxproj">
+      <Project>{21340940-7F4D-34CC-A324-85880EB37B23}</Project>
+      <Name>ClangAttrHasAttributeImpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangAttrImpl.vcxproj">
+      <Project>{DD7EA9E9-43C6-3788-A0DA-9D8BA73D0259}</Project>
+      <Name>ClangAttrImpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangAttrList.vcxproj">
+      <Project>{EB06E2C8-7208-3C63-A280-0080D6D39238}</Project>
+      <Name>ClangAttrList</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Serialization\ClangAttrPCHRead.vcxproj">
+      <Project>{3764F073-BB56-3824-8FC4-546E89A48022}</Project>
+      <Name>ClangAttrPCHRead</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Serialization\ClangAttrPCHWrite.vcxproj">
+      <Project>{29430236-24C4-3C07-AAE5-B35021868907}</Project>
+      <Name>ClangAttrPCHWrite</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Sema\ClangAttrParsedAttrImpl.vcxproj">
+      <Project>{1644B106-11D8-3DA8-8D87-CC46F30EF1FD}</Project>
+      <Name>ClangAttrParsedAttrImpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Sema\ClangAttrParsedAttrKinds.vcxproj">
+      <Project>{A5CAC1D1-EBCB-347D-A442-13AF7098FF57}</Project>
+      <Name>ClangAttrParsedAttrKinds</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Sema\ClangAttrParsedAttrList.vcxproj">
+      <Project>{8419E2C7-4036-328A-98B8-CA5DF7F891B3}</Project>
+      <Name>ClangAttrParsedAttrList</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Parse\ClangAttrParserStringSwitches.vcxproj">
+      <Project>{D7DA76FE-D149-3896-946E-BFC92B5BDFD5}</Project>
+      <Name>ClangAttrParserStringSwitches</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Sema\ClangAttrSpellingListIndex.vcxproj">
+      <Project>{E34FB781-02D5-3BA2-8F31-CD34944D15C7}</Project>
+      <Name>ClangAttrSpellingListIndex</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Parse\ClangAttrSubMatchRulesParserStringSwitches.vcxproj">
+      <Project>{4741AF87-B462-3BDD-9E12-1B3B469D132A}</Project>
+      <Name>ClangAttrSubMatchRulesParserStringSwitches</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangAttrSubjectMatchRuleList.vcxproj">
+      <Project>{DF4E3545-1B9E-39E6-A00C-EFB531FB30D7}</Project>
+      <Name>ClangAttrSubjectMatchRuleList</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Sema\ClangAttrTemplateInstantiate.vcxproj">
+      <Project>{EFB703ED-E015-329F-9620-FBEFA3707D7A}</Project>
+      <Name>ClangAttrTemplateInstantiate</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangAttrVisitor.vcxproj">
+      <Project>{17DE5A93-2418-3CCA-8B3F-2EDB789534DA}</Project>
+      <Name>ClangAttrVisitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangCommentCommandInfo.vcxproj">
+      <Project>{FEE072FB-B1F4-38C4-AC18-6CF4B04305C6}</Project>
+      <Name>ClangCommentCommandInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangCommentCommandList.vcxproj">
+      <Project>{5B83ED7D-7916-30F2-9797-D55AC228BB00}</Project>
+      <Name>ClangCommentCommandList</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangCommentHTMLNamedCharacterReferences.vcxproj">
+      <Project>{4BDD8E0A-6E04-3333-BEEC-E6D199C13967}</Project>
+      <Name>ClangCommentHTMLNamedCharacterReferences</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangCommentHTMLTags.vcxproj">
+      <Project>{86F56B66-BBD3-3776-9486-BF9B25C4D905}</Project>
+      <Name>ClangCommentHTMLTags</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangCommentHTMLTagsProperties.vcxproj">
+      <Project>{8F41F17D-068C-3B8F-AD56-BA248DCD1AB8}</Project>
+      <Name>ClangCommentHTMLTagsProperties</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangCommentNodes.vcxproj">
+      <Project>{B2DE7BCE-756F-3568-8B79-BE1AC1B1A9EC}</Project>
+      <Name>ClangCommentNodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangDeclNodes.vcxproj">
+      <Project>{BE0F94B1-C512-386D-9854-0F318285897C}</Project>
+      <Name>ClangDeclNodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticAST.vcxproj">
+      <Project>{4FCA5E6F-EF0E-3CD0-A934-6F7D8AC32819}</Project>
+      <Name>ClangDiagnosticAST</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticAnalysis.vcxproj">
+      <Project>{83A7117B-9ACF-31DE-8542-CA59461011F7}</Project>
+      <Name>ClangDiagnosticAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticComment.vcxproj">
+      <Project>{246E53C4-BC92-35B3-BBED-259BD7115625}</Project>
+      <Name>ClangDiagnosticComment</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticCommon.vcxproj">
+      <Project>{5C31AE74-12E3-3783-9474-A52421E533E5}</Project>
+      <Name>ClangDiagnosticCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticDriver.vcxproj">
+      <Project>{B6DCF923-FB03-33D1-8C07-9AAC6B62F6F3}</Project>
+      <Name>ClangDiagnosticDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticFrontend.vcxproj">
+      <Project>{B6546C25-5660-3DBF-87FE-9C7024AB58FC}</Project>
+      <Name>ClangDiagnosticFrontend</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticGroups.vcxproj">
+      <Project>{D7FA80F4-E918-37CC-8950-DE7A767DE917}</Project>
+      <Name>ClangDiagnosticGroups</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticIndexName.vcxproj">
+      <Project>{EBBB3EDC-6EE5-3388-97CC-AF954F9180E9}</Project>
+      <Name>ClangDiagnosticIndexName</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticLex.vcxproj">
+      <Project>{6FA84C52-8D48-3684-A678-83CF54BC1D8B}</Project>
+      <Name>ClangDiagnosticLex</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticParse.vcxproj">
+      <Project>{CA5BC26A-378F-3CB3-A55C-027EF9A3A6DF}</Project>
+      <Name>ClangDiagnosticParse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticSema.vcxproj">
+      <Project>{459EFDCE-40B1-3268-B5B7-BD7412D4954A}</Project>
+      <Name>ClangDiagnosticSema</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\Basic\ClangDiagnosticSerialization.vcxproj">
+      <Project>{977BEC12-3AE5-3893-9826-4C0A7BBE261E}</Project>
+      <Name>ClangDiagnosticSerialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\StaticAnalyzer\Checkers\ClangSACheckers.vcxproj">
+      <Project>{DCE894FD-C1DE-3CB5-B2B1-E484668E7DE5}</Project>
+      <Name>ClangSACheckers</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include\clang\AST\ClangStmtNodes.vcxproj">
+      <Project>{2C587F14-4FAD-3047-BEDC-9FAE27F073F5}</Project>
+      <Name>ClangStmtNodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\lib\Headers\clang-headers.vcxproj">
+      <Project>{92B7C3FF-6C4B-3E61-A95D-BAE9CFBC4A38}</Project>
+      <Name>clang-headers</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include\llvm\IR\intrinsics_gen.vcxproj">
+      <Project>{A6A48D41-D9C1-35DF-9040-6049297CD99E}</Project>
+      <Name>intrinsics_gen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

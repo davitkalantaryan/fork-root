@@ -556,6 +556,13 @@ const void *CheckImp(void *addr, bool dllimp) {
   return (const void *)addr;
 }
 
+#ifdef _MSC_VER
+#ifdef GetModuleFileName_defined
+#pragma pop_macro("GetModuleFileName")
+#undef GetModuleFileName_defined
+#endif // #ifdef GetModuleFileName_defined
+#endif // #ifdef _MSC_VER
+
 const void* DLSym(const std::string& Name, std::string* Err) {
  #ifdef _WIN64
   const DWORD Flags = LIST_MODULES_64BIT;

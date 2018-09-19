@@ -62,6 +62,14 @@
 #define strncasecmp _strnicmp
 #endif
 
+#ifdef _MSC_VER
+#ifdef GetModuleFileName
+#define GetModuleFileName_defined
+#pragma push_macro("GetModuleFileName")
+#undef GetModuleFileName
+#endif // #ifdef GetModuleFileName
+#endif // #ifdef _MSC_VER
+
 namespace ROOT {
 namespace TMetaUtils {
 
