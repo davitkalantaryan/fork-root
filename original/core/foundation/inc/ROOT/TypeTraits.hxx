@@ -38,12 +38,14 @@ template <typename T, bool HasCallOp = ROOT::Detail::HasCallOp<T>(0)>
 struct CallableTraitsImpl {};
 
 // Extract signature of operator() and delegate to the appropriate CallableTraitsImpl overloads
+#if 0
 template <typename T>
 struct CallableTraitsImpl<T, true> {
    using arg_types = typename CallableTraitsImpl<decltype(&T::operator())>::arg_types;
    using arg_types_nodecay = typename CallableTraitsImpl<decltype(&T::operator())>::arg_types_nodecay;
    using ret_type = typename CallableTraitsImpl<decltype(&T::operator())>::ret_type;
 };
+#endif
 
 // lambdas, std::function, const member functions
 template <typename R, typename T, typename... Args>

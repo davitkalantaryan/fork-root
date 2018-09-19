@@ -1,6 +1,6 @@
 
 
-  Files
+  Files (root_intrinsic.h)
  
  1. TROOT.cxx (single file in the project BaseTROOT.vcxproj)
  2. LLVMSupport.vcxproj
