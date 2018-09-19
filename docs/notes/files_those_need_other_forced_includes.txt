@@ -2,12 +2,15 @@
 
   Files (  root_intrinsic.h  )
  
- 1. TROOT.cxx (single file in the project BaseTROOT.vcxproj)
- 2. LLVMSupport.vcxproj
- 3. obj.clingUtils.vcxproj
- 4. Dictgen.vcxproj 
- 5. clangDriver.vcxproj
- 6. TextInput.vcxproj
- 7. Winnt.vcxproj
- 8. core\base\Base.vcxproj
+ 1.  TROOT.cxx (single file in the project BaseTROOT.vcxproj)
+ 2.  LLVMSupport.vcxproj
+ 3.  obj.clingUtils.vcxproj
+ 4.  Dictgen.vcxproj 
+ 5.  clangDriver.vcxproj
+ 6.  TextInput.vcxproj
+ 7.  Winnt.vcxproj
+ 8.  core\base\Base.vcxproj
+ 9.  core\metacling\src\MetaCling.vcxproj
+ 10. core\thread\ThreadObjs.vcxproj
+ 11. io\io\RIOObjs.vcxproj
  

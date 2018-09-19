@@ -33,12 +33,21 @@
     <ClInclude Include="..\..\root\root_cmake\win64\include\ROOT\typetraits.hxx">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\original\core\clingutils\res\TClingUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\original\build\win\winnt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\util\root_util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\util\TROOTnew.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\original\core\clingutils\src\TClingUtils.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -756,6 +756,13 @@ namespace {
       return SUCCEEDED(hres);
    }
 
+#ifdef _MSC_VER
+#ifdef GetModuleFileName_defined
+#pragma pop_macro("GetModuleFileName")
+#undef GetModuleFileName_defined
+#endif // #ifdef GetModuleFileName_defined
+#endif // #ifdef _MSC_VER
+
    void UpdateRegistry(TWinNTSystem* sys, char* buf /* size of buffer: MAX_MODULE_NAME32 + 1 */) {
       // register ROOT as the .root file handler:
       GetModuleFileName(0, buf, MAX_MODULE_NAME32 + 1);

@@ -215,10 +215,13 @@
     <ClInclude Include="..\..\..\original\build\win\root_intrinsic.h" />
     <ClInclude Include="..\..\..\original\build\win\root_warning_disable.h" />
     <ClInclude Include="..\..\..\original\build\win\w32pragma.h" />
+    <ClInclude Include="..\..\..\original\build\win\winnt.h" />
     <ClInclude Include="..\..\..\original\build\win\winnt_macroses.h" />
+    <ClInclude Include="..\..\..\original\core\clingutils\res\TClingUtils.h" />
     <ClInclude Include="..\..\root\root_cmake\win64\include\ROOT\typetraits.hxx" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\original\core\clingutils\src\TClingUtils.cxx" />
     <ClCompile Include="..\..\..\src\util\root_util.cpp" />
     <ClCompile Include="..\..\..\src\util\TROOTnew.cpp" />
   </ItemGroup>

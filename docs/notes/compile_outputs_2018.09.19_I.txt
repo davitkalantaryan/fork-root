@@ -1,0 +1,832 @@
+1>------ Build started: Project: move_header_core_foundation, Configuration: MinSizeRel x64 ------
+2>------ Build started: Project: ClangDriverOptions, Configuration: MinSizeRel x64 ------
+3>------ Build started: Project: intrinsics_gen, Configuration: MinSizeRel x64 ------
+4>------ Build started: Project: ClangDiagnosticCommon, Configuration: MinSizeRel x64 ------
+5>------ Build started: Project: ClangDiagnosticFrontend, Configuration: MinSizeRel x64 ------
+2>Updating Options.inc...
+3>Updating Attributes.gen...
+5>Updating DiagnosticFrontendKinds.inc...
+4>Updating DiagnosticCommonKinds.inc...
+3>Updating Intrinsics.gen...
+6>------ Build started: Project: ClangDiagnosticGroups, Configuration: MinSizeRel x64 ------
+7>------ Build started: Project: ClangDiagnosticIndexName, Configuration: MinSizeRel x64 ------
+8>------ Build started: Project: ClangDiagnosticLex, Configuration: MinSizeRel x64 ------
+9>------ Build started: Project: ClangDiagnosticParse, Configuration: MinSizeRel x64 ------
+6>Updating DiagnosticGroups.inc...
+7>Updating DiagnosticIndexName.inc...
+8>Updating DiagnosticLexKinds.inc...
+9>Updating DiagnosticParseKinds.inc...
+10>------ Build started: Project: ClangDiagnosticSema, Configuration: MinSizeRel x64 ------
+11>------ Build started: Project: ClangDiagnosticSerialization, Configuration: MinSizeRel x64 ------
+12>------ Build started: Project: ClangSACheckers, Configuration: MinSizeRel x64 ------
+13>------ Build started: Project: ClangStmtNodes, Configuration: MinSizeRel x64 ------
+10>Updating DiagnosticSemaKinds.inc...
+11>Updating DiagnosticSerializationKinds.inc...
+12>Updating Checkers.inc...
+14>------ Build started: Project: clang-headers, Configuration: MinSizeRel x64 ------
+13>Updating StmtNodes.inc...
+15>------ Build started: Project: ClangDiagnosticAnalysis, Configuration: MinSizeRel x64 ------
+16>------ Build started: Project: ClangDiagnosticComment, Configuration: MinSizeRel x64 ------
+17>------ Build started: Project: ClangDiagnosticDriver, Configuration: MinSizeRel x64 ------
+15>Updating DiagnosticAnalysisKinds.inc...
+14>Updating arm_neon.h...
+16>Updating DiagnosticCommentKinds.inc...
+17>Updating DiagnosticDriverKinds.inc...
+14>Copying clang's arm_neon.h...
+18>------ Build started: Project: ClangARMNeon, Configuration: MinSizeRel x64 ------
+19>------ Build started: Project: ClangAttrClasses, Configuration: MinSizeRel x64 ------
+20>------ Build started: Project: ClangAttrDump, Configuration: MinSizeRel x64 ------
+18>Updating arm_neon.inc...
+21>------ Build started: Project: ClangAttrHasAttributeImpl, Configuration: MinSizeRel x64 ------
+19>Updating Attrs.inc...
+20>Updating AttrDump.inc...
+22>------ Build started: Project: ClangAttrImpl, Configuration: MinSizeRel x64 ------
+23>------ Build started: Project: ClangAttrList, Configuration: MinSizeRel x64 ------
+24>------ Build started: Project: ClangAttrPCHRead, Configuration: MinSizeRel x64 ------
+21>Updating AttrHasAttributeImpl.inc...
+22>Updating AttrImpl.inc...
+23>Updating AttrList.inc...
+24>Updating AttrPCHRead.inc...
+25>------ Build started: Project: ClangAttrPCHWrite, Configuration: MinSizeRel x64 ------
+26>------ Build started: Project: ClangAttrParsedAttrImpl, Configuration: MinSizeRel x64 ------
+27>------ Build started: Project: ClangAttrParsedAttrKinds, Configuration: MinSizeRel x64 ------
+25>Updating AttrPCHWrite.inc...
+28>------ Build started: Project: ClangAttrParsedAttrList, Configuration: MinSizeRel x64 ------
+26>Updating AttrParsedAttrImpl.inc...
+27>Updating AttrParsedAttrKinds.inc...
+29>------ Build started: Project: ClangAttrParserStringSwitches, Configuration: MinSizeRel x64 ------
+28>Updating AttrParsedAttrList.inc...
+30>------ Build started: Project: ClangAttrSpellingListIndex, Configuration: MinSizeRel x64 ------
+31>------ Build started: Project: ClangAttrSubMatchRulesParserStringSwitches, Configuration: MinSizeRel x64 ------
+29>Updating AttrParserStringSwitches.inc...
+32>------ Build started: Project: ClangAttrSubjectMatchRuleList, Configuration: MinSizeRel x64 ------
+33>------ Build started: Project: ClangAttrTemplateInstantiate, Configuration: MinSizeRel x64 ------
+30>Updating AttrSpellingListIndex.inc...
+32>Updating AttrSubMatchRulesList.inc...
+34>------ Build started: Project: ClangAttrVisitor, Configuration: MinSizeRel x64 ------
+33>Updating AttrTemplateInstantiate.inc...
+35>------ Build started: Project: ClangCommentCommandInfo, Configuration: MinSizeRel x64 ------
+36>------ Build started: Project: ClangCommentCommandList, Configuration: MinSizeRel x64 ------
+37>------ Build started: Project: ClangCommentHTMLNamedCharacterReferences, Configuration: MinSizeRel x64 ------
+34>Updating AttrVisitor.inc...
+35>Updating CommentCommandInfo.inc...
+36>Updating CommentCommandList.inc...
+37>Updating CommentHTMLNamedCharacterReferences.inc...
+38>------ Build started: Project: ClangCommentHTMLTags, Configuration: MinSizeRel x64 ------
+39>------ Build started: Project: ClangCommentHTMLTagsProperties, Configuration: MinSizeRel x64 ------
+40>------ Build started: Project: ClangCommentNodes, Configuration: MinSizeRel x64 ------
+41>------ Build started: Project: ClangDeclNodes, Configuration: MinSizeRel x64 ------
+38>Updating CommentHTMLTags.inc...
+41>Updating DeclNodes.inc...
+39>Updating CommentHTMLTagsProperties.inc...
+40>Updating CommentNodes.inc...
+42>------ Build started: Project: ClangDiagnosticAST, Configuration: MinSizeRel x64 ------
+43>------ Build started: Project: move_header_core_imt, Configuration: MinSizeRel x64 ------
+44>------ Build started: Project: move_header_core_lz4, Configuration: MinSizeRel x64 ------
+45>------ Build started: Project: move_header_core_lzma, Configuration: MinSizeRel x64 ------
+42>Updating DiagnosticASTKinds.inc...
+46>------ Build started: Project: move_header_core_meta, Configuration: MinSizeRel x64 ------
+47>------ Build started: Project: move_header_core_rint, Configuration: MinSizeRel x64 ------
+48>------ Build started: Project: move_header_core_textinput, Configuration: MinSizeRel x64 ------
+49>------ Build started: Project: move_header_core_thread, Configuration: MinSizeRel x64 ------
+50>------ Build started: Project: move_header_core_winnt, Configuration: MinSizeRel x64 ------
+51>------ Build started: Project: move_header_core_zip, Configuration: MinSizeRel x64 ------
+52>------ Build started: Project: move_header_geom_gdml, Configuration: MinSizeRel x64 ------
+53>------ Build started: Project: move_header_geom_geom, Configuration: MinSizeRel x64 ------
+54>------ Build started: Project: move_header_geom_geombuilder, Configuration: MinSizeRel x64 ------
+55>------ Build started: Project: move_header_geom_geompainter, Configuration: MinSizeRel x64 ------
+56>------ Build started: Project: move_header_graf2d_asimage, Configuration: MinSizeRel x64 ------
+57>------ Build started: Project: move_header_graf2d_gpad, Configuration: MinSizeRel x64 ------
+58>------ Build started: Project: move_header_graf2d_graf, Configuration: MinSizeRel x64 ------
+59>------ Build started: Project: move_header_graf2d_postscript, Configuration: MinSizeRel x64 ------
+60>------ Build started: Project: move_header_graf2d_win32gdk, Configuration: MinSizeRel x64 ------
+61>------ Build started: Project: move_header_graf3d_eve, Configuration: MinSizeRel x64 ------
+62>------ Build started: Project: move_header_graf3d_ftgl, Configuration: MinSizeRel x64 ------
+63>------ Build started: Project: move_header_graf3d_g3d, Configuration: MinSizeRel x64 ------
+64>------ Build started: Project: move_header_graf3d_gl, Configuration: MinSizeRel x64 ------
+65>------ Build started: Project: move_header_io_sql, Configuration: MinSizeRel x64 ------
+66>------ Build started: Project: move_header_graf3d_glew, Configuration: MinSizeRel x64 ------
+67>------ Build started: Project: move_header_graf3d_gviz3d, Configuration: MinSizeRel x64 ------
+68>------ Build started: Project: move_header_gui_fitpanel, Configuration: MinSizeRel x64 ------
+69>------ Build started: Project: move_header_gui_ged, Configuration: MinSizeRel x64 ------
+70>------ Build started: Project: move_header_gui_gui, Configuration: MinSizeRel x64 ------
+71>------ Build started: Project: move_header_gui_guibuilder, Configuration: MinSizeRel x64 ------
+72>------ Build started: Project: move_header_gui_guihtml, Configuration: MinSizeRel x64 ------
+73>------ Build started: Project: move_header_gui_recorder, Configuration: MinSizeRel x64 ------
+74>------ Build started: Project: move_header_gui_sessionviewer, Configuration: MinSizeRel x64 ------
+75>------ Build started: Project: move_header_hist_hist, Configuration: MinSizeRel x64 ------
+76>------ Build started: Project: move_header_hist_histpainter, Configuration: MinSizeRel x64 ------
+77>------ Build started: Project: move_header_hist_spectrum, Configuration: MinSizeRel x64 ------
+78>------ Build started: Project: move_header_hist_spectrumpainter, Configuration: MinSizeRel x64 ------
+79>------ Build started: Project: move_header_html, Configuration: MinSizeRel x64 ------
+80>------ Build started: Project: move_header_io_io, Configuration: MinSizeRel x64 ------
+81>------ Build started: Project: move_header_io_xml, Configuration: MinSizeRel x64 ------
+82>------ Build started: Project: move_header_math_foam, Configuration: MinSizeRel x64 ------
+83>------ Build started: Project: move_header_math_fumili, Configuration: MinSizeRel x64 ------
+84>------ Build started: Project: move_header_math_genvector, Configuration: MinSizeRel x64 ------
+85>------ Build started: Project: move_header_math_mathmore, Configuration: MinSizeRel x64 ------
+86>------ Build started: Project: move_header_math_matrix, Configuration: MinSizeRel x64 ------
+87>------ Build started: Project: move_header_math_minuit, Configuration: MinSizeRel x64 ------
+88>------ Build started: Project: move_header_math_mlp, Configuration: MinSizeRel x64 ------
+89>------ Build started: Project: move_header_math_physics, Configuration: MinSizeRel x64 ------
+90>------ Build started: Project: move_header_math_quadp, Configuration: MinSizeRel x64 ------
+91>------ Build started: Project: move_header_math_smatrix, Configuration: MinSizeRel x64 ------
+92>------ Build started: Project: move_header_math_splot, Configuration: MinSizeRel x64 ------
+93>------ Build started: Project: move_header_math_vecops, Configuration: MinSizeRel x64 ------
+94>------ Build started: Project: move_header_montecarlo_eg, Configuration: MinSizeRel x64 ------
+95>------ Build started: Project: move_header_montecarlo_vmc, Configuration: MinSizeRel x64 ------
+96>------ Build started: Project: move_header_net_auth, Configuration: MinSizeRel x64 ------
+97>------ Build started: Project: move_header_net_http, Configuration: MinSizeRel x64 ------
+98>------ Build started: Project: move_header_net_httpsniff, Configuration: MinSizeRel x64 ------
+99>------ Build started: Project: move_header_net_net, Configuration: MinSizeRel x64 ------
+100>------ Build started: Project: move_header_proof_proof, Configuration: MinSizeRel x64 ------
+101>------ Build started: Project: move_header_proof_proofplayer, Configuration: MinSizeRel x64 ------
+102>------ Build started: Project: move_header_tree_dataframe, Configuration: MinSizeRel x64 ------
+103>------ Build started: Project: move_header_tree_tree, Configuration: MinSizeRel x64 ------
+104>------ Build started: Project: move_header_tree_treeplayer, Configuration: MinSizeRel x64 ------
+105>------ Build started: Project: move_header_tree_treeviewer, Configuration: MinSizeRel x64 ------
+106>------ Build started: Project: move_header_math_mathcore, Configuration: MinSizeRel x64 ------
+107>------ Build started: Project: move_header_bindings_pyroot, Configuration: MinSizeRel x64 ------
+108>------ Build started: Project: move_header_core_base, Configuration: MinSizeRel x64 ------
+109>------ Build started: Project: move_header_core_clib, Configuration: MinSizeRel x64 ------
+110>------ Build started: Project: move_header_core_clingutils, Configuration: MinSizeRel x64 ------
+111>------ Build started: Project: move_header_core_cont, Configuration: MinSizeRel x64 ------
+112>------ Build started: Project: X86CommonTableGen, Configuration: MinSizeRel x64 ------
+113>------ Build started: Project: llvm_vcsrevision_h, Configuration: MinSizeRel x64 ------
+114>------ Build started: Project: AttributeCompatFuncTableGen, Configuration: MinSizeRel x64 ------
+115>------ Build started: Project: move_headers, Configuration: MinSizeRel x64 ------
+114>Updating AttributesCompatFunc.inc...
+112>Updating X86GenRegisterInfo.inc...
+116>------ Build started: Project: LLVMRES, Configuration: MinSizeRel x64 ------
+117>------ Build started: Project: PCRE (ExternalProjectTargets\PCRE\PCRE), Configuration: MinSizeRel x64 ------
+112>Updating X86GenDisassemblerTables.inc...
+112>Updating X86GenInstrInfo.inc...
+112>Updating X86GenAsmWriter.inc...
+112>Updating X86GenAsmWriter1.inc...
+112>Updating X86GenAsmMatcher.inc...
+112>Updating X86GenDAGISel.inc...
+112>Updating X86GenFastISel.inc...
+112>Updating X86GenCallingConv.inc...
+118>------ Build started: Project: copymodulemap, Configuration: MinSizeRel x64 ------
+112>Updating X86GenSubtargetInfo.inc...
+112>Updating X86GenEVEX2VEXTables.inc...
+112>Updating X86GenRegisterBank.inc...
+119>------ Build started: Project: LZMA (ExternalProjectTargets\LZMA\LZMA), Configuration: MinSizeRel x64 ------
+120>------ Build started: Project: move_artifacts, Configuration: MinSizeRel x64 ------
+112>Updating X86GenGlobalISel.inc...
+121>------ Build started: Project: Winnt, Configuration: MinSizeRel x64 ------
+122>------ Build started: Project: G__Core, Configuration: MinSizeRel x64 ------
+123>------ Build started: Project: Meta, Configuration: MinSizeRel x64 ------
+124>------ Build started: Project: TextInput, Configuration: MinSizeRel x64 ------
+123>TClass.cxx
+124>Getline.cxx
+123>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+123>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+123>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+123>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+124>Getline_color.cxx
+123>Done building project "Meta.vcxproj" -- FAILED.
+125>------ Build started: Project: RootPcmObjs, Configuration: MinSizeRel x64 ------
+121>TWin32SplashThread.cxx
+121>TWinNTSystem.cxx
+126>------ Build started: Project: clad (ExternalProjectTargets\clad\clad), Configuration: MinSizeRel x64 ------
+126>Creating directories for 'clad'
+125>Building Custom Rule D:/davit/dev/forks/root/original/io/rootpcm/CMakeLists.txt
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(761): error C3861: 'GetModuleFileName': identifier not found
+125>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/io/rootpcm/CMakeFiles/generate.stamp is up-to-date.
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(1002): error C2039: 'GetModuleFileName': is not a member of '`global namespace''
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(1002): error C3861: 'GetModuleFileName': identifier not found
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(1107): error C2039: 'GetModuleFileName': is not a member of '`global namespace''
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(1107): error C3861: 'GetModuleFileName': identifier not found
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(1135): error C2039: 'GetModuleFileName': is not a member of '`global namespace''
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(1135): error C3861: 'GetModuleFileName': identifier not found
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4211): error C2143: syntax error: missing ')' before 'constant'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4211): error C2059: syntax error: ')'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4212): error C2059: syntax error: 'while'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4213): error C2143: syntax error: missing ';' before '{'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4237): error C2065: 'basepointer': undeclared identifier
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4237): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4237): error C2365: 'UnmapViewOfFile': redefinition; previous definition was 'function'
+121>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\memoryapi.h(282): note: see declaration of 'UnmapViewOfFile'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4238): error C2065: 'hMapping': undeclared identifier
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4238): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4238): error C2365: 'CloseHandle': redefinition; previous definition was 'function'
+121>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\handleapi.h(38): note: see declaration of 'CloseHandle'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4239): error C2065: 'hFile': undeclared identifier
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4239): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4239): error C2365: 'CloseHandle': redefinition; previous definition was 'function'
+121>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\handleapi.h(38): note: see declaration of 'CloseHandle'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4241): error C2059: syntax error: 'delete'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4243): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4245): error C2059: syntax error: 'if'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4248): error C2059: syntax error: 'return'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4249): error C2059: syntax error: '}'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4249): error C2143: syntax error: missing ';' before '}'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4265): error C2143: syntax error: missing ';' before '{'
+121>d:\davit\dev\forks\root\original\core\winnt\src\twinntsystem.cxx(4265): error C2447: '{': missing function header (old-style formal list?)
+126>Building Custom Rule D:/davit/dev/forks/root/original/interpreter/cling/tools/plugins/clad/CMakeLists.txt
+126>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/CMakeFiles/generate.stamp is up-to-date.
+126>Performing download step (git clone) for 'clad'
+124>Editor.cpp
+121>Win32Splash.cxx
+125>rootclingIO.cxx
+121>Generating Code...
+125>RootPcmObjs.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\rootpcm\RootPcmObjs.dir\MinSizeRel\RootPcmObjs.lib
+121>Done building project "Winnt.vcxproj" -- FAILED.
+127>------ Build started: Project: MetaCling, Configuration: MinSizeRel x64 ------
+127>Building Custom Rule D:/davit/dev/forks/root/original/core/metacling/src/CMakeLists.txt
+127>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/metacling/src/CMakeFiles/generate.stamp is up-to-date.
+127>TCling.cxx
+124>History.cpp
+124>KeyBinding.cpp
+124>Range.cpp
+124>SignalHandler.cpp
+124>StreamReader.cpp
+126>-- clad download command succeeded.  See also D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-stamp/clad-download-*.log
+126>No update step for 'clad'
+126>No patch step for 'clad'
+126>Performing configure step for 'clad'
+124>StreamReaderUnix.cpp
+124>StreamReaderWin.cpp
+124>TerminalConfigUnix.cpp
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+127>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+124>TerminalDisplay.cpp
+127>TClingBaseClassInfo.cxx
+124>TerminalDisplayUnix.cpp
+124>TerminalDisplayWin.cpp
+124>TextInput.cpp
+124>TextInputContext.cpp
+124>Generating Code...
+127>TClingCallFunc.cxx
+124>TextInput.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\textinput\TextInput.dir\MinSizeRel\TextInput.lib
+126>-- clad configure command succeeded.  See also D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-stamp/clad-configure-*.log
+126>Performing build step for 'clad'
+127>TClingClassInfo.cxx
+127>TClingDataMemberInfo.cxx
+127>TClingMethodArgInfo.cxx
+127>TClingMethodInfo.cxx
+126>-- clad build command succeeded.  See also D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-stamp/clad-build-*.log
+126>Performing install step for 'clad'
+126>Microsoft (R) Build Engine version 15.8.168+ga8fba1ebd7 for .NET Framework
+126>Copyright (C) Microsoft Corporation. All rights reserved.
+126>
+126>Build started 9/19/2018 2:40:59 PM.
+126>Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\install.vcxproj" on node 1 (default targets).
+126>Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\install.vcxproj" (1) is building "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+126>PrepareForBuild:
+126>  Creating directory "x64\MinSizeRel\ZERO_CHECK\".
+126>  Creating directory "x64\MinSizeRel\ZERO_CHECK\ZERO_CHECK.tlog\".
+126>InitializeBuildStatus:
+126>  Creating "x64\MinSizeRel\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+126>CustomBuild:
+126>  Checking Build System
+126>  CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/CMakeFiles/generate.stamp is up-to-date.
+126>  CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/lib/CMakeFiles/generate.stamp is up-to-date.
+126>  CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/lib/Differentiator/CMakeFiles/generate.stamp is up-to-date.
+126>  CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/tools/CMakeFiles/generate.stamp is up-to-date.
+126>FinalizeBuildStatus:
+126>  Deleting file "x64\MinSizeRel\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+126>  Touching "x64\MinSizeRel\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate".
+126>Done Building Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\ZERO_CHECK.vcxproj" (default targets).
+126>Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\install.vcxproj" (1) is building "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\ALL_BUILD.vcxproj" (3) on node 1 (default targets).
+126>Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\ALL_BUILD.vcxproj" (3) is building "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\lib\Differentiator\cladDifferentiator.vcxproj" (4) on node 1 (default targets).
+126>PrepareForBuild:
+126>  Creating directory "cladDifferentiator.dir\MinSizeRel\".
+126>  Creating directory "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\lib\Differentiator\MinSizeRel\".
+126>  Creating directory "cladDifferentiator.dir\MinSizeRel\cladDiff.8E55289F.tlog\".
+126>InitializeBuildStatus:
+126>  Creating "cladDifferentiator.dir\MinSizeRel\cladDiff.8E55289F.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+126>CustomBuild:
+126>  Building Custom Rule D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad/lib/Differentiator/CMakeLists.txt
+126>  CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/lib/Differentiator/CMakeFiles/generate.stamp is up-to-date.
+126>ClCompile:
+126>  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX64\x64\CL.exe /c /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\lib\Differentiator" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\lib\Differentiator" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\include" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\include" /ID:\davit\dev\forks\root\original\interpreter\llvm\src\include /ID:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include /ID:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include /ID:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include /nologo /W3 /WX- /diagnostics:classic /MP /O1 /Ob1 /Oi /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_NONSTDC_NO_WARNINGS /D _SCL_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D UNICODE /D _UNICODE /D __STDC_CONSTANT_MACROS /D __STDC_FORMAT_MACROS /D __STDC_LIMIT_MACROS /D _HAS_EXCEPTIONS=0 /D GTEST_HAS_RTTI=0 /D _GNU_SOURCE /D "CLAD_SRCDIR_INCL=\"D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad/include\"" /D "CLAD_INSTDIR_INCL=\"D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/include\"" /D "CMAKE_INTDIR=\"MinSizeRel\"" /D _UNICODE /D UNICODE /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Zc:rvalueCast /GR- /Fo"cladDifferentiator.dir\MinSizeRel\\" /Fd"cladDifferentiator.dir\MinSizeRel\cladDifferentiator.pdb" /Gd /TP /wd4141 /wd4146 /wd4180 /wd4244 /wd4258 /wd4267 /wd4291 /wd4345 /wd4351 /wd4355 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4800 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4324 /FC /errorReport:queue /we4238  /Zc:strictStrings -w14062 /EHs-c- "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\lib\Differentiator\ConstantFolder.cpp" "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\lib\Differentiator\DerivativeBuilder.cpp" "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\lib\Differentiator\DiffPlanner.cpp" "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\lib\Differentiator\StmtClone.cpp"
+126>  ConstantFolder.cpp
+126>  DerivativeBuilder.cpp
+126>  DiffPlanner.cpp
+126>  StmtClone.cpp
+127>TClingTypeInfo.cxx
+127>TClingTypedefInfo.cxx
+127>TClingValue.cxx
+126>  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX64\x64\CL.exe /c /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\lib\Differentiator" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\lib\Differentiator" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\include" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\include" /ID:\davit\dev\forks\root\original\interpreter\llvm\src\include /ID:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include /ID:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include /ID:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include /nologo /W3 /WX- /diagnostics:classic /MP /O1 /Ob1 /Oi /D "CLAD_CLANG_COMPAT_REVISION=\"da4a2839d80ac52958be0129b871beedfe90136e\"" /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_NONSTDC_NO_WARNINGS /D _SCL_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D UNICODE /D _UNICODE /D __STDC_CONSTANT_MACROS /D __STDC_FORMAT_MACROS /D __STDC_LIMIT_MACROS /D _HAS_EXCEPTIONS=0 /D GTEST_HAS_RTTI=0 /D _GNU_SOURCE /D "CLAD_SRCDIR_INCL=\"D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad/include\"" /D "CLAD_INSTDIR_INCL=\"D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/include\"" /D "CMAKE_INTDIR=\"MinSizeRel\"" /D _UNICODE /D UNICODE /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Zc:rvalueCast /GR- /Fo"cladDifferentiator.dir\MinSizeRel\\" /Fd"cladDifferentiator.dir\MinSizeRel\cladDifferentiator.pdb" /Gd /TP /wd4141 /wd4146 /wd4180 /wd4244 /wd4258 /wd4267 /wd4291 /wd4345 /wd4351 /wd4355 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4800 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4324 /FC /errorReport:queue /we4238  /Zc:strictStrings -w14062 /EHs-c- "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\lib\Differentiator\Version.cpp"
+126>  Version.cpp
+127>rootclingTCling.cxx
+126>Lib:
+126>  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX64\x64\Lib.exe /OUT:"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\lib\Differentiator\MinSizeRel\cladDifferentiator.lib" /NOLOGO /MACHINE:X64  /machine:x64 cladDifferentiator.dir\MinSizeRel\ConstantFolder.obj
+126>  cladDifferentiator.dir\MinSizeRel\DerivativeBuilder.obj
+126>  cladDifferentiator.dir\MinSizeRel\DiffPlanner.obj
+126>  cladDifferentiator.dir\MinSizeRel\StmtClone.obj
+126>  cladDifferentiator.dir\MinSizeRel\Version.obj
+126>  cladDifferentiator.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\lib\Differentiator\MinSizeRel\cladDifferentiator.lib
+126>FinalizeBuildStatus:
+126>  Deleting file "cladDifferentiator.dir\MinSizeRel\cladDiff.8E55289F.tlog\unsuccessfulbuild".
+126>  Touching "cladDifferentiator.dir\MinSizeRel\cladDiff.8E55289F.tlog\cladDifferentiator.lastbuildstate".
+126>Done Building Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\lib\Differentiator\cladDifferentiator.vcxproj" (default targets).
+126>Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\ALL_BUILD.vcxproj" (3) is building "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\tools\cladPlugin.vcxproj" (5) on node 1 (default targets).
+126>PrepareForBuild:
+126>  Creating directory "cladPlugin.dir\MinSizeRel\".
+126>  Creating directory "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\tools\MinSizeRel\".
+126>  Creating directory "cladPlugin.dir\MinSizeRel\cladPlugin.tlog\".
+126>InitializeBuildStatus:
+126>  Creating "cladPlugin.dir\MinSizeRel\cladPlugin.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+126>CustomBuild:
+126>  Building Custom Rule D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad/tools/CMakeLists.txt
+126>  CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/tools/CMakeFiles/generate.stamp is up-to-date.
+126>ClCompile:
+126>  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX64\x64\CL.exe /c /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\tools" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\tools" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\include" /I"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\include" /ID:\davit\dev\forks\root\original\interpreter\llvm\src\include /ID:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\include /ID:\davit\dev\forks\root\original\interpreter\llvm\src\tools\clang\include /ID:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\clang\include /nologo /W3 /WX- /diagnostics:classic /MP /O1 /Ob1 /Oi /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_DEPRECATE /D _CRT_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_NONSTDC_NO_WARNINGS /D _SCL_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D UNICODE /D _UNICODE /D __STDC_CONSTANT_MACROS /D __STDC_FORMAT_MACROS /D __STDC_LIMIT_MACROS /D _HAS_EXCEPTIONS=0 /D GTEST_HAS_RTTI=0 /D _GNU_SOURCE /D "CLAD_SRCDIR_INCL=\"D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad/include\"" /D "CLAD_INSTDIR_INCL=\"D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/include\"" /D "CMAKE_INTDIR=\"MinSizeRel\"" /D _UNICODE /D UNICODE /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Zc:rvalueCast /GR- /Fo"cladPlugin.dir\MinSizeRel\\" /Fd"cladPlugin.dir\MinSizeRel\cladPlugin.pdb" /Gd /TP /wd4141 /wd4146 /wd4180 /wd4244 /wd4258 /wd4267 /wd4291 /wd4345 /wd4351 /wd4355 /wd4456 /wd4457 /wd4458 /wd4459 /wd4503 /wd4624 /wd4722 /wd4800 /wd4100 /wd4127 /wd4512 /wd4505 /wd4610 /wd4510 /wd4702 /wd4245 /wd4706 /wd4310 /wd4701 /wd4703 /wd4389 /wd4611 /wd4805 /wd4204 /wd4577 /wd4091 /wd4592 /wd4319 /wd4324 /FC /errorReport:queue /we4238  /Zc:strictStrings -w14062 /EHs-c- "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\tools\ClangPlugin.cpp" "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad\tools\RequiredSymbols.cpp"
+126>  ClangPlugin.cpp
+126>  RequiredSymbols.cpp
+127>Generating Code...
+127>Done building project "MetaCling.vcxproj" -- FAILED.
+128>------ Build started: Project: FREETYPE (ExternalProjectTargets\FREETYPE\FREETYPE), Configuration: MinSizeRel x64 ------
+128>Creating directories for 'FREETYPE'
+128>Building Custom Rule D:/davit/dev/forks/root/original/CMakeLists.txt
+128>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/CMakeFiles/generate.stamp is up-to-date.
+128>Performing download step (verify and extract) for 'FREETYPE'
+128>-- FREETYPE download command succeeded.  See also D:/davit/dev/forks/root/prj/root/root_cmake/win64/FREETYPE-prefix/src/FREETYPE-stamp/FREETYPE-download-*.log
+128>No update step for 'FREETYPE'
+128>No patch step for 'FREETYPE'
+128>Performing configure step for 'FREETYPE'
+126>Lib:
+126>  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.15.26726\bin\HostX64\x64\Lib.exe /OUT:"D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\tools\MinSizeRel\cladPlugin.lib" /NOLOGO /MACHINE:X64  /machine:x64 cladPlugin.dir\MinSizeRel\ClangPlugin.obj
+126>  cladPlugin.dir\MinSizeRel\RequiredSymbols.obj
+126>  cladPlugin.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\tools\MinSizeRel\cladPlugin.lib
+126>FinalizeBuildStatus:
+126>  Deleting file "cladPlugin.dir\MinSizeRel\cladPlugin.tlog\unsuccessfulbuild".
+126>  Touching "cladPlugin.dir\MinSizeRel\cladPlugin.tlog\cladPlugin.lastbuildstate".
+126>Done Building Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\tools\cladPlugin.vcxproj" (default targets).
+126>PrepareForBuild:
+126>  Creating directory "x64\MinSizeRel\ALL_BUILD\".
+126>  Creating directory "x64\MinSizeRel\ALL_BUILD\ALL_BUILD.tlog\".
+126>InitializeBuildStatus:
+126>  Creating "x64\MinSizeRel\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+126>CustomBuild:
+126>  Building Custom Rule D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad/CMakeLists.txt
+126>  CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/interpreter/llvm/src/tools/cling/tools/plugins/clad/clad-prefix/src/clad-build/CMakeFiles/generate.stamp is up-to-date.
+126>FinalizeBuildStatus:
+126>  Deleting file "x64\MinSizeRel\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild".
+126>  Touching "x64\MinSizeRel\ALL_BUILD\ALL_BUILD.tlog\ALL_BUILD.lastbuildstate".
+126>Done Building Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\ALL_BUILD.vcxproj" (default targets).
+126>PrepareForBuild:
+126>  Creating directory "x64\MinSizeRel\INSTALL\".
+126>  Creating directory "x64\MinSizeRel\INSTALL\INSTALL.tlog\".
+126>InitializeBuildStatus:
+126>  Creating "x64\MinSizeRel\INSTALL\INSTALL.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+126>PostBuildEvent:
+126>  setlocal
+126>  "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DBUILD_TYPE=MinSizeRel -P cmake_install.cmake
+126>  if %errorlevel% neq 0 goto :cmEnd
+126>  :cmEnd
+126>  endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+126>  :cmErrorLevel
+126>  exit /b %1
+126>  :cmDone
+126>  if %errorlevel% neq 0 goto :VCEnd
+126>  :VCEnd
+126>  -- Install configuration: "MinSizeRel"
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include/clad
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include/clad/Differentiator
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include/clad/Differentiator/BuiltinDerivatives.h
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include/clad/Differentiator/DerivativeBuilder.h
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include/clad/Differentiator/Differentiator.h
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include/clad/Differentiator/DiffPlanner.h
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include/clad/Differentiator/StmtClone.h
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/include/clad/Differentiator/Version.h
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/lib/cladDifferentiator.lib
+126>  -- Installing: D:/davit/dev/forks/root/prj/root/root_cmake/win64/etc/cling/plugins/lib/cladPlugin.lib
+126>FinalizeBuildStatus:
+126>  Deleting file "x64\MinSizeRel\INSTALL\INSTALL.tlog\unsuccessfulbuild".
+126>  Touching "x64\MinSizeRel\INSTALL\INSTALL.tlog\INSTALL.lastbuildstate".
+126>Done Building Project "D:\davit\dev\forks\root\prj\root\root_cmake\win64\interpreter\llvm\src\tools\cling\tools\plugins\clad\clad-prefix\src\clad-build\install.vcxproj" (default targets).
+126>
+126>Build succeeded.
+126>    0 Warning(s)
+126>    0 Error(s)
+126>
+126>Time Elapsed 00:00:39.04
+126>Completed 'clad'
+129>------ Build started: Project: mathtext, Configuration: MinSizeRel x64 ------
+129>Building Custom Rule D:/davit/dev/forks/root/original/graf2d/mathtext/CMakeLists.txt
+129>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/graf2d/mathtext/CMakeFiles/generate.stamp is up-to-date.
+129>fontembed.cxx
+129>fontembedps.cxx
+129>mathrender.cxx
+129>mathrenderstyle.cxx
+129>mathrendertoken.cxx
+129>mathtext.cxx
+129>mathtextencode.cxx
+129>mathtextparse.cxx
+129>mathtextview.cxx
+129>Generating Code...
+129>mathtext.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\lib\mathtext.lib
+128>-- FREETYPE configure command succeeded.  See also D:/davit/dev/forks/root/prj/root/root_cmake/win64/FREETYPE-prefix/src/FREETYPE-stamp/FREETYPE-configure-*.log
+128>Performing build step for 'FREETYPE'
+128>-- FREETYPE build command succeeded.  See also D:/davit/dev/forks/root/prj/root/root_cmake/win64/FREETYPE-prefix/src/FREETYPE-stamp/FREETYPE-build-*.log
+128>Performing install step for 'FREETYPE'
+128>-- FREETYPE install command succeeded.  See also D:/davit/dev/forks/root/prj/root/root_cmake/win64/FREETYPE-prefix/src/FREETYPE-stamp/FREETYPE-install-*.log
+128>Completed 'FREETYPE'
+130>------ Build started: Project: gitcommit, Configuration: MinSizeRel x64 ------
+131>------ Build started: Project: BaseTROOT, Configuration: MinSizeRel x64 ------
+131>TROOT.cxx
+131>BaseTROOT.vcxproj -> D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\BaseTROOT.dir\MinSizeRel\BaseTROOT.lib
+132>------ Build started: Project: Core, Configuration: MinSizeRel x64 ------
+132>Auto build dll exports
+132>Couldn't open file 'D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/base/Base.dir/MinSizeRel/G__Core.obj' with CreateFile()
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: The command "setlocal
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: cd D:\davit\dev\forks\root\prj\root\root_cmake\win64
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E __create_def D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/Core.dir/MinSizeRel/exports.def D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/Core.dir/MinSizeRel//objects.txt
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmEnd
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmErrorLevel
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: exit /b %1
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmDone
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd
+132>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :VCEnd" exited with code 1.
+132>Done building project "Core.vcxproj" -- FAILED.
+133>------ Build started: Project: G__Thread, Configuration: MinSizeRel x64 ------
+134>------ Build started: Project: G__complexDict, Configuration: MinSizeRel x64 ------
+133>Generating G__Thread.cxx, ../../lib/libThread.rootmap
+134>Generating G__complexDict.cxx, ../../lib/libcomplexDict.rootmap
+134>RegQueryValueEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegQueryValueEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegQueryValueEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegQueryValueEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegQueryValueEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegQueryValueEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+134>Building Custom Rule D:/davit/dev/forks/root/original/core/clingutils/CMakeLists.txt
+134>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/clingutils/CMakeFiles/generate.stamp is up-to-date.
+135>------ Build started: Project: complexDict, Configuration: MinSizeRel x64 ------
+135>Generating G__complexDict.cxx, ../../lib/libcomplexDict.rootmap
+135>RegQueryValueEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegQueryValueEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegQueryValueEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+133>Building Custom Rule D:/davit/dev/forks/root/original/core/thread/CMakeLists.txt
+133>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/thread/CMakeFiles/generate.stamp is up-to-date.
+136>------ Build started: Project: ThreadObjs, Configuration: MinSizeRel x64 ------
+135>Building Custom Rule D:/davit/dev/forks/root/original/core/clingutils/CMakeLists.txt
+136>Generating G__Thread.cxx, ../../lib/libThread.rootmap
+136>RegQueryValueEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegQueryValueEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegQueryValueEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+136>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+135>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/clingutils/CMakeFiles/generate.stamp is up-to-date.
+135>G__complexDict.cxx
+136>Building Custom Rule D:/davit/dev/forks/root/original/core/thread/CMakeLists.txt
+136>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/thread/CMakeFiles/generate.stamp is up-to-date.
+135>Auto build dll exports
+136>G__Thread.cxx
+135>LINK : fatal error LNK1181: cannot open input file '..\..\lib\libCore.lib'
+135>Done building project "complexDict.vcxproj" -- FAILED.
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+136>d:\davit\dev\forks\root\prj\root\root_cmake\win64\include\twin32atomiccount.h(41): error C2665: 'InterlockedIncrement': none of the 3 overloads could convert all the argument types
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9229): note: could be 'unsigned __int64 InterlockedIncrement(volatile unsigned __int64 *)'
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9217): note: or       'unsigned long InterlockedIncrement(volatile unsigned long *)'
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9208): note: or       'unsigned int InterlockedIncrement(volatile unsigned int *)'
+136>d:\davit\dev\forks\root\prj\root\root_cmake\win64\include\twin32atomiccount.h(41): note: while trying to match the argument list '(Long_t *)'
+136>d:\davit\dev\forks\root\prj\root\root_cmake\win64\include\twin32atomiccount.h(42): error C2665: 'InterlockedDecrement': none of the 3 overloads could convert all the argument types
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9261): note: could be 'unsigned __int64 InterlockedDecrement(volatile unsigned __int64 *)'
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9249): note: or       'unsigned long InterlockedDecrement(volatile unsigned long *)'
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9240): note: or       'unsigned int InterlockedDecrement(volatile unsigned int *)'
+136>d:\davit\dev\forks\root\prj\root\root_cmake\win64\include\twin32atomiccount.h(42): note: while trying to match the argument list '(Long_t *)'
+136>TCondition.cxx
+136>TConditionImp.cxx
+136>TMutex.cxx
+136>TMutexImp.cxx
+136>TRWLock.cxx
+136>TRWSpinLock.cxx
+136>TSemaphore.cxx
+136>TThread.cxx
+136>TThreadFactory.cxx
+136>TThreadImp.cxx
+136>TRWMutexImp.cxx
+136>TReentrantRWLock.cxx
+136>RConcurrentHashColl.cxx
+136>TWin32Condition.cxx
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+136>TWin32Mutex.cxx
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+136>TWin32Thread.cxx
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+136>TWin32ThreadFactory.cxx
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+136>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+136>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+136>Generating Code...
+136>Done building project "ThreadObjs.vcxproj" -- FAILED.
+137>------ Build started: Project: Thread, Configuration: MinSizeRel x64 ------
+137>Building Custom Rule D:/davit/dev/forks/root/original/core/thread/CMakeLists.txt
+137>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/thread/CMakeFiles/generate.stamp is up-to-date.
+137>Auto build dll exports
+137>Couldn't open file 'D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/thread/ThreadObjs.dir/MinSizeRel/G__Thread.obj' with CreateFile()
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: The command "setlocal
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: cd D:\davit\dev\forks\root\prj\root\root_cmake\win64
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E __create_def D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/thread/Thread.dir/MinSizeRel/exports.def D:/davit/dev/forks/root/prj/root/root_cmake/win64/core/thread/Thread.dir/MinSizeRel//objects.txt
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmEnd
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmErrorLevel
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: exit /b %1
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :cmDone
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd
+137>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(133,5): error MSB3073: :VCEnd" exited with code 1.
+137>Done building project "Thread.vcxproj" -- FAILED.
+138>------ Build started: Project: G__RIO, Configuration: MinSizeRel x64 ------
+138>Generating G__RIO.cxx, ../../lib/libRIO.rootmap
+138>RegQueryValueEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegQueryValueEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegQueryValueEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+138>In file included from input_line_9:29:
+138>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(84,47): warning G9183C3B3: cast to 'void *' from smaller integer type 'ULong_t' (aka 'unsigned long') [-Wint-to-void-pointer-cast]
+138>   void         *GetBaseAddr() const { return (void *)fBaseAddr; }
+138>                                              ^
+138>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(93,44): warning G9183C3B3: cast to 'TMapRec *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+138>   TMapRec      *GetFirst() const { return (TMapRec*)((Long_t) fFirst + fOffset); }
+138>                                           ^
+138>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(94,43): warning G9183C3B3: cast to 'TMapRec *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+138>   TMapRec      *GetLast() const { return (TMapRec*)((Long_t) fLast + fOffset); }
+138>                                          ^
+138>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(97,56): warning G9183C3B3: cast to 'void *' from smaller integer type 'long' [-Wint-to-void-pointer-cast]
+138>   void         *OrgAddress(void *addr) const { return (void *)((Long_t)addr - fOffset); }
+138>                                                       ^
+138>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(146,60): warning G9183C3B3: cast to 'char *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+138>   const char   *GetName(Long_t offset = 0) const { return (char *)((Long_t) fName + offset); }
+138>                                                           ^
+138>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(147,65): warning G9183C3B3: cast to 'char *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+138>   const char   *GetClassName(Long_t offset = 0) const { return (char *)((Long_t) fClassName + offset); }
+138>                                                                ^
+138>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(148,62): warning G9183C3B3: cast to 'void *' from smaller integer type 'long' [-Wint-to-void-pointer-cast]
+138>   void         *GetBuffer(Long_t offset = 0) const { return (void *)((Long_t) fBuffer + offset); }
+138>                                                             ^
+138>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(151,60): warning G9183C3B3: cast to 'TMapRec *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+138>   TMapRec      *GetNext(Long_t offset = 0) const { return (TMapRec *)((Long_t) fNext + offset); }
+138>                                                           ^
+138>Building Custom Rule D:/davit/dev/forks/root/original/io/io/CMakeLists.txt
+138>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/io/io/CMakeFiles/generate.stamp is up-to-date.
+138>Done building project "G__RIO.vcxproj".
+139>------ Build started: Project: RIOObjs, Configuration: MinSizeRel x64 ------
+139>Generating G__RIO.cxx, ../../lib/libRIO.rootmap
+139>RegQueryValueEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegQueryValueEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegQueryValueEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>RegOpenKeyEx: returned 2: The system cannot find the file specified.
+139>In file included from input_line_9:29:
+139>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(84,47): warning G9183C3B3: cast to 'void *' from smaller integer type 'ULong_t' (aka 'unsigned long') [-Wint-to-void-pointer-cast]
+139>   void         *GetBaseAddr() const { return (void *)fBaseAddr; }
+139>                                              ^
+139>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(93,44): warning G9183C3B3: cast to 'TMapRec *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+139>   TMapRec      *GetFirst() const { return (TMapRec*)((Long_t) fFirst + fOffset); }
+139>                                           ^
+139>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(94,43): warning G9183C3B3: cast to 'TMapRec *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+139>   TMapRec      *GetLast() const { return (TMapRec*)((Long_t) fLast + fOffset); }
+139>                                          ^
+139>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(97,56): warning G9183C3B3: cast to 'void *' from smaller integer type 'long' [-Wint-to-void-pointer-cast]
+139>   void         *OrgAddress(void *addr) const { return (void *)((Long_t)addr - fOffset); }
+139>                                                       ^
+139>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(146,60): warning G9183C3B3: cast to 'char *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+139>   const char   *GetName(Long_t offset = 0) const { return (char *)((Long_t) fName + offset); }
+139>                                                           ^
+139>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(147,65): warning G9183C3B3: cast to 'char *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+139>   const char   *GetClassName(Long_t offset = 0) const { return (char *)((Long_t) fClassName + offset); }
+139>                                                                ^
+139>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(148,62): warning G9183C3B3: cast to 'void *' from smaller integer type 'long' [-Wint-to-void-pointer-cast]
+139>   void         *GetBuffer(Long_t offset = 0) const { return (void *)((Long_t) fBuffer + offset); }
+139>                                                             ^
+139>D:/davit/dev/forks/root/prj/root/root_cmake/win64/include\TMapFile.h(151,60): warning G9183C3B3: cast to 'TMapRec *' from smaller integer type 'long' [-Wint-to-pointer-cast]
+139>   TMapRec      *GetNext(Long_t offset = 0) const { return (TMapRec *)((Long_t) fNext + offset); }
+139>                                                           ^
+139>Building Custom Rule D:/davit/dev/forks/root/original/io/io/CMakeLists.txt
+139>CMake does not need to re-run because D:/davit/dev/forks/root/prj/root/root_cmake/win64/io/io/CMakeFiles/generate.stamp is up-to-date.
+139>G__RIO.cxx
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+139>TArchiveFile.cxx
+139>TBufferFile.cxx
+139>TBufferIO.cxx
+139>TBufferJSON.cxx
+139>TBufferMerger.cxx
+139>TBufferMergerFile.cxx
+139>TBufferText.cxx
+139>TCollectionProxyFactory.cxx
+139>TContainerConverters.cxx
+139>TDirectoryFile.cxx
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+139>TEmulatedCollectionProxy.cxx
+139>TEmulatedMapProxy.cxx
+139>TFPBlock.cxx
+139>TFile.cxx
+139>TFileCacheRead.cxx
+139>TFileCacheWrite.cxx
+139>TFileMerger.cxx
+139>TFilePrefetch.cxx
+139>TFree.cxx
+139>Generating Code...
+139>Compiling...
+139>TGenCollectionProxy.cxx
+139>TGenCollectionStreamer.cxx
+139>TKey.cxx
+139>TKeyMapFile.cxx
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+139>TLockFile.cxx
+139>TMakeProject.cxx
+139>TMapFile.cxx
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(19198): error C3861: '__stosb': identifier not found
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21656): error C3861: '__readgsqword': identifier not found
+139>d:\davit\dev\forks\root\original\build\win\redesigned\winnt.h(21667): error C3861: '__readgsqword': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9212): error C3861: '_InterlockedIncrement': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9221): error C3861: '_InterlockedIncrement': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9233): error C2065: 'InterlockedIncrement64': undeclared identifier
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9244): error C3861: '_InterlockedDecrement': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9253): error C3861: '_InterlockedDecrement': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9265): error C2065: 'InterlockedDecrement64': undeclared identifier
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9279): error C3861: '_InterlockedExchange': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9289): error C3861: '_InterlockedExchange': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9301): error C3861: 'InterlockedExchange64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9313): error C3861: '_InterlockedExchangeAdd': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9323): error C3861: '_InterlockedExchangeAdd': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9333): error C3861: '_InterlockedExchangeAdd': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9343): error C3861: '_InterlockedExchangeAdd': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9355): error C3861: 'InterlockedExchangeAdd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9365): error C3861: 'InterlockedExchangeAdd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9378): error C3861: '_InterlockedCompareExchange': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9389): error C3861: '_InterlockedCompareExchange': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9402): error C3861: '_InterlockedCompareExchange64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9412): error C3861: 'InterlockedAnd64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9422): error C3861: 'InterlockedOr64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.h(9432): error C3861: 'InterlockedXor64': identifier not found
+139>c:\program files (x86)\windows kits\10\include\10.0.17134.0\shared\stralign.h(120): warning C4090: 'argument': different '__unaligned' qualifiers
+139>TMemFile.cxx
+139>TStreamerInfo.cxx
+139>TStreamerInfoActions.cxx
+139>TStreamerInfoReadBuffer.cxx
+139>TStreamerInfoWriteBuffer.cxx
+139>TZIPFile.cxx
+139>Generating Code...

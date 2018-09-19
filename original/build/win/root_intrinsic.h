@@ -52,21 +52,6 @@
 #ifdef __cplusplus
 #ifdef _MSC_VER
 
-#ifdef GetModuleFileName
-#define GetModuleFileName_defined
-#pragma push_macro("GetModuleFileName")
-#undef GetModuleFileName
-#endif // #ifdef GetModuleFileName
-//
-#ifdef CreateWindow
-#define CreateWindow_defined
-#pragma push_macro("CreateWindow")
-#undef CreateWindow
-#endif // #ifdef CreateWindow
-
-#endif // #ifdef _MSC_VER
-#endif // #ifdef __cplusplus
-
 #if 0
 #ifdef _MSC_VER
 #ifdef GetModuleFileName_defined
@@ -75,6 +60,34 @@
 #endif // #ifdef GetModuleFileName_defined
 #endif // #ifdef _MSC_VER
 #endif
+
+
+#ifdef GetModuleFileName
+#define GetModuleFileName_defined
+#pragma push_macro("GetModuleFileName")
+#undef GetModuleFileName
+#endif // #ifdef GetModuleFileName
+//
+#ifdef GetClassInfo
+#define GetClassInfo_defined
+#pragma push_macro("GetClassInfo")
+#undef GetClassInfo
+#endif // #ifdef GetClassInfo
+//
+#ifdef CreateWindow
+#define CreateWindow_defined
+#pragma push_macro("CreateWindow")
+#undef CreateWindow
+#endif // #ifdef CreateWindow
+//
+#ifdef GetObject
+#define GetObject_defined
+#pragma push_macro("GetObject")
+#undef GetObject
+#endif // #ifdef GetObject
+
+#endif // #ifdef _MSC_VER
+#endif // #ifdef __cplusplus
 
 #endif // #ifndef __root_intrinsic_h__
 

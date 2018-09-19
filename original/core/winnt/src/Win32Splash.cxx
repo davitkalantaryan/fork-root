@@ -132,6 +132,13 @@ HBITMAP CreateAlphaTextBitmap(LPCSTR inText, HFONT inFont, COLORREF inColour)
 ///////////////////////////////////////////////////////////////////////////
 /// Draw alpha blended text on the splash screen.
 
+#ifdef _MSC_VER
+#ifdef GetObject_defined
+#pragma pop_macro("GetObject")
+#undef GetObject_defined
+#endif // #ifdef GetObject_defined
+#endif // #ifdef _MSC_VER
+
 void DrawAlphaText(HDC inDC, HFONT inFont, COLORREF inColor,
                    const char *text, int inX, int inY)
 {

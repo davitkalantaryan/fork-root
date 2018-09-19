@@ -32,6 +32,7 @@ mkdir %scriptDir%%lsbCodeName% 2>nul
 cd %scriptDir%%lsbCodeName%
 
 cmake -G"Visual Studio 15 2017 Win64"  -Thost=x64 ..\..\..\..\original
+copy %scriptDir%..\..\..\src\copy\G__Core.cxx %scriptDir%..\..\..\root_cmake\win64\core\base\.
 ::cmake -G"Visual Studio 15 2017" ..\..\..\..\original
 
 ::devenv ROOT.sln /build Debug /project Core
