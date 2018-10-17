@@ -14,6 +14,8 @@
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
 
+// DK added
+#define CLASS_FNC_HAS_BODY
 
 #include "TROOT.h"
 #include "TStreamerElement.h"
@@ -2071,6 +2073,7 @@ void TStreamerSTLstring::Streamer(TBuffer &R__b)
 // TStreamerArtificial implements StreamerElement injected by a TSchemaRule. //
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
+
 
 ClassImp(TStreamerSTLstring);
 

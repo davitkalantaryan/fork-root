@@ -1,6 +1,9 @@
 // @(#)root/core:$Id$
 // author: Lukasz Janyst <ljanyst@cern.ch>
 
+// DK added
+#define CLASS_FNC_HAS_BODY
+
 #include "TSchemaRuleSet.h"
 #include "TSchemaRule.h"
 #include "TObjArray.h"
@@ -16,10 +19,12 @@
 #include "TStreamerElement.h"
 #include "TClassEdit.h"
 
-ClassImp(TSchemaRule);
+//ClassImp(TSchemaRule);
 
 using namespace ROOT;
 using namespace ROOT::Detail;
+// DK
+ClassImp(TSchemaRule);
 
 ////////////////////////////////////////////////////////////////////////////////
 /// Default constructor.

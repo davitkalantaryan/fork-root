@@ -18,9 +18,11 @@
 #include "TROOT.h"
 #include "Riostream.h"
 
-ClassImp(TSchemaRule);
+//ClassImp(TSchemaRule);
 
 using namespace ROOT;
+
+ClassImp(TSchemaRule);
 
 namespace {
    static Bool_t IsIrrelevantCharacter(char c)

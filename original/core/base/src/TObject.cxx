@@ -53,6 +53,17 @@ Long_t TObject::fgDtorOnly = 0;
 Bool_t TObject::fgObjectStat = kTRUE;
 
 ClassImp(TObject);
+// DK tests
+#if 0
+TClass *TObject::Class()
+{
+   if (!fgIsA.load()) {
+      R__LOCKGUARD(gInterpreterMutex);
+      Dictionary();
+   }
+   return fgIsA;
+}
+#endif
 
 
 ////////////////////////////////////////////////////////////////////////////////

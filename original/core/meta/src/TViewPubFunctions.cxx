@@ -108,6 +108,7 @@ TObject *TViewPubFunctions::FindObject(const char * name) const
 
 TObject *TViewPubFunctions::FindObject(const TObject * obj) const
 {
+   TObject::Class(); // DK test
    TIter next(&fClasses);
    while (TClass *cl = (TClass*)next()) {
       TObject *result = cl->GetListOfMethods(kFALSE)->FindObject(obj);
