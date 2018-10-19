@@ -135,6 +135,8 @@ As mentioned above - this information are mainly used by contextmenu,
 but also in Dump() and Inspect() methods and by the THtml class.
 */
 
+#define STREAMER_FNC_HAS_BODY
+
 #include "TDataMember.h"
 
 #include "Strlen.h"

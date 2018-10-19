@@ -9,6 +9,8 @@
  * For the list of contributors see $ROOTSYS/README/CREDITS.             *
  *************************************************************************/
 
+#define STREAMER_FNC_HAS_BODY
+
 /** \class TArrayD
 \ingroup Containers
 Array of doubles (64 bits per element).

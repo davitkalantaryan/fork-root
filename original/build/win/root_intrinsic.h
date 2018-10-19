@@ -10,6 +10,8 @@
 #define NOMINMAX
 #endif
 
+#define STREAMER_FNC_HAS_BODY
+
 #include "root_warning_disable.h"
 
 #ifdef _WIN32
@@ -51,15 +53,6 @@
 
 #ifdef __cplusplus
 #ifdef _MSC_VER
-
-#if 0
-#ifdef _MSC_VER
-#ifdef GetModuleFileName_defined
-#pragma pop_macro("GetModuleFileName")
-#undef GetModuleFileName_defined
-#endif // #ifdef GetModuleFileName_defined
-#endif // #ifdef _MSC_VER
-#endif
 
 
 #ifdef GetModuleFileName

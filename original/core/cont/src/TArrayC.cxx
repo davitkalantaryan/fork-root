@@ -14,6 +14,8 @@
 Array of chars or bytes (8 bits per element).
 */
 
+#define STREAMER_FNC_HAS_BODY
+
 #include "TArrayC.h"
 #include "TBuffer.h"
 

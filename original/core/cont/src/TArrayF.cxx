@@ -14,6 +14,8 @@
 Array of floats (32 bits per element).
 */
 
+#define STREAMER_FNC_HAS_BODY
+
 #include "TArrayF.h"
 #include "TBuffer.h"
 

@@ -9,6 +9,8 @@
  * For the list of contributors see $ROOTSYS/README/CREDITS.             *
  *************************************************************************/
 
+#define STREAMER_FNC_HAS_BODY
+
 #include "Riostream.h"
 #include "TAttAxis.h"
 #include "TBuffer.h"

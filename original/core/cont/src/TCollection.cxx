@@ -31,6 +31,8 @@ collections of collections.
 In a later release the collections may become templatized.
 */
 
+#define STREAMER_FNC_HAS_NO_BODY
+
 #include "TCollection.h"
 #include "Riostream.h"
 #include "Varargs.h"
@@ -54,7 +56,7 @@ TObjectTable  *TCollection::fgGarbageCollection = 0;
 Bool_t         TCollection::fgEmptyingGarbage   = kFALSE;
 Int_t          TCollection::fgGarbageStack      = 0;
 
-ClassImp(TCollection);
+ClassImpOnlyClass(TCollection);
 ClassImp(TIter);
 
 #ifdef R__CHECK_COLLECTION_MULTI_ACCESS

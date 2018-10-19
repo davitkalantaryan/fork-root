@@ -18,6 +18,8 @@ file sets as stored by Grid file catalogs, by PROOF or any other
 collection of TFile names.
 */
 
+#define STREAMER_FNC_HAS_NO_BODY
+
 #include "TFileCollection.h"
 #include "THashList.h"
 #include "TFileInfo.h"
