@@ -31,8 +31,22 @@ if %argC% gtr 0 (
 mkdir %scriptDir%%lsbCodeName% 2>nul
 cd %scriptDir%%lsbCodeName%
 
+set modifiedPrjs=%scriptDir%..\..\..\prj\root\modified_projects_vs17
+set modifiedPrjsTargetBase=%scriptDir%..\..\..\prj\root\root_cmake\%lsbCodeName%
+
 cmake -G"Visual Studio 15 2017 Win64"  -Thost=x64 ..\..\..\..\original
 copy %scriptDir%..\..\..\src\copy\G__Core.cxx %scriptDir%..\..\..\root_cmake\win64\core\base\.
+copy %modifiedPrjs%\LLVMSupport.vcxproj %modifiedPrjsTargetBase%\interpreter\llvm\src\lib\Support\.
+copy %modifiedPrjs%\obj.clingUtils.vcxproj %modifiedPrjsTargetBase%\interpreter\llvm\src\tools\cling\lib\Utils\.
+copy %modifiedPrjs%\Dictgen.vcxproj %modifiedPrjsTargetBase%\core\dictgen\.
+copy %modifiedPrjs%\clangDriver.vcxproj %modifiedPrjsTargetBase%\interpreter\llvm\src\tools\clang\lib\Driver\.
+copy %modifiedPrjs%\TextInput.vcxproj %modifiedPrjsTargetBase%\core\textinput\.
+copy %modifiedPrjs%\Winnt.vcxproj %modifiedPrjsTargetBase%\core\winnt\.
+copy %modifiedPrjs%\Base.vcxproj %modifiedPrjsTargetBase%\core\base\.
+copy %modifiedPrjs%\MetaCling.vcxproj %modifiedPrjsTargetBase%\core\metacling\src\.
+copy %modifiedPrjs%\ThreadObjs.vcxproj %modifiedPrjsTargetBase%\core\thread\.
+copy %modifiedPrjs%\RIOObjs.vcxproj %modifiedPrjsTargetBase%\io\io\.
+
 ::cmake -G"Visual Studio 15 2017" ..\..\..\..\original
 
 ::devenv ROOT.sln /build Debug /project Core

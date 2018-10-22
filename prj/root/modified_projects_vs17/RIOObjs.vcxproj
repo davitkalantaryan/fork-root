@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D7FCC700-5D54-3065-BF2A-9C6797F5ABE6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>RIOObjs</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RIOObjs.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RIOObjs.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RIOObjs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RIOObjs.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RIOObjs.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RIOObjs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RIOObjs.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RIOObjs.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RIOObjs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RIOObjs.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RIOObjs.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RIOObjs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -EHsc-</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4291;4244;4049</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>w32pragma.h;sehmap.h</ForcedIncludeFiles>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -EHsc-</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <DisableSpecificWarnings>4141;4291;4244;4049</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>w32pragma.h;sehmap.h</ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -EHsc-</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <DisableSpecificWarnings>4141;4291;4244;4049</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>root_intrinsic.h;w32pragma.h;sehmap.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\original\build\win;D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -EHsc-</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++1y</CppLanguageStandard>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4141;4291;4244;4049</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForcedIncludeFiles>w32pragma.h;sehmap.h</ForcedIncludeFiles>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_XKEYCHECK_H;_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER;NOMINMAX;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\davit\dev\forks\root\prj\root\root_cmake\win64\include;D:\davit\dev\forks\root\original\core\clib\res;D:\davit\dev\forks\root\original\io\io\res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\CMakeFiles\0ddc94b8d1858f618fd2dfac2fca2a59\G__RIO.cxx.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating G__RIO.cxx, ../../lib/libRIO.rootmap</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env LD_LIBRARY_PATH=D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib: D:/davit/dev/forks/root/prj/root/root_cmake/win64/bin/rootcling_stage1.exe -v2 -f G__RIO.cxx -s D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/libRIO.dll -m libCore_rdict.pcm -m libThread_rdict.pcm -excludePath D:/davit/dev/forks/root/original -excludePath D:/davit/dev/forks/root/prj/root/root_cmake/win64 -rml libRIO.dll -rmf D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/libRIO.rootmap -ID:/davit/dev/forks/root/original -ID:/davit/dev/forks/root/original/interpreter/cling/include -ID:/davit/dev/forks/root/prj/root/root_cmake/win64/include -ID:/davit/dev/forks/root/original/core/clib/res -ID:/davit/dev/forks/root/original/io/io/res -ID:/davit/dev/forks/root/original/core/thread/../foundation/res TArchiveFile.h TBufferFile.h TBufferIO.h TBufferJSON.h TBufferText.h TCollectionProxyFactory.h TContainerConverters.h TDirectoryFile.h TEmulatedCollectionProxy.h TEmulatedMapProxy.h TFPBlock.h TFile.h TFileCacheRead.h TFileCacheWrite.h TFileMerger.h TFilePrefetch.h TFree.h TGenCollectionProxy.h TGenCollectionStreamer.h TKey.h TKeyMapFile.h TLockFile.h TMakeProject.h TMapFile.h TMemFile.h TStreamerInfo.h TStreamerInfoActions.h TVirtualArray.h TVirtualCollectionIterators.h TVirtualObject.h TZIPFile.h ROOT/TBufferMerger.hxx D:/davit/dev/forks/root/original/io/io/inc/LinkDef.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/davit/dev/forks/root/prj/root/root_cmake/win64/CMakeFiles/0ddc94b8d1858f618fd2dfac2fca2a59/G__RIO.cxx.rule;D:\davit\dev\forks\root\original\io\io\inc\LinkDef.h;D:\davit\dev\forks\root\original\io\io\inc\TArchiveFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferIO.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferJSON.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferText.h;D:\davit\dev\forks\root\original\io\io\inc\TCollectionProxyFactory.h;D:\davit\dev\forks\root\original\io\io\inc\TContainerConverters.h;D:\davit\dev\forks\root\original\io\io\inc\TDirectoryFile.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedMapProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TFPBlock.h;D:\davit\dev\forks\root\original\io\io\inc\TFile.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheRead.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheWrite.h;D:\davit\dev\forks\root\original\io\io\inc\TFileMerger.h;D:\davit\dev\forks\root\original\io\io\inc\TFilePrefetch.h;D:\davit\dev\forks\root\original\io\io\inc\TFree.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionStreamer.h;D:\davit\dev\forks\root\original\io\io\inc\TKey.h;D:\davit\dev\forks\root\original\io\io\inc\TKeyMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TLockFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMakeProject.h;D:\davit\dev\forks\root\original\io\io\inc\TMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMemFile.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfo.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfoActions.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualArray.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualCollectionIterators.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualObject.h;D:\davit\dev\forks\root\original\io\io\inc\TZIPFile.h;D:\davit\dev\forks\root\original\io\io\inc\ROOT\TBufferMerger.hxx;D:\davit\dev\forks\root\original\io\io\inc\TArchiveFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferIO.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferJSON.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferText.h;D:\davit\dev\forks\root\original\io\io\inc\TCollectionProxyFactory.h;D:\davit\dev\forks\root\original\io\io\inc\TContainerConverters.h;D:\davit\dev\forks\root\original\io\io\inc\TDirectoryFile.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedMapProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TFPBlock.h;D:\davit\dev\forks\root\original\io\io\inc\TFile.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheRead.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheWrite.h;D:\davit\dev\forks\root\original\io\io\inc\TFileMerger.h;D:\davit\dev\forks\root\original\io\io\inc\TFilePrefetch.h;D:\davit\dev\forks\root\original\io\io\inc\TFree.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionStreamer.h;D:\davit\dev\forks\root\original\io\io\inc\TKey.h;D:\davit\dev\forks\root\original\io\io\inc\TKeyMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TLockFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMakeProject.h;D:\davit\dev\forks\root\original\io\io\inc\TMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMemFile.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfo.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfoActions.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualArray.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualCollectionIterators.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualObject.h;D:\davit\dev\forks\root\original\io\io\inc\TZIPFile.h;D:\davit\dev\forks\root\original\io\io\inc\ROOT\TBufferMerger.hxx;D:\davit\dev\forks\root\original\io\io\inc\LinkDef.h;D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\libCore.dll;D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\libThread.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\G__RIO.cxx;D:\davit\dev\forks\root\prj\root\root_cmake\win64\lib\libRIO.rootmap</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating G__RIO.cxx, ../../lib/libRIO.rootmap</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env LD_LIBRARY_PATH=D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib: D:/davit/dev/forks/root/prj/root/root_cmake/win64/bin/rootcling_stage1.exe -v2 -f G__RIO.cxx -s D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/libRIO.dll -m libCore_rdict.pcm -m libThread_rdict.pcm -excludePath D:/davit/dev/forks/root/original -excludePath D:/davit/dev/forks/root/prj/root/root_cmake/win64 -rml libRIO.dll -rmf D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/libRIO.rootmap -ID:/davit/dev/forks/root/original -ID:/davit/dev/forks/root/original/interpreter/cling/include -ID:/davit/dev/forks/root/prj/root/root_cmake/win64/include -ID:/davit/dev/forks/root/original/core/clib/res -ID:/davit/dev/forks/root/original/io/io/res -ID:/davit/dev/forks/root/original/core/thread/../foundation/res TArchiveFile.h TBufferFile.h TBufferIO.h TBufferJSON.h TBufferText.h TCollectionProxyFactory.h TContainerConverters.h TDirectoryFile.h TEmulatedCollectionProxy.h TEmulatedMapProxy.h TFPBlock.h TFile.h TFileCacheRead.h TFileCacheWrite.h TFileMerger.h TFilePrefetch.h TFree.h TGenCollectionProxy.h TGenCollectionStreamer.h TKey.h TKeyMapFile.h TLockFile.h TMakeProject.h TMapFile.h TMemFile.h TStreamerInfo.h TStreamerInfoActions.h TVirtualArray.h TVirtualCollectionIterators.h TVirtualObject.h TZIPFile.h ROOT/TBufferMerger.hxx D:/davit/dev/forks/root/original/io/io/inc/LinkDef.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/davit/dev/forks/root/prj/root/root_cmake/win64/CMakeFiles/0ddc94b8d1858f618fd2dfac2fca2a59/G__RIO.cxx.rule;D:\davit\dev\forks\root\original\io\io\inc\LinkDef.h;D:\davit\dev\forks\root\original\io\io\inc\TArchiveFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferIO.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferJSON.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferText.h;D:\davit\dev\forks\root\original\io\io\inc\TCollectionProxyFactory.h;D:\davit\dev\forks\root\original\io\io\inc\TContainerConverters.h;D:\davit\dev\forks\root\original\io\io\inc\TDirectoryFile.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedMapProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TFPBlock.h;D:\davit\dev\forks\root\original\io\io\inc\TFile.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheRead.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheWrite.h;D:\davit\dev\forks\root\original\io\io\inc\TFileMerger.h;D:\davit\dev\forks\root\original\io\io\inc\TFilePrefetch.h;D:\davit\dev\forks\root\original\io\io\inc\TFree.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionStreamer.h;D:\davit\dev\forks\root\original\io\io\inc\TKey.h;D:\davit\dev\forks\root\original\io\io\inc\TKeyMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TLockFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMakeProject.h;D:\davit\dev\forks\root\original\io\io\inc\TMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMemFile.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfo.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfoActions.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualArray.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualCollectionIterators.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualObject.h;D:\davit\dev\forks\root\original\io\io\inc\TZIPFile.h;D:\davit\dev\forks\root\original\io\io\inc\ROOT\TBufferMerger.hxx;D:\davit\dev\forks\root\original\io\io\inc\TArchiveFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferIO.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferJSON.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferText.h;D:\davit\dev\forks\root\original\io\io\inc\TCollectionProxyFactory.h;D:\davit\dev\forks\root\original\io\io\inc\TContainerConverters.h;D:\davit\dev\forks\root\original\io\io\inc\TDirectoryFile.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedMapProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TFPBlock.h;D:\davit\dev\forks\root\original\io\io\inc\TFile.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheRead.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheWrite.h;D:\davit\dev\forks\root\original\io\io\inc\TFileMerger.h;D:\davit\dev\forks\root\original\io\io\inc\TFilePrefetch.h;D:\davit\dev\forks\root\original\io\io\inc\TFree.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionStreamer.h;D:\davit\dev\forks\root\original\io\io\inc\TKey.h;D:\davit\dev\forks\root\original\io\io\inc\TKeyMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TLockFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMakeProject.h;D:\davit\dev\forks\root\original\io\io\inc\TMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMemFile.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfo.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfoActions.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualArray.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualCollectionIterators.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualObject.h;D:\davit\dev\forks\root\original\io\io\inc\TZIPFile.h;D:\davit\dev\forks\root\original\io\io\inc\ROOT\TBufferMerger.hxx;D:\davit\dev\forks\root\original\io\io\inc\LinkDef.h;D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\libCore.dll;D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\libThread.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\G__RIO.cxx;D:\davit\dev\forks\root\prj\root\root_cmake\win64\lib\libRIO.rootmap</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating G__RIO.cxx, ../../lib/libRIO.rootmap</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env LD_LIBRARY_PATH=D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib: D:/davit/dev/forks/root/prj/root/root_cmake/win64/bin/rootcling_stage1.exe -v2 -f G__RIO.cxx -s D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/libRIO.dll -m libCore_rdict.pcm -m libThread_rdict.pcm -excludePath D:/davit/dev/forks/root/original -excludePath D:/davit/dev/forks/root/prj/root/root_cmake/win64 -rml libRIO.dll -rmf D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/libRIO.rootmap -ID:/davit/dev/forks/root/original -ID:/davit/dev/forks/root/original/interpreter/cling/include -ID:/davit/dev/forks/root/prj/root/root_cmake/win64/include -ID:/davit/dev/forks/root/original/core/clib/res -ID:/davit/dev/forks/root/original/io/io/res -ID:/davit/dev/forks/root/original/core/thread/../foundation/res TArchiveFile.h TBufferFile.h TBufferIO.h TBufferJSON.h TBufferText.h TCollectionProxyFactory.h TContainerConverters.h TDirectoryFile.h TEmulatedCollectionProxy.h TEmulatedMapProxy.h TFPBlock.h TFile.h TFileCacheRead.h TFileCacheWrite.h TFileMerger.h TFilePrefetch.h TFree.h TGenCollectionProxy.h TGenCollectionStreamer.h TKey.h TKeyMapFile.h TLockFile.h TMakeProject.h TMapFile.h TMemFile.h TStreamerInfo.h TStreamerInfoActions.h TVirtualArray.h TVirtualCollectionIterators.h TVirtualObject.h TZIPFile.h ROOT/TBufferMerger.hxx D:/davit/dev/forks/root/original/io/io/inc/LinkDef.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/davit/dev/forks/root/prj/root/root_cmake/win64/CMakeFiles/0ddc94b8d1858f618fd2dfac2fca2a59/G__RIO.cxx.rule;D:\davit\dev\forks\root\original\io\io\inc\LinkDef.h;D:\davit\dev\forks\root\original\io\io\inc\TArchiveFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferIO.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferJSON.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferText.h;D:\davit\dev\forks\root\original\io\io\inc\TCollectionProxyFactory.h;D:\davit\dev\forks\root\original\io\io\inc\TContainerConverters.h;D:\davit\dev\forks\root\original\io\io\inc\TDirectoryFile.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedMapProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TFPBlock.h;D:\davit\dev\forks\root\original\io\io\inc\TFile.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheRead.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheWrite.h;D:\davit\dev\forks\root\original\io\io\inc\TFileMerger.h;D:\davit\dev\forks\root\original\io\io\inc\TFilePrefetch.h;D:\davit\dev\forks\root\original\io\io\inc\TFree.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionStreamer.h;D:\davit\dev\forks\root\original\io\io\inc\TKey.h;D:\davit\dev\forks\root\original\io\io\inc\TKeyMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TLockFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMakeProject.h;D:\davit\dev\forks\root\original\io\io\inc\TMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMemFile.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfo.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfoActions.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualArray.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualCollectionIterators.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualObject.h;D:\davit\dev\forks\root\original\io\io\inc\TZIPFile.h;D:\davit\dev\forks\root\original\io\io\inc\ROOT\TBufferMerger.hxx;D:\davit\dev\forks\root\original\io\io\inc\TArchiveFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferIO.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferJSON.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferText.h;D:\davit\dev\forks\root\original\io\io\inc\TCollectionProxyFactory.h;D:\davit\dev\forks\root\original\io\io\inc\TContainerConverters.h;D:\davit\dev\forks\root\original\io\io\inc\TDirectoryFile.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedMapProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TFPBlock.h;D:\davit\dev\forks\root\original\io\io\inc\TFile.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheRead.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheWrite.h;D:\davit\dev\forks\root\original\io\io\inc\TFileMerger.h;D:\davit\dev\forks\root\original\io\io\inc\TFilePrefetch.h;D:\davit\dev\forks\root\original\io\io\inc\TFree.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionStreamer.h;D:\davit\dev\forks\root\original\io\io\inc\TKey.h;D:\davit\dev\forks\root\original\io\io\inc\TKeyMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TLockFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMakeProject.h;D:\davit\dev\forks\root\original\io\io\inc\TMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMemFile.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfo.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfoActions.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualArray.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualCollectionIterators.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualObject.h;D:\davit\dev\forks\root\original\io\io\inc\TZIPFile.h;D:\davit\dev\forks\root\original\io\io\inc\ROOT\TBufferMerger.hxx;D:\davit\dev\forks\root\original\io\io\inc\LinkDef.h;D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\libCore.dll;D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\libThread.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\G__RIO.cxx;D:\davit\dev\forks\root\prj\root\root_cmake\win64\lib\libRIO.rootmap</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating G__RIO.cxx, ../../lib/libRIO.rootmap</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env LD_LIBRARY_PATH=D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib: D:/davit/dev/forks/root/prj/root/root_cmake/win64/bin/rootcling_stage1.exe -v2 -f G__RIO.cxx -s D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/libRIO.dll -m libCore_rdict.pcm -m libThread_rdict.pcm -excludePath D:/davit/dev/forks/root/original -excludePath D:/davit/dev/forks/root/prj/root/root_cmake/win64 -rml libRIO.dll -rmf D:/davit/dev/forks/root/prj/root/root_cmake/win64/lib/libRIO.rootmap -ID:/davit/dev/forks/root/original -ID:/davit/dev/forks/root/original/interpreter/cling/include -ID:/davit/dev/forks/root/prj/root/root_cmake/win64/include -ID:/davit/dev/forks/root/original/core/clib/res -ID:/davit/dev/forks/root/original/io/io/res -ID:/davit/dev/forks/root/original/core/thread/../foundation/res TArchiveFile.h TBufferFile.h TBufferIO.h TBufferJSON.h TBufferText.h TCollectionProxyFactory.h TContainerConverters.h TDirectoryFile.h TEmulatedCollectionProxy.h TEmulatedMapProxy.h TFPBlock.h TFile.h TFileCacheRead.h TFileCacheWrite.h TFileMerger.h TFilePrefetch.h TFree.h TGenCollectionProxy.h TGenCollectionStreamer.h TKey.h TKeyMapFile.h TLockFile.h TMakeProject.h TMapFile.h TMemFile.h TStreamerInfo.h TStreamerInfoActions.h TVirtualArray.h TVirtualCollectionIterators.h TVirtualObject.h TZIPFile.h ROOT/TBufferMerger.hxx D:/davit/dev/forks/root/original/io/io/inc/LinkDef.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/davit/dev/forks/root/prj/root/root_cmake/win64/CMakeFiles/0ddc94b8d1858f618fd2dfac2fca2a59/G__RIO.cxx.rule;D:\davit\dev\forks\root\original\io\io\inc\LinkDef.h;D:\davit\dev\forks\root\original\io\io\inc\TArchiveFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferIO.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferJSON.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferText.h;D:\davit\dev\forks\root\original\io\io\inc\TCollectionProxyFactory.h;D:\davit\dev\forks\root\original\io\io\inc\TContainerConverters.h;D:\davit\dev\forks\root\original\io\io\inc\TDirectoryFile.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedMapProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TFPBlock.h;D:\davit\dev\forks\root\original\io\io\inc\TFile.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheRead.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheWrite.h;D:\davit\dev\forks\root\original\io\io\inc\TFileMerger.h;D:\davit\dev\forks\root\original\io\io\inc\TFilePrefetch.h;D:\davit\dev\forks\root\original\io\io\inc\TFree.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionStreamer.h;D:\davit\dev\forks\root\original\io\io\inc\TKey.h;D:\davit\dev\forks\root\original\io\io\inc\TKeyMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TLockFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMakeProject.h;D:\davit\dev\forks\root\original\io\io\inc\TMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMemFile.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfo.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfoActions.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualArray.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualCollectionIterators.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualObject.h;D:\davit\dev\forks\root\original\io\io\inc\TZIPFile.h;D:\davit\dev\forks\root\original\io\io\inc\ROOT\TBufferMerger.hxx;D:\davit\dev\forks\root\original\io\io\inc\TArchiveFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferFile.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferIO.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferJSON.h;D:\davit\dev\forks\root\original\io\io\inc\TBufferText.h;D:\davit\dev\forks\root\original\io\io\inc\TCollectionProxyFactory.h;D:\davit\dev\forks\root\original\io\io\inc\TContainerConverters.h;D:\davit\dev\forks\root\original\io\io\inc\TDirectoryFile.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TEmulatedMapProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TFPBlock.h;D:\davit\dev\forks\root\original\io\io\inc\TFile.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheRead.h;D:\davit\dev\forks\root\original\io\io\inc\TFileCacheWrite.h;D:\davit\dev\forks\root\original\io\io\inc\TFileMerger.h;D:\davit\dev\forks\root\original\io\io\inc\TFilePrefetch.h;D:\davit\dev\forks\root\original\io\io\inc\TFree.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionProxy.h;D:\davit\dev\forks\root\original\io\io\inc\TGenCollectionStreamer.h;D:\davit\dev\forks\root\original\io\io\inc\TKey.h;D:\davit\dev\forks\root\original\io\io\inc\TKeyMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TLockFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMakeProject.h;D:\davit\dev\forks\root\original\io\io\inc\TMapFile.h;D:\davit\dev\forks\root\original\io\io\inc\TMemFile.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfo.h;D:\davit\dev\forks\root\original\io\io\inc\TStreamerInfoActions.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualArray.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualCollectionIterators.h;D:\davit\dev\forks\root\original\io\io\inc\TVirtualObject.h;D:\davit\dev\forks\root\original\io\io\inc\TZIPFile.h;D:\davit\dev\forks\root\original\io\io\inc\ROOT\TBufferMerger.hxx;D:\davit\dev\forks\root\original\io\io\inc\LinkDef.h;D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\libCore.dll;D:\davit\dev\forks\root\prj\root\root_cmake\win64\bin\libThread.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\G__RIO.cxx;D:\davit\dev\forks\root\prj\root\root_cmake\win64\lib\libRIO.rootmap</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\davit\dev\forks\root\original\io\io\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/davit/dev/forks/root/original/io/io/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HD:/davit/dev/forks/root/original -BD:/davit/dev/forks/root/prj/root/root_cmake/win64 --check-stamp-file D:/davit/dev/forks/root/prj/root/root_cmake/win64/io/io/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/davit/dev/forks/root/original/io/io/CMakeLists.txt;D:\davit\dev\forks\root\original\io\io\CMakeLists.txt;D:\davit\dev\forks\root\original\io\io\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/davit/dev/forks/root/original/io/io/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HD:/davit/dev/forks/root/original -BD:/davit/dev/forks/root/prj/root/root_cmake/win64 --check-stamp-file D:/davit/dev/forks/root/prj/root/root_cmake/win64/io/io/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/davit/dev/forks/root/original/io/io/CMakeLists.txt;D:\davit\dev\forks\root\original\io\io\CMakeLists.txt;D:\davit\dev\forks\root\original\io\io\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/davit/dev/forks/root/original/io/io/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HD:/davit/dev/forks/root/original -BD:/davit/dev/forks/root/prj/root/root_cmake/win64 --check-stamp-file D:/davit/dev/forks/root/prj/root/root_cmake/win64/io/io/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/davit/dev/forks/root/original/io/io/CMakeLists.txt;D:\davit\dev\forks\root\original\io\io\CMakeLists.txt;D:\davit\dev\forks\root\original\io\io\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/davit/dev/forks/root/original/io/io/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HD:/davit/dev/forks/root/original -BD:/davit/dev/forks/root/prj/root/root_cmake/win64 --check-stamp-file D:/davit/dev/forks/root/prj/root/root_cmake/win64/io/io/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/davit/dev/forks/root/original/io/io/CMakeLists.txt;D:\davit\dev\forks\root\original\io\io\CMakeLists.txt;D:\davit\dev\forks\root\original\io\io\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\G__RIO.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TArchiveFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TBufferFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TBufferIO.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TBufferJSON.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TBufferMerger.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TBufferMergerFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TBufferText.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TCollectionProxyFactory.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TContainerConverters.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TDirectoryFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TEmulatedCollectionProxy.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TEmulatedMapProxy.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TFPBlock.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TFileCacheRead.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TFileCacheWrite.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TFileMerger.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TFilePrefetch.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TFree.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TGenCollectionProxy.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TGenCollectionStreamer.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TKey.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TKeyMapFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TLockFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TMakeProject.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TMapFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TMemFile.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TStreamerInfo.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TStreamerInfoActions.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TStreamerInfoReadBuffer.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TStreamerInfoWriteBuffer.cxx" />
+    <ClCompile Include="D:\davit\dev\forks\root\original\io\io\src\TZIPFile.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\ZERO_CHECK.vcxproj">
+      <Project>{1449AF80-30A3-3358-A09A-BEAE15D73FCE}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\Core.vcxproj">
+      <Project>{F674B098-7CCB-32A8-9BCD-FD07006D5033}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\io\io\G__RIO.vcxproj">
+      <Project>{FD4FD6AA-8392-3C71-BA8A-2D5F52EA59E8}</Project>
+      <Name>G__RIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\thread\Thread.vcxproj">
+      <Project>{06748389-10A9-343A-BE04-AFEAEA8232D8}</Project>
+      <Name>Thread</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\move_headers.vcxproj">
+      <Project>{347D60F2-D3AF-3BAF-8692-CD059E52BCBC}</Project>
+      <Name>move_headers</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\davit\dev\forks\root\prj\root\root_cmake\win64\core\rootcling_stage1\rootcling_stage1.vcxproj">
+      <Project>{918741E2-06BB-303B-9226-8AC4F18C3319}</Project>
+      <Name>rootcling_stage1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

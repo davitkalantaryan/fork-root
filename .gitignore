@@ -32,7 +32,7 @@ contrib/sys/*/bin/*
 !contrib/sys/*/*.udoc
 !contrib/sys/*.udoc
 !contrib/sys/*/doocs64_install/server/*.bat
-#sys/*/*/*/*
+sys/*/*/*/*
 sys/*/*/.objects/*
 sys/*/*/.objects/*/*
 sys/*/*/.objects/*/*/*
