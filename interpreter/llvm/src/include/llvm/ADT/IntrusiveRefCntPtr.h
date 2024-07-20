@@ -135,6 +135,8 @@ public:
   template <typename T>
   class IntrusiveRefCntPtr {
     T* Obj;
+    template <class X>
+    friend class IntrusiveRefCntPtr;
 
   public:
     typedef T element_type;
