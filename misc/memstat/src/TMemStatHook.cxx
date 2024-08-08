@@ -35,7 +35,7 @@ static zoneFreeHookFunc_t m_pf;
 
 #if defined(R__GNU) && (defined(R__LINUX) || defined(__APPLE__))
 #if !defined(__GLIBC__) || (__GLIBC__ < 3)
-#define SUPPORTS_MEMSTAT
+//#define SUPPORTS_MEMSTAT
 #endif
 #endif
 
