@@ -139,7 +139,7 @@ namespace ROOT {
 #else
          TYPENAME T::const_reference ref = *(e->iter());
 #endif
-         return e->start = address(ref);
+         return e->start = Address<T>::address(ref);
       }
       static void* next(void* env)  {
          PEnv_t  e = PEnv_t(env);
