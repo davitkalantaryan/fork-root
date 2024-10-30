@@ -40,6 +40,8 @@
 
 //#define G__OLDEXPAND
 
+
+#include <sys/resource.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/types.h>

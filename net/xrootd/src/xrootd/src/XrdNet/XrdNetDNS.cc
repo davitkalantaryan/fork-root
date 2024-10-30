@@ -459,7 +459,7 @@ int XrdNetDNS::Host2Dest(const char      *hostname,
 
 // Find the colon in the host name
 //
-   if (!(cp = index(hostname, (int)':')))
+   if (!(cp = index((char*)hostname, (int)':')))
        {if (errtxt) *errtxt = (char *)"port not specified";
         return 0;
        }

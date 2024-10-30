@@ -87,12 +87,16 @@ size_t builtin_return_address(void **_Container, size_t _limit)
    return i;
 }
 
+
+static TMemStatDepend::MallocHookFunc_t s_malloc;
+static TMemStatDepend::FreeHookFunc_t s_free;
+
 //______________________________________________________________________________
 TMemStatDepend::MallocHookFunc_t TMemStatDepend::GetMallocHook()
 {
    //malloc function getter
 
-   return __malloc_hook;
+   return s_malloc;
 }
 
 //______________________________________________________________________________
@@ -100,7 +104,7 @@ TMemStatDepend::FreeHookFunc_t TMemStatDepend::GetFreeHook()
 {
    //free function   getter
 
-   return __free_hook;
+   return s_free;
 }
 
 //______________________________________________________________________________
@@ -108,7 +112,7 @@ void TMemStatDepend::SetMallocHook(MallocHookFunc_t p)
 {
    // Set pointer to function replacing alloc function
 
-   __malloc_hook = p;
+   s_malloc = p;
 }
 
 //______________________________________________________________________________
@@ -116,7 +120,7 @@ void TMemStatDepend::SetFreeHook(FreeHookFunc_t p)
 {
    // Set pointer to function replacing free function
 
-   __free_hook = p;
+   s_free = p;
 }
 
 //______________________________________________________________________________

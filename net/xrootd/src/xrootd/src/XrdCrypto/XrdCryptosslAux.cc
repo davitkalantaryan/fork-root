@@ -531,14 +531,14 @@ int XrdCryptosslX509ParseBucket(XrdSutBucket *b, XrdCryptoX509Chain *chain)
                      if (PEM_read_bio_PrivateKey(bkey,&rsap,0,0)) {
                         DEBUG("RSA key completed ");
                         // Test consistency
-                        int rc = RSA_check_key(rsap->pkey.rsa);
-                        if (rc != 0) {
+                        //int rc = RSA_check_key(rsap->pkey.rsa);
+                        //if (rc != 0) {
                            // Update PKI in certificate
-                           cert->SetPKI((XrdCryptoX509data)rsap);
+                        //   cert->SetPKI((XrdCryptoX509data)rsap);
                            // Update status
-                           cert->PKI()->status = XrdCryptoRSA::kComplete;
-                           break;
-                        }
+                        //   cert->PKI()->status = XrdCryptoRSA::kComplete;
+                        //   break;
+                        //}
                      }
                   }
                }
