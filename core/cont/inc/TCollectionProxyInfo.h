@@ -139,7 +139,7 @@ namespace ROOT {
 #else
          TYPENAME T::const_reference ref = *(e->iter());
 #endif
-         return e->start = Address<T>::address(ref);
+         return e->start = Address<TYPENAME T::const_reference>::address(ref);
       }
       static void* next(void* env)  {
          PEnv_t  e = PEnv_t(env);
@@ -152,7 +152,7 @@ namespace ROOT {
 #else
          TYPENAME T::const_reference ref = *(e->iter());
 #endif
-         return address(ref);
+         return Address<TYPENAME T::const_reference>::address(ref);
       }
       static void* construct(void* env)  {
          PEnv_t  e = PEnv_t(env);
@@ -206,7 +206,7 @@ namespace ROOT {
          PCont_t c = PCont_t(e->object);
          c->resize(e->size);
          e->idx = 0;
-         return e->start = address(*c->begin());
+         return e->start = Address<TYPENAME T::const_reference>::address(*c->begin());
       }
       static void* feed(void* env)  {
          PEnv_t   e = PEnv_t(env);
