@@ -159,8 +159,10 @@ int gen_systypes()
 
 /* see v6_init.cxx, G__platformMacro
   INT_TYPEDEF_PREFER_INT(fp,ssize_t,"ssize_t"); */
+#ifdef _WIN32
   INT_TYPEDEF_PREFER_INT(fp,pid_t,"pid_t");
   UINT_TYPEDEF_PREFER_INT(fp,pid_t,"pid_t");
+#endif
   fprintf(fp,"typedef void* ptr_t;\n");
   UINT_TYPEDEF_PREFER_LONG(fp,dev_t,"dev_t");
   UINT_TYPEDEF_PREFER_LONG(fp,gid_t,"gid_t");
