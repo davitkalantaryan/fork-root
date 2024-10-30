@@ -191,8 +191,8 @@ private:
       return fGrad[icoord]; 
    }
 
-   const BinData & fData; 
-   mutable IModelFunction & fFunc; 
+   const BinData & fData;
+   IModelFunction & fFunc;
 
    unsigned int fNDim; 
    unsigned int fNPoints;   // size of the data
