@@ -414,7 +414,9 @@ int XrdCryptosslX509ParseFile(const char *fname,
                      if (PEM_read_bio_PrivateKey(bkey,&rsap,0,0)) {
                         DEBUG("RSA key completed ");
                         // Test consistency
-                        int rc = RSA_check_key(rsap->pkey.rsa);
+                        //int rc = RSA_check_key(rsap->pkey.rsa); // old (by DK)
+                        RSA *rsa_key = EVP_PKEY_get0_RSA(rsap->pkey);
+                        int rc = (rsa_key != nullptr) ? 1 : 0; // Set rc to 1 if RSA key exists, otherwise 0.
                         if (rc != 0) {
                            // Update PKI in certificate
                            cert->SetPKI((XrdCryptoX509data)rsap);
