@@ -158,8 +158,8 @@ private:
  
       //data member
 
-   const UnBinData & fData; 
-   mutable IModelFunction & fFunc; 
+   const UnBinData & fData;
+   IModelFunction & fFunc;
 
    unsigned int fNDim; 
    unsigned int fNPoints;   // size of the data
