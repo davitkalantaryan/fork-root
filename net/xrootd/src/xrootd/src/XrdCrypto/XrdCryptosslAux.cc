@@ -141,7 +141,8 @@ bool XrdCryptosslX509VerifyChain(XrdCryptoX509Chain *chain, int &errcode)
    }
 
    // Make sure all the certificates have been inserted
-   if (sk_num(stk) != chain->Size() - 1)
+   //if (sk_num(stk) != chain->Size() - 1)
+    if (OPENSSL_sk_num(reinterpret_cast<const OPENSSL_STACK*>(stk)) != chain->Size() - 1)
       return 0;
 
    // Create a store ctx ...
